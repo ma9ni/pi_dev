@@ -1,0 +1,4 @@
+services:
+#    fiche_de_soin.example:
+#        class: pi\FrontEnd\FicheDeSoinBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

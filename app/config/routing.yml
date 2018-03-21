@@ -1,0 +1,7 @@
+fiche_de_soin:
+    resource: "@FicheDeSoinBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
