@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>F_soin</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ f_soin.id }}</td>
+            </tr>
+            <tr>
+                <th>Observation</th>
+                <td>{{ f_soin.observation }}</td>
+            </tr>
+            <tr>
+                <th>Medicament</th>
+                <td>{{ f_soin.medicament }}</td>
+            </tr>
+            <tr>
+                <th>Datecreation</th>
+                <td>{% if f_soin.dateCreation %}{{ f_soin.dateCreation|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Prochainrdv</th>
+                <td>{% if f_soin.prochainRDV %}{{ f_soin.prochainRDV|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <td>{{ f_soin.etat }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('f_soin_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('f_soin_edit', { 'id': f_soin.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
