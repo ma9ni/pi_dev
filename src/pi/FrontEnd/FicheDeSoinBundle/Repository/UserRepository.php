@@ -1,6 +1,6 @@
 <?php
 
-namespace pi\FrontEnd\FicheDeSoinBundle\Entity;
+namespace pi\FrontEnd\FicheDeSoinBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
