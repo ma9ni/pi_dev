@@ -5,3 +5,8 @@ fiche_de_soin:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+
+#FosUser_Routing
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml
