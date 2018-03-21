@@ -23,8 +23,8 @@ class f_soin
 
     /**
      * @var int
-     *
-     * @ORM\Column(name="id_membre", type="integer")
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
      */
     private $idMembre;
 
@@ -58,13 +58,13 @@ class f_soin
 
     /**
      * @var int
-     *
-     * @ORM\Column(name="id_animal", type="integer")
+     * @ORM\ManyToOne(targetEntity="animal")
+     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id")
      */
     private $idAnimal;
 
     /**
-     * @var string
+     * @var integer
      *
      * @ORM\Column(name="etat", type="string", length=255)
      */
