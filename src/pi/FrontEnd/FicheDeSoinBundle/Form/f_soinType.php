@@ -2,6 +2,7 @@
 
 namespace pi\FrontEnd\FicheDeSoinBundle\Form;
 
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -13,7 +14,18 @@ class f_soinType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('observation')->add('medicament')->add('dateCreation')->add('prochainRDV')->add('etat')->add('idMembre')->add('idAnimal');
+        $builder
+                ->add('observation')
+                ->add('medicament')
+                ->add('dateCreation')
+                ->add('prochainRDV')
+                ->add('etat')
+                ->add('idMembre',EntityType::class,array(
+                    'class'=>'pi\FrontEnd\FicheDeSoinBundle\Entity\User'
+                ,'choice_label'=>'id','multiple'=>false))
+                ->add('idAnimal',EntityType::class,array(
+        'class'=>'pi\FrontEnd\FicheDeSoinBundle\Entity\animal'
+    ,'choice_label'=>'nom','multiple'=>false));
     }/**
      * {@inheritdoc}
      */

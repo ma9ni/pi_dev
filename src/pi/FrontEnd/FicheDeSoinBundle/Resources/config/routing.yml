@@ -1,3 +1,6 @@
 fiche_de_soin_homepage:
     path:     /
     defaults: { _controller: FicheDeSoinBundle:Default:index }
+
+
+

@@ -65,8 +65,7 @@ class f_soin
 
     /**
      * @var integer
-     *
-     * @ORM\Column(name="etat", type="string", length=255)
+     * @ORM\Column(name="etat", type="integer", length=255 , options={"default" : 1})
      */
     private $etat;
 

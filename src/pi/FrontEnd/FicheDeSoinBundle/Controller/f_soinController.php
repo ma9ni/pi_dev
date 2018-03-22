@@ -26,7 +26,7 @@ class f_soinController extends Controller
 
         $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findAll();
 
-        return $this->render('f_soin/index.html.twig', array(
+        return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
             'f_soins' => $f_soins,
         ));
     }
