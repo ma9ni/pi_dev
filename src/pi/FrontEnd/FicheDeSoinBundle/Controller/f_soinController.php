@@ -23,9 +23,8 @@ class f_soinController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-
-        $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findAll();
-
+        $user = $this->getUser();
+        $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user));
         return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
             'f_soins' => $f_soins,
         ));
