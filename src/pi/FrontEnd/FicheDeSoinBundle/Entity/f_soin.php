@@ -3,6 +3,7 @@
 namespace pi\FrontEnd\FicheDeSoinBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\Date;
 
 /**
  * f_soin
@@ -27,7 +28,6 @@ class f_soin
      * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
      */
     private $idMembre;
-
     /**
      * @var string
      *
@@ -65,7 +65,7 @@ class f_soin
 
     /**
      * @var integer
-     * @ORM\Column(name="etat", type="integer", length=255 , options={"default" : 1})
+     * @ORM\Column(name="etat", type="integer", length=255 , options={"default" :1})
      */
     private $etat;
 

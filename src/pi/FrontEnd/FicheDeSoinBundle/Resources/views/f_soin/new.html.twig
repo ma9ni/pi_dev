@@ -4,13 +4,42 @@
     <h1>Fiche De Soin Creation</h1>
 
     {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+    <table >
+        <tr>
+            <td>{{ form_label(form.observation ) }}</td>
+            <td>{{ form_widget(form.observation) }}</td>
+            <td>{{ form_errors(form.observation) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(form.idAnimal) }}</td>
+            <td>{{ form_widget(form.idAnimal) }}</td>
+            <td>{{ form_errors(form.idAnimal) }}</td>
+        </tr>
+
+        <tr>
+            <td>{{ form_label(form.prochainRDV) }}</td>
+            <td>{{ form_widget(form.prochainRDV) }}</td>
+            <td>{{ form_errors(form.prochainRDV) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(form.medicament) }}</td>
+            <td>{{ form_widget(form.medicament) }}</td>
+            <td>{{ form_errors(form.medicament) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(form.etat) }}</td>
+            <td>{{ form_widget(form.etat) }}</td>
+            <td>{{ form_errors(form.etat) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_label(form.Ajouter) }}</td>
+            <td>{{ form_widget(form.Ajouter) }}</td>
+            <td></td>
+        </tr>
+
+    </table>
+
     {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('f_soin_index') }}">Back to the list</a>
-        </li>
-    </ul>
+
 {% endblock %}

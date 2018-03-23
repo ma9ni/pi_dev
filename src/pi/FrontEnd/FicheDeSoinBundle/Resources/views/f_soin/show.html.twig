@@ -1,9 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>F_soin</h1>
+    <div class="container">
+    <h1>Fiche De soin Liste </h1>
 
-    <table>
+    <table border="2">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -45,4 +46,5 @@
             {{ form_end(delete_form) }}
         </li>
     </ul>
+    </div>
 {% endblock %}

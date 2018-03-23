@@ -3,6 +3,7 @@
 namespace pi\FrontEnd\FicheDeSoinBundle\Controller;
 
 use pi\FrontEnd\FicheDeSoinBundle\Entity\f_soin;
+use pi\FrontEnd\FicheDeSoinBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -16,7 +17,6 @@ class f_soinController extends Controller
 {
     /**
      * Lists all f_soin entities.
-     *
      * @Route("/", name="f_soin_index")
      * @Method("GET")
      */
@@ -39,12 +39,15 @@ class f_soinController extends Controller
      */
     public function newAction(Request $request)
     {
+        $user = $this->getUser();
         $f_soin = new F_soin();
         $form = $this->createForm('pi\FrontEnd\FicheDeSoinBundle\Form\f_soinType', $f_soin);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $f_soin->setIdMembre($user);
+            $f_soin->setDateCreation(new \DateTime());
             $em->persist($f_soin);
             $em->flush();
 
@@ -108,7 +111,6 @@ class f_soinController extends Controller
     {
         $form = $this->createDeleteForm($f_soin);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->remove($f_soin);
