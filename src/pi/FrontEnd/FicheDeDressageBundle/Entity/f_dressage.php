@@ -30,7 +30,6 @@ class f_dressage
 
     /**
      * @var int
-     *
      * @ORM\Column(name="displine", type="integer")
      */
     private $displine;
@@ -94,7 +93,6 @@ class f_dressage
 
     /**
      * @var integer
-     *
      * @ORM\Column(name="etat", type="integer", options={"default":1})
      */
     private $etat;

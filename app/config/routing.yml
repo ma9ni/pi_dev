@@ -1,3 +1,7 @@
+fiche_de_dressage_f.dressage:
+    resource: "@FicheDeDressageBundle/Controller/f_dressageController.php"
+    type:     annotation
+
 fiche_de_dressage:
     resource: "@FicheDeDressageBundle/Resources/config/routing.yml"
     prefix:   /
