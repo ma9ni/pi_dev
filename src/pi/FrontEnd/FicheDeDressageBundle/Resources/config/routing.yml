@@ -1,0 +1,3 @@
+fiche_de_dressage_homepage:
+    path:     /
+    defaults: { _controller: FicheDeDressageBundle:Default:index }

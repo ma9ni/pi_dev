@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/DefaultController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Entity/f_dressage.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/FicheDeDressageBundle.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Repository/f_dressageRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/routing.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/services.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/Default/index.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tests/FicheDeDressageBundle/Controller/DefaultControllerTest.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Form/f_soinType.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Form/f_soinType.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/f_soinRepository.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/f_soinRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,65 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="f_soinController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
+      <file leaf-file-name="f_dressage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Entity/f_dressage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="89" column="63" lean-forward="false" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
+            <state relative-caret-position="491">
+              <caret line="368" column="0" lean-forward="true" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+      <file leaf-file-name="f_dressageController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig">
+      <file leaf-file-name="f_soin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="f_soinType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Form/f_soinType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="-3230">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -97,8 +68,8 @@
       <find />
       <find>HEAD</find>
       <find>tra</find>
-      <find>getId</find>
       <find>input</find>
+      <find>getId</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -125,6 +96,9 @@
       <command text="s doctrine:schema:update -f " />
       <command text="fos" />
       <command text="s doctrine:schema:update -f " />
+      <command text="s generate:bundle" />
+      <command text="s doctrine:generate:entity " />
+      <command text="s doctrine:generate:entities FicheDeDressageBundle:f_dressage" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -167,7 +141,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/banner.html.twig" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/f_soinRepository.php" />
@@ -177,6 +150,9 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Form/f_soinType.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Entity/f_dressage.php" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
       </list>
     </option>
   </component>
@@ -230,10 +206,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1378" />
-    <option name="height" value="733" />
+    <option name="x" value="676" />
+    <option name="y" value="30" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -265,33 +241,82 @@
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -347,23 +372,23 @@
       <workItem from="1521662331453" duration="4011000" />
       <workItem from="1521670334542" duration="2809000" />
       <workItem from="1521715753951" duration="19264000" />
-      <workItem from="1521741796930" duration="40128000" />
+      <workItem from="1521741796930" duration="42462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72739000" />
+    <option name="totallyTimeSpent" value="75073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -378,6 +403,27 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32200646" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -416,36 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/views/Group/new.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/login-page.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/banner.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -698,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59">
@@ -759,7 +767,7 @@
         <state relative-caret-position="434">
           <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -809,15 +817,63 @@
         <state relative-caret-position="357">
           <caret line="36" column="59" lean-forward="false" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#12#26#0#Twig" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/FicheDeSoinBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/FicheDeDressageBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3230">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Entity/f_dressage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="368" column="0" lean-forward="true" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
           <folding />
         </state>
       </provider>
