@@ -24,7 +24,7 @@ class f_soinController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user));
+        $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user,"etat"=>1));
         return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
             'f_soins' => $f_soins,
         ));
@@ -47,10 +47,11 @@ class f_soinController extends Controller
             $em = $this->getDoctrine()->getManager();
             $f_soin->setIdMembre($user);
             $f_soin->setDateCreation(new \DateTime());
+            $f_soin->setEtat(1);
             $em->persist($f_soin);
             $em->flush();
 
-            return $this->redirectToRoute('f_soin_show', array('id' => $f_soin->getId()));
+            return $this->redirectToRoute('f_soin_index');
         }
 
         return $this->render('@FicheDeSoin/f_soin/new.html.twig', array(
@@ -83,39 +84,32 @@ class f_soinController extends Controller
      */
     public function editAction(Request $request, f_soin $f_soin)
     {
-        $deleteForm = $this->createDeleteForm($f_soin);
         $editForm = $this->createForm('pi\FrontEnd\FicheDeSoinBundle\Form\f_soinType', $f_soin);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('f_soin_edit', array('id' => $f_soin->getId()));
+
+            return $this->redirectToRoute('f_soin_index');
         }
 
         return $this->render('@FicheDeSoin/f_soin/edit.html.twig', array(
             'f_soin' => $f_soin,
             'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
-    /**
-     * Deletes a f_soin entity.
-     *
-     * @Route("/{id}", name="f_soin_delete")
-     * @Method("DELETE")
-     */
-    public function deleteAction(Request $request, f_soin $f_soin)
-    {
-        $form = $this->createDeleteForm($f_soin);
-        $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($f_soin);
-            $em->flush();
-        }
 
+    /**
+     * @Route("supprimer/{id}", name="f_soin_delete")
+     */
+    public function deleteAction(f_soin $f_soin)
+    {
+            $em = $this->getDoctrine()->getManager();
+            $id=$f_soin->getId();
+            $em->getRepository('FicheDeSoinBundle:f_soin')->deleteFicheDeSoin($id);
+            $em->flush();
         return $this->redirectToRoute('f_soin_index');
     }
 

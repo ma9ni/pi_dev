@@ -20,13 +20,14 @@ class f_soinType extends AbstractType
                 ->add('observation','Symfony\Component\Form\Extension\Core\Type\TextareaType')
                 ->add('medicament')
                 ->add('prochainRDV')
-                ->add('etat')
-
                 ->add('idAnimal',EntityType::class,array(
         'class'=>'pi\FrontEnd\FicheDeSoinBundle\Entity\animal'
-    ,'choice_label'=>'nom','multiple'=>false))
-                ->add('Ajouter',SubmitType::class);
-    }/**
+    ,'choice_label'=>'nom','multiple'=>false));
+
+    }
+
+
+    /**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)
@@ -35,7 +36,6 @@ class f_soinType extends AbstractType
             'data_class' => 'pi\FrontEnd\FicheDeSoinBundle\Entity\f_soin'
         ));
     }
-
     /**
      * {@inheritdoc}
      */

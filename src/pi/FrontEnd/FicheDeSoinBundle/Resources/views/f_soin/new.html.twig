@@ -1,45 +1,93 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Fiche De Soin Creation</h1>
+    <div class="contact">
+        <div class="container">
+            <h3 class="agileits-title w3title2">Création Fiche De Soin </h3>
+            <div class="form-group">
 
-    {{ form_start(form) }}
-    <table >
-        <tr>
-            <td>{{ form_label(form.observation ) }}</td>
-            <td>{{ form_widget(form.observation) }}</td>
-            <td>{{ form_errors(form.observation) }}</td>
-        </tr>
-        <tr>
-            <td>{{ form_label(form.idAnimal) }}</td>
-            <td>{{ form_widget(form.idAnimal) }}</td>
-            <td>{{ form_errors(form.idAnimal) }}</td>
-        </tr>
+{{ form_start(form) }}
 
-        <tr>
-            <td>{{ form_label(form.prochainRDV) }}</td>
-            <td>{{ form_widget(form.prochainRDV) }}</td>
-            <td>{{ form_errors(form.prochainRDV) }}</td>
-        </tr>
-        <tr>
-            <td>{{ form_label(form.medicament) }}</td>
-            <td>{{ form_widget(form.medicament) }}</td>
-            <td>{{ form_errors(form.medicament) }}</td>
-        </tr>
-        <tr>
-            <td>{{ form_label(form.etat) }}</td>
-            <td>{{ form_widget(form.etat) }}</td>
-            <td>{{ form_errors(form.etat) }}</td>
-        </tr>
-        <tr>
-            <td>{{ form_label(form.Ajouter) }}</td>
-            <td>{{ form_widget(form.Ajouter) }}</td>
-            <td></td>
-        </tr>
+            <div class="col-sm-6 contact-left tex">
+              {{ form_label(form.observation ) }}
+            </div>
+            <div class="col-sm-6 contact-right">
+              {{ form_widget(form.observation)  }}
+            </div>
+                <div class="col-sm-6 contact-left">
+                    {{ form_label(form.prochainRDV ) }}
+                </div>
+                <div class="col-sm-6 contact-right" >
+                    {{ form_widget(form.prochainRDV)  }}
+                </div>
+                    <div class="col-sm-6 contact-left">
+                        {{ form_label(form.idAnimal ) }}
+                    </div>
+                    <div class="col-sm-6 contact-right" >
+                        {{ form_widget(form.idAnimal)  }}
+                    </div>
 
-    </table>
+                    <div class="col-sm-6 contact-left">
+                        {{ form_label(form.medicament ) }}
+                    </div>
+                    <div class="col-sm-6 contact-right" >
+                        {{ form_widget(form.medicament)  }}
+                    </div>
+                    <div>
+                        <input type="submit" value="Ajouter" />
 
-    {{ form_end(form) }}
-
-
+                    </div>
+                {{ form_end(form) }}
+            </div>
+    </div>
+</div>
+    <div class="contact">
+        <div class="container">
+            <h3 class="agileits-title w3title2">Contact Us</h3>
+            <div class="map-pos">
+                <div class="col-md-4 address-row">
+                    <div class="col-xs-2 address-left">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-10 address-right">
+                        <h5>Visit Us</h5>
+                        <p>Bmr St, Canada, New York, USA</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 address-row w3-agileits">
+                    <div class="col-xs-2 address-left">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-10 address-right">
+                        <h5>Mail Us</h5>
+                        <p><a href="mailto:info@example.com"> mail@example.com</a></p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 address-row">
+                    <div class="col-xs-2 address-left">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-10 address-right">
+                        <h5>Call Us</h5>
+                        <p>+01 222 333 4444</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <form action="#" method="post">
+                <div class="col-sm-6 contact-left">
+                    <input type="text" name="Name" placeholder="Your Name" required="">
+                    <input type="email" name="Email" placeholder="Email" required="">
+                    <input type="text" name="Mobile Number" placeholder="Mobile Number" required="">
+                </div>
+                <div class="col-sm-6 contact-right">
+                    <textarea name="Message" placeholder="Message" required=""></textarea>
+                    <input type="submit" value="Submit" >
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
 {% endblock %}

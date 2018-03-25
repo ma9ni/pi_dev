@@ -4,7 +4,7 @@
     <div class="container">
     <h1>Fiche De soin Liste </h1>
 
-    <table border="2">
+    <table>
         <tbody>
             <tr>
                 <th>Id</th>
@@ -41,9 +41,7 @@
             <a href="{{ path('f_soin_edit', { 'id': f_soin.id }) }}">Edit</a>
         </li>
         <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+            <a href="{{ path('f_soin_delete', { 'id': f_soin.id }) }}">supprimer</a>
         </li>
     </ul>
     </div>
