@@ -18,7 +18,7 @@ class f_dressageController extends Controller
     /**
      * Lists all f_dressage entities.
      *
-     * @Route("/", name="f_dressage_index")
+     * @Route("/fichedressage", name="f_dressage_index")
      * @Method("GET")
      */
     public function indexAction()

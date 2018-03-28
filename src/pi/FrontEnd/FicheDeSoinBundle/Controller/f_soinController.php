@@ -18,7 +18,7 @@ class f_soinController extends Controller
 {
     /**
      * Lists all f_soin entities.
-     * @Route("/index", name="f_soin_index")
+     * @Route("/fichesoin", name="f_soin_index")
      * @Method("GET")
      */
     public function indexAction()

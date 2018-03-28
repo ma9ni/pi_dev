@@ -35,4 +35,22 @@ class DefaultController extends Controller
     {
         return $this->render('::dressuer.html.twig');
     }
+
+    public function redirectAction()
+    {
+        $user=$this->get('security.token_storage')->getToken()->getUser();
+        $role=$user->getRoles();
+
+        var_dump($role);
+
+
+        if ($role[0]=='ROLE_VETE'){
+
+            return $this->redirectToRoute('f_soin_index');
+        }
+        elseif ($role[0]=='ROLE_DRESS'){
+            return $this->redirectToRoute('f_dressage_index');
+        }
+        else{return $this->redirectToRoute('front_end_homepage');}
+    }
 }

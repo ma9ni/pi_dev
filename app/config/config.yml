@@ -78,6 +78,9 @@ fos_user:
     firewall_name: main
     user_class: pi\FrontEnd\FicheDeSoinBundle\Entity\User
 
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationType
 
     from_email:
         address: "ahmed.makni.1@esprit.tn"

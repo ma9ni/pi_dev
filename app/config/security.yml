@@ -3,8 +3,9 @@ security:
         FOS\UserBundle\Model\UserInterface: bcrypt
 
     role_hierarchy:
-        ROLE_DRESS:       ROLE_DRESS
-        ROLE_VETE:        ROLE_VETE
+        ROLE_USER:        ROLE_USER
+        ROLE_DRESS:       ROLE_USER
+        ROLE_VETE:        ROLE_USER
         ROLE_ADMIN:       ROLE_USER
         ROLE_SUPER_ADMIN: ROLE_ADMIN
 
@@ -18,6 +19,7 @@ security:
             form_login:
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
+                success_handler: redirect.after.login
 
             logout:       true
             anonymous:    true

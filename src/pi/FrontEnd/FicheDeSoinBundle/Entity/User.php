@@ -31,7 +31,21 @@ class User extends BaseUser
     /**
      * @ORM\Column(type="string",length=255,nullable=true)
      */
-    private $adresse;
+    protected $adresse;
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+
+    protected $gouvernorat;
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+    protected $numTel;
+
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+    protected $type;
 
     /**
      * @return mixed
@@ -81,15 +95,8 @@ class User extends BaseUser
         $this->numTel = $numTel;
     }
 
-    /**
-     * @ORM\Column(name="gouvernorat" type="string",length=255,nullable=true)
-     */
-    private $gouvernorat;
 
-    /**
-     * @ORM\Column(name="num_tel" type="string",length=255,nullable=true)
-     */
-    private $numTel;
+
 
     public function __construct()
     {
@@ -158,6 +165,22 @@ class User extends BaseUser
     public function setNote($note)
     {
         $this->note = $note;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param mixed $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
     }
 
 

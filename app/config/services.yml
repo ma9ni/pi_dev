@@ -4,6 +4,7 @@ parameters:
     #parameter_name: value
 
 services:
+
     # default configuration for services in *this* file
     _defaults:
         # automatically injects dependencies in your services
@@ -13,7 +14,14 @@ services:
         # this means you cannot fetch services directly from the container via $container->get()
         # if you need to do this, you can override this setting on individual services
         public: false
+    app.form.registration:
+        class: AppBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: app_user_registration }
 
+    redirect.after.login:
+            class: AppBundle\Redirection\AfterLoginRedirection
+            arguments: ["@router"]
 
     # makes classes in src/AppBundle available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
