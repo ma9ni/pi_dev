@@ -3,17 +3,20 @@
 {% block body %}
     <h1>F_soins list</h1>
 
-    <table border="4" style="background-color: #31b0d5">
-                <tr>
-                    <td>ID</td>
-                    <td>Observation</td>
-                    <td>Medicament</td>
-                    <td>Datecreation</td>
-                    <td>Prochainrdv</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+    <table class=" table table table-hover table-dark">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Observation</th>
+            <th scope="col">Medicament</th>
+            <th scope="col">Datecreation</th>
+            <th scope="col">Prochainrdv</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+
         {% for f_soin in f_soins %}
                 <tr>
                     <td>{{ f_soin.id }}</td>
@@ -21,9 +24,9 @@
                     <td>{{ f_soin.medicament }}</td>
                     <td>{% if f_soin.dateCreation %}{{ f_soin.dateCreation|date('Y-m-d') }}{% endif %}</td>
                     <td>{% if f_soin.prochainRDV %}{{ f_soin.prochainRDV|date('Y-m-d') }}{% endif %}</td>
-                    <td><a href="{{ path('f_soin_show', { 'id': f_soin.id }) }}">show</a></td>
-                    <td><a href="{{ path('f_soin_delete', { 'id': f_soin.id }) }}">supprimer</a></td>
-                    <td><a href="{{ path('f_soin_edit', { 'id': f_soin.id }) }}">edit</a></td>
+                    <td><a href="{{ path('f_soin_show', { 'id': f_soin.id }) }}"><span class="glyphicon glyphicon-hand-up"></span></a></td>
+                    <td><a href="{{ path('f_soin_edit', { 'id': f_soin.id }) }}"><span class="glyphicon glyphicon-edit"></span>edit</a></td>
+                    <td><a href="{{ path('f_soin_delete', { 'id': f_soin.id }) }}"><span class="glyphicon glyphicon-trash"></span></a></td>
                 </tr>
         {% endfor %}
             </table>

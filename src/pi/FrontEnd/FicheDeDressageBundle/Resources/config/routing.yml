@@ -1,3 +1,32 @@
 fiche_de_dressage_homepage:
     path:     /
     defaults: { _controller: FicheDeDressageBundle:Default:index }
+
+
+front_end_about:
+    path:     /about
+    defaults: { _controller: FicheDeDressageBundle:Default:about }
+
+
+front_end_gallery:
+    path:     /gallery
+    defaults: { _controller: FicheDeDressageBundle:Default:gallery }
+
+
+
+front_end_contact:
+    path:     /contact
+    defaults: { _controller: FicheDeDressageBundle:Default:contact }
+
+front_end_homepage:
+    path:     /index
+    defaults: { _controller: FicheDeDressageBundle:Default:index }
+
+front_end_vet:
+    path:     /veterinaires
+    defaults: { _controller: FicheDeDressageBundle:Default:vet }
+
+
+front_end_dress:
+    path:     /dresseur
+    defaults: { _controller: FicheDeDressageBundle:Default:dress }

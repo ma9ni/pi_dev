@@ -22,13 +22,18 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="note", type="float" ,options={"default":1}, nullable=true)
+     */
+    protected $note;
 
     public function __construct()
     {
         parent::__construct();
         // your own logic
     }
-
     /**
      * @return string
      */
@@ -75,6 +80,22 @@ class User extends BaseUser
     public function setId($id)
     {
         $this->id = $id;
+    }
+
+    /**
+     * @return float
+     */
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    /**
+     * @param float $note
+     */
+    public function setNote($note)
+    {
+        $this->note = $note;
     }
 
 

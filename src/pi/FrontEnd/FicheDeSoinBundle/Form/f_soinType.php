@@ -2,9 +2,10 @@
 
 namespace pi\FrontEnd\FicheDeSoinBundle\Form;
 
+
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -19,7 +20,7 @@ class f_soinType extends AbstractType
 
                 ->add('observation','Symfony\Component\Form\Extension\Core\Type\TextareaType')
                 ->add('medicament')
-                ->add('prochainRDV')
+                ->add('prochainRDV',DateType::class,array('widget'=>'single_text'))
                 ->add('idAnimal',EntityType::class,array(
         'class'=>'pi\FrontEnd\FicheDeSoinBundle\Entity\animal'
     ,'choice_label'=>'nom','multiple'=>false));

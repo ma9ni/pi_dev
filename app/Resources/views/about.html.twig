@@ -1,0 +1,166 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<!-- welcome -->
+<div class="welcome">
+    <div class="container">
+        <div class="col-md-6 w3ls_welcome_right">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="agileits_w3layouts_welcome_grid">
+                            <img src="{{ asset('FrontEnd/images/g1.jpg') }}" alt=" " class="img-responsive" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="agileits_w3layouts_welcome_grid">
+                            <img src="{{ asset('FrontEnd/images/g2.jpg') }}" alt=" " class="img-responsive" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="agileits_w3layouts_welcome_grid">
+                            <img src="{{ asset('FrontEnd/images/g3.jpg') }}" alt=" " class="img-responsive" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 w3ls_welcome_left">
+            <div class="w3ls_welcome_right1">
+                <h3 class="agileits-title">About Us</h3>
+                <h6>Lorem ipsum dolor <span> Consectetur </span> sit amet adipisicing elit. </h6>
+                <p>Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                <div class="w3l_more">
+                    <a href="#" class="button button--nina" data-text="Learn more" data-toggle="modal" data-target="#myModal">
+                        <span>L</span><span>e</span><span>a</span><span>n</span> <span>m</span><span>o</span><span>r</span><span>e</span>
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- //welcome -->
+<!-- Stats -->
+<div class="stats services jarallax">
+    <div class="container">
+        <div class="stats-info agileits-w3layouts">
+            <div class="col-sm-3 col-xs-6 stats-grid">
+                <div class="stats-img">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <h5>Happy Clients</h5>
+                <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='157000' data-delay='.5' data-increment="100">157000</div>
+            </div>
+            <div class="col-sm-3 col-xs-6 stats-grid">
+                <div class="stats-img w3-agileits">
+                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                </div>
+                <h5>Our Events</h5>
+                <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='850' data-delay='8' data-increment="1">850</div>
+            </div>
+            <div class="col-sm-3 col-xs-6 stats-grid">
+                <div class="stats-img w3-agileits">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <h5>Projects</h5>
+                <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80000' data-delay='.5' data-increment="100">80000</div>
+            </div>
+            <div class="col-sm-3 col-xs-6 stats-grid">
+                <div class="stats-img w3-agileits">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                </div>
+                <h5>Awards</h5>
+                <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">269</div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- //Stats -->
+<!-- team -->
+<div class="team agileits">
+    <div class="team-agileinfo">
+        <div class="container">
+            <h3 class="agileits-title w3title2">Our Team</h3>
+            <div class="team-row agileits-w3layouts">
+                <div class="col-sm-3 col-xs-6 team-grids">
+                    <div class="team-agileimg">
+                        <img class="img-responsive" src="{{ asset('FrontEnd/images/t1.jpg') }}" alt="">
+                        <div class="captn">
+                            <div class="captn-top">
+                                <h4>Edwards Doe</h4>
+                                <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                            </div>
+                            <div class="social-w3lsicon">
+                                <ul class="agileits_social_list">
+                                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 team-grids">
+                    <div class="team-agileimg">
+                        <img class="img-responsive" src="{{ asset('FrontEnd/images/t2.jpg') }}" alt="">
+                        <div class="captn">
+                            <div class="captn-top">
+                                <h4>Mark Sophia</h4>
+                                <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                            </div>
+                            <div class="social-w3lsicon">
+                                <ul class="agileits_social_list">
+                                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 team-grids">
+                    <div class="team-agileimg">
+                        <img class="img-responsive" src="{{ asset('FrontEnd/images/t3.jpg') }}" alt="">
+                        <div class="captn">
+                            <div class="captn-top">
+                                <h4>Michael amet</h4>
+                                <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                            </div>
+                            <div class="social-w3lsicon">
+                                <ul class="agileits_social_list">
+                                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 team-grids">
+                    <div class="team-agileimg">
+                        <img class="img-responsive" src="{{ asset('FrontEnd/images/t4.jpg') }}" alt="">
+                        <div class="captn">
+                            <div class="captn-top">
+                                <h4>Daniel Nyari</h4>
+                                <p>Aenean pulvinar ac enimet posuere tincidunt velit Utin tincidunt</p>
+                            </div>
+                            <div class="social-w3lsicon">
+                                <ul class="agileits_social_list">
+                                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //team -->
+
+{% endblock %}

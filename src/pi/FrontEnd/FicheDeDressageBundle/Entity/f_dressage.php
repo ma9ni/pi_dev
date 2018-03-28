@@ -93,7 +93,7 @@ class f_dressage
 
     /**
      * @var integer
-     * @ORM\Column(name="etat", type="integer", options={"default":1})
+     * @ORM\Column(name="etat", type="integer", options={"default":1}, nullable=true)
      */
     private $etat;
 
