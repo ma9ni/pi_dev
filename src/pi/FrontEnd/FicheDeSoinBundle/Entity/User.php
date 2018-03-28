@@ -28,6 +28,68 @@ class User extends BaseUser
      * @ORM\Column(name="note", type="float" ,options={"default":1}, nullable=true)
      */
     protected $note;
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+    private $adresse;
+
+    /**
+     * @return mixed
+     */
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
+
+    /**
+     * @param mixed $adresse
+     */
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGouvernorat()
+    {
+        return $this->gouvernorat;
+    }
+
+    /**
+     * @param mixed $gouvernorat
+     */
+    public function setGouvernorat($gouvernorat)
+    {
+        $this->gouvernorat = $gouvernorat;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNumTel()
+    {
+        return $this->numTel;
+    }
+
+    /**
+     * @param mixed $numTel
+     */
+    public function setNumTel($numTel)
+    {
+        $this->numTel = $numTel;
+    }
+
+    /**
+     * @ORM\Column(name="gouvernorat" type="string",length=255,nullable=true)
+     */
+    private $gouvernorat;
+
+    /**
+     * @ORM\Column(name="num_tel" type="string",length=255,nullable=true)
+     */
+    private $numTel;
 
     public function __construct()
     {
