@@ -22,9 +22,7 @@ front_end_homepage:
     path:     /index
     defaults: { _controller: FicheDeDressageBundle:Default:index }
 
-front_end_vet:
-    path:     /veterinaires
-    defaults: { _controller: FicheDeDressageBundle:Default:vet }
+
 
 
 front_end_dress:

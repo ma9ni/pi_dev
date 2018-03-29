@@ -12,4 +12,14 @@ use Doctrine\ORM\EntityRepository;
  */
 class UserRepository extends EntityRepository
 {
+
+    public function  findVeterinaireQB(){
+        $queryBuilder=$this
+            ->createQueryBuilder('s');
+        $queryBuilder
+            ->where("s.roles=:roles")
+            ->setParameter('roles','a:1:{i:0;s:9:"ROLE_VETE";}');
+        return $queryBuilder->getQuery()->getResult();
+
+    }
 }

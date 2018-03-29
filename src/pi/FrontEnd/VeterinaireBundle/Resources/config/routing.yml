@@ -1,3 +1,8 @@
 veterinaire_homepage:
     path:     /
     defaults: { _controller: VeterinaireBundle:Default:index }
+
+
+front_end_vet:
+    path:     /veterinaires
+    defaults: { _controller: VeterinaireBundle:Default:list }

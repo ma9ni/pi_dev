@@ -13,6 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity()
  * @ORM\Table(name="fos_user")
+ * @ORM\Entity(repositoryClass="pi\FrontEnd\FicheDeSoinBundle\Repository\UserRepository")
  */
 class User extends BaseUser
 {

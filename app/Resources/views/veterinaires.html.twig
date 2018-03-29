@@ -6,36 +6,23 @@
         <div class="container">
             <h3 class="agileits-title w3title2">veterinaire</h3>
             <div class="agile_gallery_grids">
-                {% for  i in 0..3 %}
+                {% for  i in veterinaires %}
                     <div class="col-sm-4 col-xs-4 col-md-6 agile_gallery_grid">
                         <div class="w3ls_gallery_grid">
                             <a href="{{ asset('FrontEnd/images/g1.jpg') }}" class="lsb-preview wthree_p_grid" data-lsb-group="header">
                                 <img src="{{ asset('FrontEnd/images/g1.jpg') }}" alt=" " class="img-responsive" />
                                 <div class="agileinfo_content_wrap">
                                     <div class="agileits_content">
-                                        <h3>Best Pets  {{ i  }} </h3>
-                                        <p>Ne nam facilisis adolescens faucibus. {{ i }}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        </br>
-                    </div>
-                    <div class="col-sm-4 col-xs-4 col-md-6 agile_gallery_grid">
-                        <div class="w3ls_gallery_grid">
-                            <a href="{{ asset('FrontEnd/images/g2.jpg') }}" class="lsb-preview wthree_p_grid" data-lsb-group="header">
-                                <img src="{{ asset('FrontEnd/images/g2.jpg') }}" alt=" " class="img-responsive" />
-                                <div class="agileinfo_content_wrap">
-                                    <div class="agileits_content">
-                                        <h3>Best Pets{{ i  }}</h3>
-                                        <p>Ne nam facilisis adolescens faucibus. {{ i }}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        </br>
-                    </div>
+                                        <h3>Best Pets  {{ i.email  }} </h3>
+                                        <p>Ne nam facilisis adolescens faucibus. {{ i.numTel }}</p>
 
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </br>
+                    </div>
+            </div>
                 {% endfor %}
 
         </div>
