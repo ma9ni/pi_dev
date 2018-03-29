@@ -1,3 +1,7 @@
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
 veterinaire:
     resource: "@VeterinaireBundle/Resources/config/routing.yml"
     prefix:   /
