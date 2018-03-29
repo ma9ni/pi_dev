@@ -1,3 +1,7 @@
+veterinaire:
+    resource: "@VeterinaireBundle/Resources/config/routing.yml"
+    prefix:   /
+
 fiche_de_dressage_f.dressage:
     resource: "@FicheDeDressageBundle/Controller/f_dressageController.php"
     type:     annotation

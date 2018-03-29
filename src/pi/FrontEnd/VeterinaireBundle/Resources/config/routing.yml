@@ -1,0 +1,3 @@
+veterinaire_homepage:
+    path:     /
+    defaults: { _controller: VeterinaireBundle:Default:index }

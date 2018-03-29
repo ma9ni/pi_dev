@@ -1,0 +1,4 @@
+services:
+#    veterinaire.example:
+#        class: pi\FrontEnd\VeterinaireBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
