@@ -10,15 +10,13 @@ class DefaultController extends Controller
     {
         return $this->render('VeterinaireBundle:Default:index.html.twig');
     }
-
     public function listAction()
     {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireQB();
-        return $this->render('::veterinaires.html.twig', array(
+        return $this->render('@Veterinaire/veterinaires.html.twig', array(
             'veterinaires' => $veterinaires,
         ));
     }
-
 }
