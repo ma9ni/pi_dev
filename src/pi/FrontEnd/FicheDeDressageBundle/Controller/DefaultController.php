@@ -8,32 +8,29 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('::layout.html.twig');
+        return $this->render(':FrontEnd:layout.html.twig');
     }
 
     public function aboutAction()
     {
-        return $this->render('::about.html.twig');
+        return $this->render(':FrontEnd:about.html.twig');
     }
 
     public function galleryAction()
     {
-        return $this->render('::gallery.html.twig');
+        return $this->render(':FrontEnd:gallery.html.twig');
     }
 
     public function contactAction()
     {
-        return $this->render('::contact.html.twig');
+        return $this->render(':FrontEnd:contact.html.twig');
     }
 
-    public function vetAction()
-    {
-        return $this->render('::veterinaires.html.twig');
-    }
+
 
     public function dressAction()
     {
-        return $this->render('::dressuer.html.twig');
+        return $this->render(':FrontEnd:dressuer.html.twig');
     }
 
     public function redirectAction()

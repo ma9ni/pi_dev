@@ -17,16 +17,13 @@ class f_dressageController extends Controller
 {
     /**
      * Lists all f_dressage entities.
-     *
-     * @Route("/fichedressage", name="f_dressage_index")
+     * @Route("/index", name="f_dressage_index")
      * @Method("GET")
      */
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-
         $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')->findAll();
-
         return $this->render('@FicheDeDressage/f_dressage/index.html.twig', array(
             'f_dressages' => $f_dressages,
         ));
@@ -64,14 +61,14 @@ class f_dressageController extends Controller
     /**
      * Finds and displays a f_dressage entity.
      *
-     * @Route("/{id}", name="f_dressage_show")
+     * @Route("/show/{id}", name="f_dressage_show")
      * @Method("GET")
      */
     public function showAction(f_dressage $f_dressage)
     {
         $deleteForm = $this->createDeleteForm($f_dressage);
 
-        return $this->render('@FicheDeDressage/f_dressage/new.html.twig', array(
+        return $this->render('@FicheDeDressage/f_dressage/show.html.twig', array(
             'f_dressage' => $f_dressage,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -80,7 +77,7 @@ class f_dressageController extends Controller
     /**
      * Displays a form to edit an existing f_dressage entity.
      *
-     * @Route("/{id}/edit", name="f_dressage_edit")
+     * @Route("/edit/{id}", name="f_dressage_edit")
      * @Method({"GET", "POST"})
      */
     public function editAction(Request $request, f_dressage $f_dressage)
@@ -105,7 +102,7 @@ class f_dressageController extends Controller
     /**
      * Deletes a f_dressage entity.
      *
-     * @Route("/{id}", name="f_dressage_delete")
+     * @Route("/delete/{id}", name="f_dressage_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, f_dressage $f_dressage)

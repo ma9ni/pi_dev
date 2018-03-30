@@ -1,64 +1,25 @@
-{% extends 'base.html.twig' %}
+{% extends ":FrontEnd:base.html.twig" %}
 
 {% block body %}
     <h1>F_dressage</h1>
+    <ul class="list-group">
+        <li class="list-group-item">Id :Cras justo odio</li>
+        <li class="list-group-item">Displine : {{ f_dressage.displine }}</li>
+        <li class="list-group-item">Obeissance : {{ f_dressage.obeissance }}Morbi leo risus</li>
+        <li class="list-group-item">Specialite : {{ f_dressage.specialite }}Porta ac consectetur ac</li>
+        <li class="list-group-item">Accompagnement : {{ f_dressage.accompagnement }}Vestibulum at eros</li>
+        <li class="list-group-item">Interception : {{ f_dressage.interception }}Vestibulum at eros</li>
+        <li class="list-group-item">Notetotale : {{ f_dressage.noteTotale }}Vestibulum at eros</li>
+        <li class="list-group-item">Datedebut : {% if f_dressage.dateDebut %}{{ f_dressage.dateDebut|date('Y-m-d') }}{% endif %}</li>
+        <li class="list-group-item">Datefin : {% if f_dressage.dateFin %}{{ f_dressage.dateFin|date('Y-m-d') }}{% endif %}</li>
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ f_dressage.id }}</td>
-            </tr>
-            <tr>
-                <th>Displine</th>
-                <td>{{ f_dressage.displine }}</td>
-            </tr>
-            <tr>
-                <th>Obeissance</th>
-                <td>{{ f_dressage.obeissance }}</td>
-            </tr>
-            <tr>
-                <th>Specialite</th>
-                <td>{{ f_dressage.specialite }}</td>
-            </tr>
-            <tr>
-                <th>Accompagnement</th>
-                <td>{{ f_dressage.accompagnement }}</td>
-            </tr>
-            <tr>
-                <th>Interception</th>
-                <td>{{ f_dressage.interception }}</td>
-            </tr>
-            <tr>
-                <th>Notetotale</th>
-                <td>{{ f_dressage.noteTotale }}</td>
-            </tr>
-            <tr>
-                <th>Datedebut</th>
-                <td>{% if f_dressage.dateDebut %}{{ f_dressage.dateDebut|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Datefin</th>
-                <td>{% if f_dressage.dateFin %}{{ f_dressage.dateFin|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Etat</th>
-                <td>{{ f_dressage.etat }}</td>
-            </tr>
-        </tbody>
-    </table>
-
+    </ul>
     <ul>
         <li>
             <a href="{{ path('f_dressage_index') }}">Back to the list</a>
         </li>
         <li>
             <a href="{{ path('f_dressage_edit', { 'id': f_dressage.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
         </li>
     </ul>
 {% endblock %}

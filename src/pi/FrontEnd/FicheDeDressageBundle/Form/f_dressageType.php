@@ -4,6 +4,7 @@ namespace pi\FrontEnd\FicheDeDressageBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -21,8 +22,8 @@ class f_dressageType extends AbstractType
             ->add('accompagnement')
             ->add('interception')
             ->add('noteTotale')
-            ->add('dateDebut')
-            ->add('dateFin')
+            ->add('dateDebut',DateType::class,array('widget'=>'single_text'))
+            ->add('dateFin',DateType::class,array('widget'=>'single_text'))
             ->add('id_animal',EntityType::class,array(
                 'class'=>'pi\FrontEnd\FicheDeSoinBundle\Entity\animal'
             ,'choice_label'=>'nom','multiple'=>false));

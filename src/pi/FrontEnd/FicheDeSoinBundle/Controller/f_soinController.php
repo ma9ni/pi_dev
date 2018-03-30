@@ -18,7 +18,7 @@ class f_soinController extends Controller
 {
     /**
      * Lists all f_soin entities.
-     * @Route("/fichesoin", name="f_soin_index")
+     * @Route("/index", name="f_soin_index")
      * @Method("GET")
      */
     public function indexAction()
@@ -51,36 +51,30 @@ class f_soinController extends Controller
             $f_soin->setEtat(1);
             $em->persist($f_soin);
             $em->flush();
-
             return $this->redirectToRoute('f_soin_index');
         }
-
         return $this->render('@FicheDeSoin/f_soin/new.html.twig', array(
             'f_soin' => $f_soin,
             'form' => $form->createView(),
         ));
     }
-
     /**
      * Finds and displays a f_soin entity.
-     *
-     * @Route("/{id}", name="f_soin_show")
+     * @Route("/show/{id}", name="f_soin_show")
      * @Method("GET")
      */
     public function showAction(f_soin $f_soin)
     {
         $deleteForm = $this->createDeleteForm($f_soin);
-
         return $this->render('@FicheDeSoin/f_soin/show.html.twig', array(
             'f_soin' => $f_soin,
             'delete_form' => $deleteForm->createView(),
         ));
     }
-
     /**
      * Displays a form to edit an existing f_soin entity.
      *
-     * @Route("/{id}/edit", name="f_soin_edit")
+     * @Route("/edit/{id}", name="f_soin_edit")
      * @Method({"GET", "POST"})
      */
     public function editAction(Request $request, f_soin $f_soin)
@@ -103,7 +97,7 @@ class f_soinController extends Controller
 
 
     /**
-     * @Route("supprimer/{id}", name="f_soin_delete")
+     * @Route("/delete/{id}", name="f_soin_delete")
      */
     public function deleteAction(f_soin $f_soin)
     {
@@ -113,7 +107,6 @@ class f_soinController extends Controller
             $em->flush();
         return $this->redirectToRoute('f_soin_index');
     }
-
     /**
      * Creates a form to delete a f_soin entity.
      *
