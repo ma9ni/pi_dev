@@ -1,0 +1,4 @@
+services:
+#    dresseur.example:
+#        class: pi\FrontEnd\DresseurBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

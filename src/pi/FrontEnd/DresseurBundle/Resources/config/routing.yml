@@ -1,0 +1,3 @@
+dresseur_homepage:
+    path:     /
+    defaults: { _controller: DresseurBundle:Default:index }
