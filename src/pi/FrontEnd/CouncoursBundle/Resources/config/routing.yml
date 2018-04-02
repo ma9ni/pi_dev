@@ -1,0 +1,3 @@
+concours_homepage:
+    path:     /
+    defaults: { _controller: ConcoursBundle:Default:index }
