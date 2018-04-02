@@ -28,7 +28,6 @@ class f_dressageController extends Controller
             'f_dressages' => $f_dressages,
         ));
     }
-
     /**
      * Creates a new f_dressage entity.
      *
@@ -40,7 +39,6 @@ class f_dressageController extends Controller
         $f_dressage = new F_dressage();
         $form = $this->createForm('pi\FrontEnd\FicheDeDressageBundle\Form\f_dressageType', $f_dressage);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $user = $this->getUser();
@@ -48,7 +46,6 @@ class f_dressageController extends Controller
             $f_dressage->setIdMembre($user);
             $em->persist($f_dressage);
             $em->flush();
-
             return $this->redirectToRoute('f_dressage_show', array('id' => $f_dressage->getId()));
         }
 

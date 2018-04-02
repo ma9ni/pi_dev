@@ -8,7 +8,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('BackEnd/pages/index.html.twig');
+        return $this->render('@Admin/wrapper.html.twig');
     }
 
     public function listAction()

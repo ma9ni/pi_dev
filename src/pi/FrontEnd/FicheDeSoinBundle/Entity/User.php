@@ -33,6 +33,7 @@ class User extends BaseUser
      * @ORM\Column(type="string",length=255,nullable=true)
      */
     protected $adresse;
+
     /**
      * @ORM\Column(type="string",length=255,nullable=true)
      */
@@ -183,6 +184,11 @@ class User extends BaseUser
     {
         $this->type = $type;
     }
+
+    /**
+     * @return mixed
+     */
+
 
 
 }

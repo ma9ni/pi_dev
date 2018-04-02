@@ -12,9 +12,36 @@ class RegistrationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('adresse')
-            ->add('gouvernorat')
             ->add('num_tel')
+            ->add('gouvernorat', ChoiceType::class, array(
+                'choices' => array(
+                    'Tunis' => 'Tunis',
+                    'Ariana' => 'Ariana',
+                    'Ben Arous' => 'Ben Arous',
+                    'Manouba' => 'Manouba',
+                    'Nabeul' => 'Nabeul',
+                    'Bizerte' => 'Bizerte',
+                    'Sousse' => 'Sousse',
+                    'Sfax' => 'Sfax',
+                    'Monastir' => 'Monastir',
+                    'Mahdia' => 'Mahdia',
+                    'Gabès' => 'Gabès',
+                    'Zaghouane' => 'Zaghouane',
+                    'Jendouba' => 'Jendouba',
+                    'Beja' => 'Beja',
+                    'Le Kef' => 'Le kef',
+                    'Siliana' => 'Siliana',
+                    'Kairouan' => 'Kairouan',
+                    'Sidi Bouzid' => 'Sidi Bouzid',
+                    'Gafsa' => 'Gafsa',
+                    'Kasserine' => 'Kasserine',
+                    'Tozeur' => 'Tozeur',
+                    'Médenine' => 'Médenine',
+                    'Kébili' => 'Kébili',
+                    'Tataouine' => 'Tataouine'),
+                'required' => true,
+                'multiple' => false,))
+            ->add('adresse')
             ->add('roles', ChoiceType::class, array(
                 'label' => 'Type',
                 'choices' => array(

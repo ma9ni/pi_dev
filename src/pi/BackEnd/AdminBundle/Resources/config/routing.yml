@@ -5,3 +5,7 @@ admin_homepage:
 admin_listVet:
     path:     /listVet
     defaults: { _controller: AdminBundle:Default:list }
+
+index:
+    path:     /home
+    defaults: { _controller: AdminBundle:Default:index }
