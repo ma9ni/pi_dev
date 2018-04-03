@@ -1,0 +1,63 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+
+{% block body %}
+
+    <!-- welcome -->
+    <div class="welcome">
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        <ul>
+    <li>        <a>ajouter une annonce d'adoption</a>
+    </li>
+    <li>        <a>voir vos annonces</a>
+    </li>
+</ul>
+        {% endif %}
+        <h3 class="agileits-title">liste des annoces d'adoptions</h3>
+
+        {% for adoption in adoptions %}
+
+            <div class="container">
+                <div class="col-md-6 w3ls_welcome_right">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="agileits_w3layouts_welcome_grid">
+                                    <img src="{{ asset('FrontEnd/images/g1.jpg') }}" alt=" " class="img-responsive" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agileits_w3layouts_welcome_grid">
+                                    <img src="{{ asset('FrontEnd/images/g2.jpg') }}" alt=" " class="img-responsive" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agileits_w3layouts_welcome_grid">
+                                    <img src="{{ asset('FrontEnd/images/g3.jpg') }}" alt=" " class="img-responsive" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 w3ls_welcome_left">
+                    <div class="w3ls_welcome_right1">
+                        <h4 class="agileits-title"></h4>
+                        <h6>{% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</h6>
+                        <p>{{ adoption.description }}</p>
+                        <div class="w3l_more">
+                            <a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}" class="button button--nina" data-text="Learn more">
+                                <span>L</span><span>e</span><span>a</span><span>n</span> <span>m</span><span>o</span><span>r</span><span>e</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </br>
+            </br>
+        {% endfor %}
+
+    </div>
+    <!-- //welcome -->
+
+{% endblock %}
