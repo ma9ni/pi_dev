@@ -11,13 +11,5 @@ class DefaultController extends Controller
         return $this->render('@Admin/wrapper.html.twig');
     }
 
-    public function listAction()
-    {
-        $em = $this->getDoctrine()->getManager();
-        $user = $this->getUser();
-        $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findAll();
-        return $this->render(':BackEnd/pages:listVeterinaire.html.twig', array(
-            'veterinaires' => $veterinaires,
-        ));
-    }
+
 }

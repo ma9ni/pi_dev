@@ -4,7 +4,7 @@ admin_homepage:
 
 admin_listVet:
     path:     /listVet
-    defaults: { _controller: AdminBundle:Default:list }
+    defaults: { _controller: AdminBundle:listVet_Dress_Admin:list }
 
 index:
     path:     /home

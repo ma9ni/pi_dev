@@ -22,4 +22,18 @@ class UserRepository extends EntityRepository
         return $queryBuilder->getQuery()->getResult();
 
     }
+
+    public function  findUser(){
+        $queryBuilder=$this
+            ->createQueryBuilder('s');
+        $queryBuilder
+            ->where("s.roles=:roles")
+            ->orWhere("s.roles=:roledres")
+            ->setParameter('roles','a:1:{i:0;s:9:"ROLE_VETE";}')
+            ->setParameter('roledres','a:1:{i:0;s:10:"ROLE_DRESS";}');
+
+        return $queryBuilder->getQuery()->getResult();
+
+    }
+
 }

@@ -1,0 +1,31 @@
+{% extends ":BackEnd:index.html.twig" %}
+{% block container %}
+<div class="container">
+
+<table class="table table-hover">
+    <tbody><tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Reason</th>
+    </tr>
+
+{% for  i in veterinaires %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.username }}</td>
+        <td>{{ i.email }}</td>
+        <td>{{ i.gouvernorat }}</td>
+        <td>{{ i.adresse }}</td>
+        <td><span class="label label-success">Approved</span></td>
+        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+    </tr>
+
+
+{% endfor %}
+    </tbody></table>
+
+
+</div>
+{% endblock %}
