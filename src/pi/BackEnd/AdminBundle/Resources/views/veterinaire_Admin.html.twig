@@ -18,8 +18,13 @@
         <td>{{ i.email }}</td>
         <td>{{ i.gouvernorat }}</td>
         <td>{{ i.adresse }}</td>
-        <td><span class="label label-success">Approved</span></td>
-        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+        {% if i.confirmation ==0 %}
+            <td><a href="{{ path('confirmer', { 'id': i.id }) }}"><span class="label label-success">Approved</span></a></td>
+        {% else %}
+            <td></td>
+        <td><a href="{{ path('block', { 'id': i.id }) }}"><span class="label label-danger">deney</span></a></td>
+        <td>{{ i.confirmation}}</td>
+        {% endif %}
     </tr>
 
 

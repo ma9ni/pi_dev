@@ -9,3 +9,13 @@ admin_listVet:
 index:
     path:     /home
     defaults: { _controller: AdminBundle:Default:index }
+
+
+
+confirmer:
+    path:     /conf/{id}
+    defaults: { _controller: AdminBundle:listVet_Dress_Admin:ConfirmerUser }
+
+block:
+    path:     /block/{id}
+    defaults: { _controller: AdminBundle:listVet_Dress_Admin:blockUser }
