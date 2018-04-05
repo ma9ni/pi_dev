@@ -1,0 +1,45 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+
+{% block body %}
+    <h1>Vos Annonces</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Type</th>
+            <th>Dateannonce</th>
+            <th>Lieu</th>
+            <th>Description</th>
+            <th>animal</th>
+            <th>consulter</th>
+            <th>modifier</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for adoption in adoptions %}
+            <tr>
+                <td>{{ adoption.type }}</td>
+                <td>{% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ adoption.lieu }}</td>
+                <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}">{{ adoption.description }}</a></td>
+                <td>{{ adoption.idAnimal.nom }}</td>
+                <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}"><button>voir</button></a></td>
+
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('adoption_edit', { 'idAdoption': adoption.idAdoption }) }}">modifier</a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+{% endblock %}

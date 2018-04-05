@@ -1,0 +1,57 @@
+{% extends ":FrontEnd:base.html.twig" %}
+{% block body %}
+
+    <div class="contact">
+        <div class="container">
+            <h3 class="agileits-title w3title2">Contacter  l'annonceur</h3>
+            <div class="map-pos">
+                <div class="col-md-4 address-row">
+                    <div class="col-xs-2 address-left">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-10 address-right">
+                        <h5>Visiter a </h5>
+                        <p>{{ adoption.idMembre.adresse }}</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 address-row w3-agileits">
+                    <div class="col-xs-2 address-left">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-10 address-right">
+                        <h5>Nom de l'annonceur </h5>
+                        <p><a href="mailto:info@example.com"> {{ adoption.idMembre.username }}</a></p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-4 address-row">
+                    <div class="col-xs-2 address-left">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-10 address-right">
+                        <h5>vous pouvez l'appeler sur </h5>
+                        <p>{{ adoption.idMembre.numtel }}</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <form action="{{ path('adoption_contact',{'id':adoption.idAdoption }) }}" method="POST">
+                <div class="col-sm-6 contact-left">
+                    <input type="text" name="Name" placeholder="votre nom" required="">
+                    <input type="email" name="Email" placeholder="votre email" required="">
+                    <input type="text" name="Number" placeholder="votre numero" required="">
+                </div>
+                <div class="col-sm-6 contact-right">
+                    <textarea name="Message" placeholder="Message" required=""></textarea>
+                    <input type="submit" value="envoyer l'email" >
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+    <!-- //contact -->
+    <div class="map">
+        <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=en&q={{ adoption.idMembre.adresse }}+(pets)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+{% endblock %}
