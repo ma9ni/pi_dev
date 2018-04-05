@@ -7,6 +7,7 @@ imports:
     - { resource: "@VeterinaireBundle/Resources/config/services.yml" }
     - { resource: "@AdminBundle/Resources/config/services.yml" }
     - { resource: "@AdoptionBundle/Resources/config/services.yml" }
+    - { resource: "@PetiteurBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -68,10 +69,11 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: '%mailer_transport%'
-    host: '%mailer_host%'
-    username: '%mailer_user%'
-    password: '%mailer_password%'
+    port:  2525
+    transport: smtp
+    host: smtp.mailtrap.io
+    username:  830a84f109ebc5
+    password: 06d71bed991286
     spool: { type: memory }
 
 

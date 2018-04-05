@@ -160,9 +160,10 @@ class AdoptionController extends Controller
             $tem=$request->get('Number');
             $nom=$request->get('Name');
             $message=$request->get('Message');
-            $messages = \Swift_Message::newInstance()->setSubject('contacter')
-                ->setFrom('houssem.marnissi@gmail.com')
-                ->setTo('houssem.marnissi@gmail.com')
+            $messages = \Swift_Message::newInstance()
+                ->setSubject('contacter')
+                ->setFrom($email)
+                ->setTo('mourynesse@gmail.com')
             ->setBody(
                 $this->renderView(
                     'AdoptionBundle:Front:mail.html.twig',

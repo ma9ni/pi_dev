@@ -1,3 +1,15 @@
+petiteur_demande_gard:
+    resource: "@PetiteurBundle/Controller/DemandeGardController.php"
+    type:     annotation
+
+petiteur_offre_petiteur:
+    resource: "@PetiteurBundle/Controller/OffrePetiteurController.php"
+    type:     annotation
+
+petiteur:
+    resource: "@PetiteurBundle/Resources/config/routing.yml"
+    prefix:   /
+
 adoption_adoption:
     resource: "@AdoptionBundle/Controller/AdoptionController.php"
     type:     annotation

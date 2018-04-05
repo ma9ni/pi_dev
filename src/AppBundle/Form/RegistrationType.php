@@ -47,7 +47,8 @@ class RegistrationType extends AbstractType
                 'choices' => array(
                     'Utilisateur' => 'ROLE_USER',
                     'Vétérinaire' => 'ROLE_VETE',
-                    'Dresseur' => 'ROLE_DRESS'
+                    'Dresseur' => 'ROLE_DRESS',
+                    'Petiteur' => 'ROLE_PET'
                 ),
                 'required' => true,
                 'multiple' => true,));

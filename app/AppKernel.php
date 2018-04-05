@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new pi\FrontEnd\VeterinaireBundle\VeterinaireBundle(),
             new pi\BackEnd\AdminBundle\AdminBundle(),
             new pi\FrontEnd\AdoptionBundle\AdoptionBundle(),
+            new pi\FrontEnd\PetiteurBundle\PetiteurBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

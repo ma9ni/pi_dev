@@ -1,0 +1,42 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+    <h1>les  Demande de garderie proposeé</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Message</th>
+                <th>Datedebut</th>
+                <th>Datefin</th>
+                <th>Actions</th>
+                <th>Accepter</th>
+                <th>Refusser</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for demandeGard in demandeGards %}
+            <tr>
+                <td>{{ demandeGard.idAnimal.race }}</td>
+                <td>{{ demandeGard.message }}</td>
+                <td>{% if demandeGard.dateDebut %}{{ demandeGard.dateDebut|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if demandeGard.dateFin %}{{ demandeGard.dateFin|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('demandegard_show', { 'id': demandeGard.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('demandegard_edit', { 'id': demandeGard.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

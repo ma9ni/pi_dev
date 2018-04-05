@@ -1,0 +1,37 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+
+    Vous cherchez un endroit pour faire garder votre précieux compagnon (animal de compagnie) voici des offres de garderie.
+    <h1>Offrepetiteurs list</h1>
+
+    <table>
+        <thead>
+            <tr>
+
+                <th>Description</th>
+                <th>Prix</th>
+                <th>Race</th>
+                <th>Adresse</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for offrePetiteur in offrePetiteurs %}
+            <tr>
+                <td>{{ offrePetiteur.description }}</td>
+                <td>{{ offrePetiteur.prix }}</td>
+                <td>{{ offrePetiteur.race }}</td>
+                <td>{{ offrePetiteur.adresse }}</td>
+                <td>
+
+                            <a href="{{ path('offrepetiteur_show', { 'id': offrePetiteur.id }) }}">show</a>
+
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+    <h1>Offrepetiteur</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ offrePetiteur.id }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ offrePetiteur.description }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ offrePetiteur.prix }}</td>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <td>{{ offrePetiteur.etat }}</td>
+            </tr>
+            <tr>
+                <th>Race</th>
+                <td>{{ offrePetiteur.race }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('offrepetiteur_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('offrepetiteur_edit', { 'id': offrePetiteur.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
