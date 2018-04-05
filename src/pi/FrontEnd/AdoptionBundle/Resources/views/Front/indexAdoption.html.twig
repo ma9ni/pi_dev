@@ -5,17 +5,42 @@
 
     <!-- welcome -->
     <div class="welcome">
-        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
-        <ul>
-    <li>        <a>ajouter une annonce d'adoption</a>
-    </li>
-    <li>        <a>voir vos annonces</a>
-    </li>
-</ul>
-        {% endif %}
         <h3 class="agileits-title">liste des annoces d'adoptions</h3>
 
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+            <ul>
+                <li>        <a href="{{ path('adoption_new') }}">ajouter une annonce d'adoption</a>
+                </li>
+                <li>        <a href="{{ path('adoption_vosAnnonces') }}">voir vos annonces</a>
+                </li>
+            </ul>
+
+        {% endif %}
+        <br>
+        <div>
+            Recherche :  <input type="text">
+
+            type d'annonces :
+            <select>
+                <option>les deux</option>
+                <option>adoptez définitivement</option>
+                <option>adoptez temporairement</option>
+            </select>
+            race de l'animal :
+            <select>
+                <option>tous les races</option>
+                <option>chien</option>
+                <option>chat</option>
+                <option>oiseau</option>
+                <option>cheval</option>
+
+            </select>
+
+        </div>
+        <br>
+        <br>
         {% for adoption in adoptions %}
 
             <div class="container">
@@ -44,6 +69,11 @@
                     <div class="w3ls_welcome_right1">
                         <h4 class="agileits-title"></h4>
                         <h6>{% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</h6>
+                        <h6>{% if adoption.type=="deleger" %}
+                            {{ adoption.idAnimal.race }}  a adopter temporairement
+                            {% else %}
+                                {{ adoption.idAnimal.race }}  a adopter définitivement
+                            {% endif %}</h6>
                         <p>{{ adoption.description }}</p>
                         <div class="w3l_more">
                             <a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}" class="button button--nina" data-text="Learn more">

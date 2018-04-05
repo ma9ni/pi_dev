@@ -20,17 +20,16 @@ class Adoption
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $idAdoption;
-
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id_membre", type="integer", nullable=true)
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id")
      */
+
     private $idMembre;
 
     /**
      * @var string
-     *
      * @ORM\Column(name="type", type="string", length=11, nullable=true)
      */
     private $type;
@@ -64,9 +63,9 @@ class Adoption
     private $description;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id_animal", type="integer", nullable=true)
+     * @var int
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\animal")
+     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id")
      */
     private $idAnimal;
 

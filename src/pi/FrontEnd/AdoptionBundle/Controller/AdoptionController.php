@@ -2,7 +2,9 @@
 
 namespace pi\FrontEnd\AdoptionBundle\Controller;
 
+use DateTime;
 use pi\FrontEnd\AdoptionBundle\Entity\Adoption;
+use Swift_Mailer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -14,6 +16,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component
  */
 class AdoptionController extends Controller
 {
+
     /**
      * Lists all adoption entities.
      *
@@ -30,6 +33,23 @@ class AdoptionController extends Controller
             'adoptions' => $adoptions,
         ));
     }
+    /**
+     * Lists all adoption entities.
+     *
+     * @Route("/vos_annonce", name="adoption_vosAnnonces")
+     * @Method("GET")
+     */
+    public function VosAnnonceAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user=$this->getUser();
+
+        $adoptions = $em->getRepository('AdoptionBundle:Adoption')->findBy(['idMembre'=>$user->getId()]);
+
+        return $this->render('@Adoption/Front/VosAnnonce.html.twig', array(
+            'adoptions' => $adoptions,
+        ));
+    }
 
     /**
      * Creates a new adoption entity.
@@ -41,6 +61,10 @@ class AdoptionController extends Controller
     {
         $adoption = new Adoption();
         $form = $this->createForm('pi\FrontEnd\AdoptionBundle\Form\AdoptionType', $adoption);
+        $adoption->setEtatadoption(1);
+        $adoption->setDateannonce(new DateTime());
+        $user = $this->getUser();
+        $adoption->setIdMembre($user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -51,7 +75,7 @@ class AdoptionController extends Controller
             return $this->redirectToRoute('adoption_show', array('idAdoption' => $adoption->getIdadoption()));
         }
 
-        return $this->render('adoption/new.html.twig', array(
+        return $this->render('@Adoption/Front/new.html.twig', array(
             'adoption' => $adoption,
             'form' => $form->createView(),
         ));
@@ -67,7 +91,7 @@ class AdoptionController extends Controller
     {
         $deleteForm = $this->createDeleteForm($adoption);
 
-        return $this->render('adoption/show.html.twig', array(
+        return $this->render('@Adoption/Front/show.html.twig', array(
             'adoption' => $adoption,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -118,6 +142,47 @@ class AdoptionController extends Controller
         return $this->redirectToRoute('adoption_index');
     }
 
+
+    /**
+     * @param Request $request
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public  function ContactAction(Request $request, $id){
+
+
+        $em=$this->getDoctrine()->getManager();
+
+        $adoption=$em->getRepository('AdoptionBundle:Adoption')->find($id);
+
+        if ($request->isMethod('POST')){
+            $email=$request->get('Email');
+            $tem=$request->get('Number');
+            $nom=$request->get('Name');
+            $message=$request->get('Message');
+            $messages = \Swift_Message::newInstance()->setSubject('contacter')
+                ->setFrom('mourynesse@gmail.com')
+                ->setTo('houssem.marnissi@gmail.com')
+            ->setBody(
+                $this->renderView(
+                    'AdoptionBundle:Front:mail.html.twig',
+                    array('nom' => $nom, 'email'=>$email,
+                    'message'=>$message, 'tel'=>$tem)
+                ),
+                'text/html'
+            );
+           //$mailer=new  \Swift_Mailer('');
+           $mailer =$this->get('mailer') ;
+            $mailer->send($messages);
+            return $this->render('@Adoption/Front/sucess.html.twig');
+
+        }
+
+        return $this->render('@Adoption/Front/contactAnnonceur.html.twig', array('adoption'=>$adoption));
+
+
+    }
+
     /**
      * Creates a form to delete a adoption entity.
      *
@@ -133,4 +198,6 @@ class AdoptionController extends Controller
             ->getForm()
         ;
     }
+
+
 }

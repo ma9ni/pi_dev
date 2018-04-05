@@ -8,13 +8,12 @@ use Doctrine\ORM\Mapping as ORM;
  * animal
  *
  * @ORM\Table(name="animal")
- * @ORM\Entity(repositoryClass="\AppBundle\Repository\animalRepository")
+ * @ORM\Entity(repositoryClass="pi\FrontEnd\FicheDeSoinBundle\Repository\animalRepository")
  */
 class animal
 {
     /**
-     * @var int
-     *
+     * @var integer
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -23,7 +22,6 @@ class animal
 
     /**
      * @var string
-     *
      * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
@@ -35,7 +33,20 @@ class animal
      */
     private $race;
 
+    /**
+     * @var int
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id")
+     */
 
+
+    private $id_membre;
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="age", type="integer")
+     */
+    private $age;
     /**
      * Get id
      *
@@ -93,5 +104,38 @@ class animal
     {
         return $this->race;
     }
+
+    /**
+     * @return int
+     */
+    public function getIdMembre()
+    {
+        return $this->id_membre;
+    }
+
+    /**
+     * @param int $id_membre
+     */
+    public function setIdMembre($id_membre)
+    {
+        $this->id_membre = $id_membre;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    /**
+     * @param int $age
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
+    }
+
 }
 

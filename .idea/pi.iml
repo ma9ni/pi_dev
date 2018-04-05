@@ -46,5 +46,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Bons_Plans" />
+    <orderEntry type="module" module-name="ahmed02" />
   </component>
 </module>

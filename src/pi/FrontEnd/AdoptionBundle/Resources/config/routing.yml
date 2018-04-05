@@ -1,3 +1,7 @@
 adoption_homepage:
     path:     /
     defaults: { _controller: AdoptionBundle:Default:index }
+
+adoption_contact:
+    path:     /ContactAnnonceur/{id}
+    defaults: { _controller: AdoptionBundle:Adoption:Contact }
