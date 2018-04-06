@@ -31,7 +31,7 @@ class animal
     /**
      * @var string
      *
-     * @ORM\Column(name="race", type="string", length=255)
+     * @ORM\Column(name="race", type="string", length=255 )
      */
     private $race;
 
