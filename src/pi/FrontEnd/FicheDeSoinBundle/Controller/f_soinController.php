@@ -73,7 +73,6 @@ class f_soinController extends Controller
     }
     /**
      * Displays a form to edit an existing f_soin entity.
-     *
      * @Route("/edit/{id}", name="f_soin_edit")
      * @Method({"GET", "POST"})
      */

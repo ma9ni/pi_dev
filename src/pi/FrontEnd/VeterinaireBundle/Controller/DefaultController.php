@@ -15,7 +15,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $notes=$em->getRepository('DresseurBundle:Rating')->findAll();
-
+//        $note=$em->getRepository('DresseurBundle:Rating')->moyenneNote();
         $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireQB();
         return $this->render('@Veterinaire/veterinaires.html.twig', array(
             'veterinaires' => $veterinaires,
@@ -31,15 +31,11 @@ class DefaultController extends Controller
         $comment=$em->getRepository('DresseurBundle:Rating')->affCom($id);
         $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
         $user = $this->getUser();
-        var_dump($note);
-       // $gateau=intval($note);
-        var_dump((float)($note[0]));
-        $r=round(4.5885,0);
-        var_dump($r);
-      //  var_dump($gateau);
+        $gateau=intval($note);
+        $r=round($note[0]['noteuser'],0);
 
         $affectnote=new Rating();
-        $affectnote->setNote($gateau);
+        $affectnote->setNote($r);
         $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\Rating2Type',$affectnote);
         $form->handleRequest($request);
         $affectnote->setIdMembre($user);
@@ -50,7 +46,14 @@ class DefaultController extends Controller
             //var_dump($affectnote);die();
             $em->persist($affectnote);
             $em->flush();
-            $this->redirectToRoute('front_end_vet');
+            $this->redirectToRoute('front_end_show_vet',array('id'=>$id));
+            return $this->render('@Veterinaire/showVet.html.twig', array(
+                'vet' => $vet,
+                'notee'=>$note,
+                'form' => $form->createView(),
+                'com'=>$comment,
+                'rai'=>$rai
+            ));
         }
        // var_dump($note);die();
         return $this->render('@Veterinaire/showVet.html.twig', array(
