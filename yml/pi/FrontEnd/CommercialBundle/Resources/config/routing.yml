@@ -1,0 +1,3 @@
+commercial_homepage:
+    path:     /
+    defaults: { _controller: CommercialBundle:Default:index }
