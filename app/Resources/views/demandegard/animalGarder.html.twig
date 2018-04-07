@@ -5,15 +5,15 @@
 
     <table>
         <thead>
-            <tr>
-                <th>Animal</th>
-                <th>Message</th>
-                <th>Datedebut</th>
-                <th>Datefin</th>
-                <th>voir</th>
-                <th>Accepter</th>
-                <th>Refusser</th>
-            </tr>
+        <tr>
+            <th>Animal</th>
+            <th>Message</th>
+            <th>Datedebut</th>
+            <th>Datefin</th>
+            <th>voir</th>
+            <th>Action</th>
+
+        </tr>
         </thead>
         <tbody>
         {% for demandeGard in demandeGards %}
@@ -29,9 +29,7 @@
                         </li>
                     </ul>
                 </td>
-                <td><a  href="{{ path('demandegard_accept', { 'id': demandeGard.id }) }}"><button>accepter</button></a></td>
-                <td><a  href="{{ path('demandegard_refuse', { 'id': demandeGard.id }) }}"><button>refuser</button></a></td>
-
+                <td><a href="{{ path('demandegard_RetourAnimal',{'id':demandeGard.id}) }}" ><button>Retour de l'animal</button></a></td>
             </tr>
         {% endfor %}
         </tbody>

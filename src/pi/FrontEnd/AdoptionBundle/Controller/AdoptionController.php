@@ -66,18 +66,28 @@ class AdoptionController extends Controller
         $user = $this->getUser();
         $adoption->setIdMembre($user);
         $form->handleRequest($request);
+        $em = $this->getDoctrine()->getManager();
+        $user=$this->getUser();
+        $animal=$em->getRepository('Proxies\__CG__\pi\FrontEnd\FicheDeSoinBundle\Entity\animal')->findBy(array('id_membre'=>$user));
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $idanimal=$request->get('animal');
+            $animal=$em->getRepository('Proxies\__CG__\pi\FrontEnd\FicheDeSoinBundle\Entity\animal')->find($idanimal);
+
+
+            $adoption->setIdAnimal($animal);
             $em = $this->getDoctrine()->getManager();
             $em->persist($adoption);
             $em->flush();
 
-            return $this->redirectToRoute('adoption_show', array('idAdoption' => $adoption->getIdadoption()));
+            return $this->redirectToRoute('adopt
+            ion_show', array('idAdoption' => $adoption->getIdadoption()));
         }
 
         return $this->render('@Adoption/Front/new.html.twig', array(
             'adoption' => $adoption,
             'form' => $form->createView(),
+            'animal'=>$animal
         ));
     }
 
@@ -121,7 +131,12 @@ class AdoptionController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
-
+public function showAnimal(){
+    $em = $this->getDoctrine()->getManager();
+    $user=$this->getUser();
+$animal=$em->getRepository('Proxies\__CG__\pi\FrontEnd\FicheDeSoinBundle\Entity\animal')->findBy(array('idMembre'=>$user));
+return $animal;
+    }
     /**
      * Deletes a adoption entity.
      *

@@ -1,3 +1,11 @@
+reclamation_reclamation:
+    resource: "@ReclamationBundle/Controller/ReclamationController.php"
+    type:     annotation
+
+reclamation:
+    resource: "@ReclamationBundle/Resources/config/routing.yml"
+    prefix:   /
+
 petiteur_demande_gard:
     resource: "@PetiteurBundle/Controller/DemandeGardController.php"
     type:     annotation

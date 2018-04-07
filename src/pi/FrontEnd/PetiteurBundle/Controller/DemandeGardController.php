@@ -5,7 +5,8 @@ namespace pi\FrontEnd\PetiteurBundle\Controller;
 use pi\FrontEnd\PetiteurBundle\Entity\DemandeGard;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Demandegard controller.
@@ -23,28 +24,77 @@ class DemandeGardController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
+        $user=$this->getUser();
+        $offre=$em->getRepository('PetiteurBundle:OffrePetiteur')->findOneBy(array('idMembre'=>$user));
 
-        $demandeGards = $em->getRepository('PetiteurBundle:DemandeGard')->findAll();
+        $demandeGards = $em->getRepository('PetiteurBundle:DemandeGard')->findBy(array('idOffre'=>$offre ,'etat'=> 0));
 
         return $this->render('demandegard/index.html.twig', array(
             'demandeGards' => $demandeGards,
         ));
     }
+    /**
+     * Lists all demandeGard entities.
+     *
+     * @Route("/demandeAccepter", name="demandegard_demandeAccepter")
+     * @Method("GET")
+     */
+    public function demandeAccepterAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user=$this->getUser();
+        $offre=$em->getRepository('PetiteurBundle:OffrePetiteur')->findOneBy(array('idMembre'=>$user));
+
+        $demandeGards = $em->getRepository('PetiteurBundle:DemandeGard')->findBy(array('idOffre'=>$offre ,'etat'=> 1));
+
+        return $this->render('demandegard/animalGarder.html.twig', array(
+            'demandeGards' => $demandeGards,
+        ));
+    }
+    /**
+     *
+     * @Route("/retourAnimal/{id}", name="demandegard_RetourAnimal")
+     * @Method({"GET", "POST"})
+     */
+    public function RetourAnimalAction( $id){
+
+        $em=$this->getDoctrine()->getManager();
+        $demandeGard=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->find($id);
+//        $Offre=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->find($demandeGard->getIdOffre());
+//        $animal=$em->getRepository('pi\FrontEnd\FicheDeSoinBundle\Entity\animal')->find($demandeGard->getIdAnimal());
+
+        $em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->changerAnimal($demandeGard->getIdAnimal(),$demandeGard->getIdMembre());
+
+        $em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->retour($id);
+
+$em->flush();
+return $this->redirectToRoute('demandegard_demandeAccepter');
+    }
+
 
     /**
      * Creates a new demandeGard entity.
      *
-     * @Route("/new", name="demandegard_new")
+     * @Route("/new/{id}", name="demandegard_new")
      * @Method({"GET", "POST"})
      */
-    public function newAction(Request $request)
+    public function newAction(Request $request,$id)
     {
         $demandeGard = new Demandegard();
         $form = $this->createForm('pi\FrontEnd\PetiteurBundle\Form\DemandeGardType', $demandeGard);
         $form->handleRequest($request);
+        $em = $this->getDoctrine()->getManager();
+
+        $animal=$em->getRepository('pi\FrontEnd\FicheDeSoinBundle\Entity\animal')->findBy(array('id_membre' => $this->getUser()));
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $demandeGard->setIdMembre($this->getUser());
+            $animal=$em->getRepository('pi\FrontEnd\FicheDeSoinBundle\Entity\animal')->find($request->get('animal'));
+            $demandeGard->setIdAnimal($animal);
+            $offre=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur')->find($id);
+            $demandeGard->setIdOffre($offre);
+            $demandeGard->setEtat(0);
             $em->persist($demandeGard);
             $em->flush();
 
@@ -54,6 +104,7 @@ class DemandeGardController extends Controller
         return $this->render('demandegard/new.html.twig', array(
             'demandeGard' => $demandeGard,
             'form' => $form->createView(),
+            'animal' => $animal,
         ));
     }
 
@@ -72,6 +123,8 @@ class DemandeGardController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
+
 
     /**
      * Displays a form to edit an existing demandeGard entity.
@@ -117,7 +170,57 @@ class DemandeGardController extends Controller
 
         return $this->redirectToRoute('demandegard_index');
     }
+    /**
+     *
+     * @Route("/accept/{id}", name="demandegard_accept")
+     */
 
+    public function accepterAction( $id){
+
+        $em=$this->getDoctrine()->getManager();
+        $demandeGard=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->find($id);
+        $offre=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur')
+            ->find($demandeGard->getIdOffre());
+
+        $em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->accept($id);
+        $em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')
+            ->changerAnimal($demandeGard->getIdAnimal(),$offre->getIdMembre());
+
+        $em->flush();
+
+        return $this->redirectToRoute('demandegard_index');
+
+    }
+    /**
+     *
+     * @Route("/refuse/{id}", name="demandegard_refuse")
+     */
+
+    public function refuseAction( $id){
+
+        $em=$this->getDoctrine()->getManager();
+
+        $em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->refuse($id);
+        $em->flush();
+
+        return $this->redirectToRoute('demandegard_index');
+
+    }
+    /**
+     *
+     * @Route("/listdemandeUtilisateur/", name="demandegard_listdemandeUtilisateur")
+     */
+
+
+    public function listdemandeUtilisateurAction(){
+        $user=$this->getUser();
+        $em=$this->getDoctrine()->getManager();
+        $demandes=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard')->findBy(array('idMembre'=>$user->getId()));
+
+        return $this->render('demandegard/listdemandeUtilisateur.html.twig',array('demandeGards'=>$demandes));
+
+
+    }
     /**
      * Creates a form to delete a demandeGard entity.
      *

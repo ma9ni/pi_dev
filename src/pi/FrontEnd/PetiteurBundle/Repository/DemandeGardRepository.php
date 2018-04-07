@@ -10,4 +10,56 @@ namespace pi\FrontEnd\PetiteurBundle\Repository;
  */
 class DemandeGardRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function accept($id){
+
+        return $this->createQueryBuilder('f')
+            ->update('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard','f')
+            ->set('f.etat',1)
+            ->where('f.id = ?1')
+            ->setParameter(1,$id)
+            ->getQuery()
+            ->execute();
+    }
+
+    public function refuse($id){
+
+        return $this->createQueryBuilder('f')
+            ->update('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard','f')
+            ->set('f.etat',2)
+            ->where('f.id = ?1')
+            ->setParameter(1,$id)
+            ->getQuery()
+            ->execute();
+    }
+    public function demandenonTraiterDQL(){
+        $query=$this->getEntityManager()
+            ->createQuery("SELECT e FROM PetiteurBundle:DemandeGard e WHERE e.etat = 0 ");
+        return $query->getResult();
+
+    }
+    public function changerAnimal($idanimal,$idmembre){
+
+
+
+        return $this->createQueryBuilder('f')
+            ->update('pi\FrontEnd\FicheDeSoinBundle\Entity\animal','f')
+            ->set('f.id_membre',$idmembre->getId())
+            ->where('f.id = ?1')
+            ->setParameter(1,$idanimal->getId())
+            ->getQuery()
+            ->execute();
+
+
+    }
+
+    public function retour($id){
+
+        return $this->createQueryBuilder('f')
+            ->update('pi\FrontEnd\PetiteurBundle\Entity\DemandeGard','f')
+            ->set('f.etat',4)
+            ->where('f.id = ?1')
+            ->setParameter(1,$id)
+            ->getQuery()
+            ->execute();
+    }
 }
