@@ -8,7 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
  * animal
  *
  * @ORM\Table(name="animal")
+<<<<<<< HEAD
  * @ORM\Entity(repositoryClass=pi\FrontEnd\FicheDeSoinBundle\Repository\animalRepository")
+=======
+ * @ORM\Entity(repositoryClass="pi\FrontEnd\FicheDeSoinBundle\Repository\animalRepository")
+>>>>>>> d5b6d01006aa76b7b84e2b6c17b3524241a2ec14
  */
 class animal
 {
@@ -31,7 +35,7 @@ class animal
     /**
      * @var string
      *
-     * @ORM\Column(name="race", type="string", length=255)
+     * @ORM\Column(name="race", type="string", length=255 )
      */
     private $race;
 

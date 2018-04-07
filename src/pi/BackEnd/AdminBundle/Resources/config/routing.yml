@@ -4,8 +4,18 @@ admin_homepage:
 
 admin_listVet:
     path:     /listVet
-    defaults: { _controller: AdminBundle:Default:list }
+    defaults: { _controller: AdminBundle:listVet_Dress_Admin:list }
 
 index:
     path:     /home
     defaults: { _controller: AdminBundle:Default:index }
+
+
+
+confirmer:
+    path:     /conf/{id}
+    defaults: { _controller: AdminBundle:listVet_Dress_Admin:ConfirmerUser }
+
+block:
+    path:     /block/{id}
+    defaults: { _controller: AdminBundle:listVet_Dress_Admin:blockUser }

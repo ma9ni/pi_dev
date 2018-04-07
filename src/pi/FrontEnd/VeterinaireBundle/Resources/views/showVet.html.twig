@@ -1,0 +1,54 @@
+{% extends ":FrontEnd:base.html.twig" %}
+
+
+{% block body %}
+
+
+    hahahahahahahahaha
+
+
+{{ vet.username }}
+
+
+    <div class="blog-bottom">
+        <div class="container">
+            <div class="col-sm-7 w3_agile_blog_bottom_right">
+                <h5>User name : {{ vet.username }}</h5>
+                <h5>Adress : {{ vet.adresse }}</h5>
+                <h3>Phone Number : {{ vet.numTel }}</h3>
+                {% for note in notee %}
+                    <h3>Note : {{ note.noteuser }}</h3>
+                <h3>Note : {{ note.noteuser|rating }}</h3>
+                {% endfor %}
+                <p>Pellentesque accumsan cursus dui, sodales blandit urna sodales vitae.
+                    Maecenas placerat eget mi vitae euismod. Duis aliquam efficitur mi,
+                    et eleifend velit.</p>
+                <p>{% for c in com %}
+                        comentaire : {{ c.comm }} </br>
+                        howsCom: {{ c.hoscam }}
+                    {% endfor %}</p>
+                {% for i in  rai%}
+                    nom: {{ i.idMembre.username }}
+                    commantaire : {{ i.commentaire }}
+                {% endfor %}
+
+
+                {{ form_start(form) }}
+                <input type="submit" value="notee">
+                {{ form_end(form) }}
+
+            </div>
+            <div class="col-sm-5 w3_agile_blog_bottom_left">
+                <img src="{{ asset('FrontEnd/images/s1.jpg') }}" alt="" class="img-responsive">
+            </div>
+
+            <div class="clearfix"> </div>
+
+
+            <div class="map">
+                <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=en&q={{ vet.gouvernorat }}+(pets)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
