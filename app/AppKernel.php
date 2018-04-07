@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new pi\FrontEnd\DresseurBundle\DresseurBundle(),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
             new pi\FrontEnd\CommercialBundle\CommercialBundle(),
+            new pi\BackEnd\CommercialAdminBundle\CommercialAdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,0 +1,4 @@
+services:
+#    commercial_admin.example:
+#        class: pi\BackEnd\CommercialAdminBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
