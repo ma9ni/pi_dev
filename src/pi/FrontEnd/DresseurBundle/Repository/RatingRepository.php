@@ -31,6 +31,5 @@ class RatingRepository extends \Doctrine\ORM\EntityRepository
             ->setParameter('idmembre',$id)
             ->getQuery()
             ->getResult();
-
     }
 }

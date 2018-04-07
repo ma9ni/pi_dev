@@ -15,6 +15,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $notes=$em->getRepository('DresseurBundle:Rating')->findAll();
+
         $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireQB();
         return $this->render('@Veterinaire/veterinaires.html.twig', array(
             'veterinaires' => $veterinaires,
@@ -30,7 +31,15 @@ class DefaultController extends Controller
         $comment=$em->getRepository('DresseurBundle:Rating')->affCom($id);
         $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
         $user = $this->getUser();
+        var_dump($note);
+       // $gateau=intval($note);
+        var_dump((float)($note[0]));
+        $r=round(4.5885,0);
+        var_dump($r);
+      //  var_dump($gateau);
+
         $affectnote=new Rating();
+        $affectnote->setNote($gateau);
         $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\Rating2Type',$affectnote);
         $form->handleRequest($request);
         $affectnote->setIdMembre($user);
