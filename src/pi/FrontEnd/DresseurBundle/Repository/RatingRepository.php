@@ -20,7 +20,6 @@ class RatingRepository extends \Doctrine\ORM\EntityRepository
             ->groupBy('r.idUser')
             ->getQuery()
             ->getResult();
-
     }
     
     public function affCom($id)
