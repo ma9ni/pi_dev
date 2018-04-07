@@ -31,7 +31,7 @@ class DefaultController extends Controller
         $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
         $user = $this->getUser();
         $affectnote=new Rating();
-        $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\RatingType',$affectnote);
+        $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\Rating2Type',$affectnote);
         $form->handleRequest($request);
         $affectnote->setIdMembre($user);
         $affectnote->setIdUser($vet);
@@ -60,7 +60,7 @@ class DefaultController extends Controller
         $note=new Rating();
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\RatingType', $note);
+        $form = $this->createForm('Rating2Type', $note);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
         {

@@ -22,6 +22,7 @@ class RatingRepository extends \Doctrine\ORM\EntityRepository
             ->getResult();
 
     }
+    
     public function affCom($id)
     {
         return $this->createQueryBuilder('r')
@@ -31,16 +32,5 @@ class RatingRepository extends \Doctrine\ORM\EntityRepository
             ->getQuery()
             ->getResult();
 
-    }
-
-    public function affcomUser($id)
-    {
-        $query = $this->getEntityManager()
-            ->createQuery(" select r.commentaire as comm , f.username as hoscam FROM DresseurBundle:Rating r,FicheDeSoinBundle:User f
-                              WHERE r.idMembre=F.id AND r.idUser=iddd     
-                          ")
-        ->setParameter('iddd',$id)
-        ->getQuery()
-        ->getResult();
     }
 }

@@ -1,38 +1,41 @@
 <?php
 
-namespace pi\FrontEnd\DresseurBundle\Form;
+namespace blackknight467\StarRatingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\FormInterface;
+use Symfony\Component\Form\FormView;
 
 class RatingType extends AbstractType
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+
+    public function buildView(FormView $view, FormInterface $form, array $options)
     {
-        $builder
-            ->add('note')
-            ->add('commentaire');
-    }/**
-     * {@inheritdoc}
-     */
+        $view->vars = array_replace($view->vars, [
+            'stars' => $options['stars']
+        ]);
+    }
+
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
-            'data_class' => 'pi\FrontEnd\DresseurBundle\Entity\Rating'
-        ));
+        $resolver->setDefaults([
+            'attr' => [
+                'class' => 'rating',
+            ],
+            'scale' => 1,
+            'stars' => 5,
+        ]);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getBlockPrefix()
+    public function getParent()
     {
-        return 'pi_frontend_dresseurbundle_rating';
+        return NumberType::class;
     }
 
-
+    public function getName()
+    {
+        return 'rating';
+    }
 }

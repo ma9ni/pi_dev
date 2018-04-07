@@ -1,4 +1,6 @@
 {% extends ":FrontEnd:base.html.twig" %}
+
+
 {% block body %}
 
 
@@ -15,7 +17,8 @@
                 <h5>Adress : {{ vet.adresse }}</h5>
                 <h3>Phone Number : {{ vet.numTel }}</h3>
                 {% for note in notee %}
-                <h3>Note : {{ note.noteuser }}</h3>
+                    <h3>Note : {{ note.noteuser }}</h3>
+                <h3>Note : {{ note.noteuser|rating }}</h3>
                 {% endfor %}
                 <p>Pellentesque accumsan cursus dui, sodales blandit urna sodales vitae.
                     Maecenas placerat eget mi vitae euismod. Duis aliquam efficitur mi,
@@ -28,6 +31,7 @@
                     nom: {{ i.idMembre.username }}
                     commantaire : {{ i.commentaire }}
                 {% endfor %}
+
 
                 {{ form_start(form) }}
                 <input type="submit" value="notee">
@@ -47,3 +51,4 @@
         </div>
     </div>
 {% endblock %}
+

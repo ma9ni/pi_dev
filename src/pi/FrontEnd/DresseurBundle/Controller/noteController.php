@@ -19,7 +19,7 @@ class noteController extends Controller
         $note=new Rating();
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\RatingType', $note);
+        $form = $this->createForm('Rating2Type', $note);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
         {
@@ -38,7 +38,7 @@ class noteController extends Controller
         $note=new Rating();
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\RatingType', $note);
+        $form = $this->createForm('Rating2Type', $note);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid())
         {
