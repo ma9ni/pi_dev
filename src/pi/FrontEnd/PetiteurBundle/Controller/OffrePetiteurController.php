@@ -83,6 +83,20 @@ class OffrePetiteurController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
+    /**
+     *
+     * @Route("/deleteAdmin/{id}", name="reclamation_deleteAdmin")
+     */
+    public function deleteAdminAction( OffrePetiteur $offrePetiteur)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($offrePetiteur);
+        $em->flush();
+
+
+        return $this->redirectToRoute('reclamation_indexOffrePetiteur');
+    }
 
     /**
      * Displays a form to edit an existing offrePetiteur entity.

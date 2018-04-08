@@ -37,22 +37,22 @@ class Reclamation
 
     /**
      * @var integer
-     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur")
-     * @ORM\JoinColumn(name="id_offre",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_offre",referencedColumnName="id",nullable=true,onDelete="CASCADE")
      */
     private $idOffre;
 
     /**
      * @var integer
-     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
-     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",nullable=true,onDelete="CASCADE")
      */
     private $idMembre;
 
     /**
      * @var integer
-     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\AdoptionBundle\Entity\Adoption")
-     * @ORM\JoinColumn(name="id_adoption",referencedColumnName="id_adoption")
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\AdoptionBundle\Entity\Adoption", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_adoption",referencedColumnName="id_adoption",nullable=true,onDelete="CASCADE")
      */
     private $idAdoption;
 

@@ -3,6 +3,7 @@
 namespace pi\BackEnd\ReclamationBundle\Controller;
 
 use pi\BackEnd\ReclamationBundle\Entity\Reclamation;
+use pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -17,14 +18,30 @@ class ReclamationController extends Controller
     /**
      * Lists all reclamation entities.
      *
-     * @Route("/", name="reclamation_index")
+     * @Route("/Adoption", name="reclamation_indexAdoption")
      * @Method("GET")
      */
-    public function indexAction()
+    public function indexAdoptionAction()
     {
         $em = $this->getDoctrine()->getManager();
 
-        $reclamations = $em->getRepository('ReclamationBundle:Reclamation')->findAll();
+        $reclamations = $em->getRepository('pi\BackEnd\ReclamationBundle\Entity\Reclamation')->ReclamationAdoptionDQL();
+
+        return $this->render('reclamation/index.html.twig', array(
+            'reclamations' => $reclamations,
+        ));
+    }
+    /**
+     * Lists all reclamation entities.
+     *
+     * @Route("/OffrePetiteur", name="reclamation_indexOffrePetiteur")
+     * @Method("GET")
+     */
+    public function indexOffrePetiteurAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $reclamations = $em->getRepository('ReclamationBundle:Reclamation')->ReclamationOffrePetiteurDQL();
 
         return $this->render('reclamation/index.html.twig', array(
             'reclamations' => $reclamations,
@@ -34,10 +51,10 @@ class ReclamationController extends Controller
     /**
      * Creates a new reclamation entity.
      *
-     * @Route("/new", name="reclamation_new")
+     * @Route("/newAdoption/{id}", name="reclamation_newAdoption")
      * @Method({"GET", "POST"})
      */
-    public function newAction(Request $request)
+    public function newAdoptionAction(Request $request,$id)
     {
         $reclamation = new Reclamation();
         $form = $this->createForm('pi\BackEnd\ReclamationBundle\Form\ReclamationType', $reclamation);
@@ -45,10 +62,47 @@ class ReclamationController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $adoption=$em->getRepository('pi\FrontEnd\AdoptionBundle\Entity\Adoption')
+                ->find($id);
+            $reclamation->setIdAdoption($adoption);
+            $reclamation->setIdMembre($this->getUser());
+
+
             $em->persist($reclamation);
             $em->flush();
 
-            return $this->redirectToRoute('reclamation_show', array('id' => $reclamation->getId()));
+            return $this->redirectToRoute('adoption_show', array('idAdoption' => $adoption->getIdAdoption()));
+        }
+
+        return $this->render('reclamation/new.html.twig', array(
+            'reclamation' => $reclamation,
+            'form' => $form->createView(),
+        ));
+    }
+    /**
+     * Creates a new reclamation entity.
+     *
+     * @Route("/newOffre/{id}", name="reclamation_newOffre")
+     * @Method({"GET", "POST"})
+     */
+    public function newOffreAction(Request $request,$id)
+    {
+        $reclamation = new Reclamation();
+        $form = $this->createForm('pi\BackEnd\ReclamationBundle\Form\ReclamationType', $reclamation);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $offre=$em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur')
+                ->find($id);
+            $reclamation->setIdOffre($offre);
+            $reclamation->setIdMembre($this->getUser());
+
+
+            $em->persist($reclamation);
+            $em->flush();
+
+            return $this->redirectToRoute('offrepetiteur_show', array('id' => $offre->getId()));
         }
 
         return $this->render('reclamation/new.html.twig', array(
@@ -115,8 +169,9 @@ class ReclamationController extends Controller
             $em->flush();
         }
 
-        return $this->redirectToRoute('reclamation_index');
+        return $this->redirectToRoute('reclamation_indexAdoption');
     }
+
 
     /**
      * Creates a form to delete a reclamation entity.

@@ -140,7 +140,7 @@ return $animal;
     /**
      * Deletes a adoption entity.
      *
-     * @Route("/{idAdoption}", name="adoption_delete")
+     * @Route("/deleteFront{idAdoption}", name="adoption_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, Adoption $adoption)
@@ -155,6 +155,20 @@ return $animal;
         }
 
         return $this->redirectToRoute('adoption_index');
+    }
+    /**
+     *
+     * @Route("/deleteAdmin/{idAdoption}", name="adoption_deleteAdmin")
+     */
+    public function deleteAdminAction( Adoption $adoption)
+    {
+
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($adoption);
+            $em->flush();
+
+
+        return $this->redirectToRoute('reclamation_indexAdoption');
     }
 
 

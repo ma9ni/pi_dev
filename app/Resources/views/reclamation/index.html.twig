@@ -1,41 +1,68 @@
-{% extends 'base.html.twig' %}
+{% extends ":BackEnd:index.html.twig" %}
 
-{% block body %}
-    <h1>Reclamations list</h1>
+{% block container %}
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">liste des reclamation </h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Sujet</th>
+                    <th>utilisateur</th>
+                    <th>l'annonce </th>
+                    <th>le proprietaire </th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+<tbody>
+{% for reclamation in reclamations %}
+    <tr>
+        <td>{{ reclamation.sujet }}</td>
+        <td>{{ reclamation.idMembre.username }}</td>
+        <td>{% if reclamation.idOffre==null %}
+          <a href="{{ path('adoption_show',{'idAdoption':reclamation.idAdoption.idAdoption}) }}" data-hover="voir annonce" > {{ reclamation.idAdoption.idAdoption }}</a>
+        {% endif %}
+            {% if reclamation.idAdoption==null %}
+                <a href="{{ path('offrepetiteur_show',{'id':reclamation.idOffre.id}) }}"data-hover="voir annonce">{{ reclamation.idOffre.id }}</a>
+            {% endif %}
+        </td>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Sujet</th>
-                <th>Message</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for reclamation in reclamations %}
-            <tr>
-                <td><a href="{{ path('reclamation_show', { 'id': reclamation.id }) }}">{{ reclamation.id }}</a></td>
-                <td>{{ reclamation.sujet }}</td>
-                <td>{{ reclamation.message }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('reclamation_show', { 'id': reclamation.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('reclamation_edit', { 'id': reclamation.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+        <td>{% if reclamation.idOffre==null %}
+                {{ reclamation.idAdoption.idMembre }}
 
-    <ul>
-        <li>
-            <a href="{{ path('reclamation_new') }}">Create a new reclamation</a>
-        </li>
-    </ul>
+            {% endif %}
+            {% if  reclamation.idAdoption ==null %}
+                {{ reclamation.idOffre.idMembre }}
+
+            {% endif %}</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="{{ path('reclamation_show', { 'id': reclamation.id }) }}">Consulter Reclamation</a>
+                </li>
+
+            </ul>
+        </td>
+
+    </tr>
+{% endfor %}
+</tbody>
+                <tfoot>
+                <tr>
+                    <th>Sujet</th>
+                    <th>utilisateur</th>
+                    <th>l'annonce </th>
+                    <th>le proprietaire </th>
+                    <th>Action </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+
+
 {% endblock %}

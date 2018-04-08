@@ -43,8 +43,8 @@ class OffrePetiteur
 
     /**
      * @var integer
-     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
-     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",unique=true)
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User",cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",unique=true,nullable=true,onDelete="CASCADE")
      */
 
     private $idMembre;

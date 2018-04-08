@@ -1,7 +1,7 @@
 {% extends ':FrontEnd:base.html.twig' %}
 
 {% block body %}
-    <h1>Offrepetiteur</h1>
+    <h1>Offre petiteur</h1>
 
     <table>
         <tbody>
@@ -29,16 +29,13 @@
     </table>
 
     <ul>
+
         <li>
-            <a href="{{ path('offrepetiteur_index') }}">Back to the list</a>
+            <a href="{{ path('reclamation_newOffre',{ 'id':offrePetiteur.id } ) }}">ajouter  une reclamation</a>
         </li>
         <li>
-            <a href="{{ path('offrepetiteur_edit', { 'id': offrePetiteur.id }) }}">Edit</a>
+            <a href="{{ path('offrepetiteur_index') }}">retour au liste</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
+
     </ul>
 {% endblock %}

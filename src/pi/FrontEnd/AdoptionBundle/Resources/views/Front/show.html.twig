@@ -25,6 +25,7 @@
 
                 <h5> Nom de l'animal :{{ adoption.idAnimal.nom }}</h5>
                 <p>{{ adoption.description }}.</p>
+                <p><a href="{{ path('reclamation_newAdoption',{'id':adoption.idAdoption}) }}">signaler annonce </a></p>
                 <div class="w3l_more">
                     <a href="{{ path('adoption_contact',{'id':adoption.idAdoption}) }}" class="button button--nina" data-text="Contacter l'annonceur">
                         <span>Contacter l'annonceur</span>

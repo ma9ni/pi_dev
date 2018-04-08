@@ -50,23 +50,23 @@ class DemandeGard
     private $dateFin;
     /**
      * @var integer
-     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
-     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",nullable=true,onDelete="CASCADE")
      */
 
     private $idMembre;
     /**
      * @var integer
-     * @ORM\ManyToOne(targetEntity="OffrePetiteur")
-     * @ORM\JoinColumn(name="id_offre",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="OffrePetiteur", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_offre",referencedColumnName="id",nullable=true,onDelete="CASCADE")
      */
 
     private $idOffre;
 
     /**
      * @var int
-     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\animal")
-     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\animal", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id",nullable=true,onDelete="CASCADE")
      */
     private $idAnimal;
     /**

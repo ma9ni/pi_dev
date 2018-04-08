@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
+{% extends ":BackEnd:index.html.twig" %}
 
-{% block body %}
+{% block container %}
     <h1>Reclamation</h1>
 
     <table>
@@ -22,15 +22,23 @@
 
     <ul>
         <li>
-            <a href="{{ path('reclamation_index') }}">Back to the list</a>
+            <a href="{{ path('reclamation_indexAdoption') }}">Retour au liste</a>
         </li>
-        <li>
-            <a href="{{ path('reclamation_edit', { 'id': reclamation.id }) }}">Edit</a>
-        </li>
+
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <input type="submit" value="Supprimer la reclamation">
             {{ form_end(delete_form) }}
         </li>
     </ul>
+        {% if reclamation.idOffre == null and reclamation.idAdoption != null %}
+            <a href="{{ path('adoption_deleteAdmin',{'idAdoption':reclamation.idAdoption.idAdoption}) }}">Supprimer l'annonce d'adoption </a>
+
+        {% endif %}
+    {% if reclamation.idOffre != null and reclamation.idAdoption == null %}
+        <a href="{{ path('reclamation_deleteAdmin',{'id':reclamation.idOffre.id}) }}">Supprimer l'offre petiteur</a>
+
+    {% endif %}
+
+
 {% endblock %}

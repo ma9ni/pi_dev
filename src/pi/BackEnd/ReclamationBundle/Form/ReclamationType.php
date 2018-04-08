@@ -13,7 +13,9 @@ class ReclamationType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('sujet')->add('message')->add('idOffre')->add('idMembre')->add('idAdoption');
+        $builder->add('sujet')
+            ->add('message')
+           ;
     }/**
      * {@inheritdoc}
      */
