@@ -3,22 +3,62 @@
 namespace pi\FrontEnd\VeterinaireBundle\Controller;
 
 use pi\FrontEnd\DresseurBundle\Entity\Rating;
+use pi\FrontEnd\DresseurBundle\Form\rechercheVetParNom;
+use pi\FrontEnd\FicheDeSoinBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
 
+    public function recherchePArnomAction(Request $request)
+    {
+        $vet=new User();
+        $em = $this->getDoctrine()->getManager();
+        $rech = $this->createForm(rechercheVetParNom::class,$vet);
+        $rech->handleRequest($request);
 
-    public function listAction()
+        if ($rech->isSubmitted())
+        {$nom=$vet->getUsername();
+        $nom;die();
+            $veterinair = $em->getRepository('FicheDeSoinBundle:User')->find($nom);
+            var_dump($veterinair);
+       }
+
+        return $this->render('@Veterinaire/veterinaires.html.twig', array(
+            'veterinaires' => $veterinair,
+            'rech'=>$rech->createView()
+
+        ));
+
+
+    }
+
+
+    public function listAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $notes=$em->getRepository('DresseurBundle:Rating')->findAll();
+        $rech = $this->createFormBuilder()
+            ->add('Recherche')
+            ->getForm();
+
+        $rech->handleRequest($request);
+
+        if ($rech->isSubmitted() && $rech->isValid()) {
+            // data is an array with "name", "email", and "message" keys
+            $data = $rech->getData();
+
+        }
+
+
 //        $note=$em->getRepository('DresseurBundle:Rating')->moyenneNote();
         $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireQB();
         return $this->render('@Veterinaire/veterinaires.html.twig', array(
             'veterinaires' => $veterinaires,
+            'rech'=>$rech->createView()
 
         ));
     }
@@ -31,6 +71,9 @@ class DefaultController extends Controller
         $comment=$em->getRepository('DresseurBundle:Rating')->affCom($id);
         $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
         $user = $this->getUser();
+
+
+
         $gateau=intval($note);
         $r=round($note[0]['noteuser'],0);
 
@@ -61,7 +104,8 @@ class DefaultController extends Controller
             'notee'=>$note,
             'form' => $form->createView(),
             'com'=>$comment,
-            'rai'=>$rai
+            'rai'=>$rai,
+
 
         ));
     }
@@ -84,5 +128,8 @@ class DefaultController extends Controller
         }
         return $this->render('@Veterinaire/veterinaires.html.twig', array('form' => $form->createView()));
     }
+
+
+
 
 }

@@ -23,6 +23,10 @@ class AppKernel extends Kernel
             new pi\BackEnd\AdminBundle\AdminBundle(),
             new pi\FrontEnd\DresseurBundle\DresseurBundle(),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

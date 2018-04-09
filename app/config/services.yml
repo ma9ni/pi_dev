@@ -23,6 +23,11 @@ services:
             class: AppBundle\Redirection\AfterLoginRedirection
             arguments: ["@router"]
 
+    app_bundle.service.listener:
+        class: pi\FrontEnd\VeterinaireBundle\Listener\LoadDataListener
+#    tags:
+#            - { name: 'kernel.event_listener', event: 'fullcalendar.set_data', method: loadData }
+
     # makes classes in src/AppBundle available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     AppBundle\:

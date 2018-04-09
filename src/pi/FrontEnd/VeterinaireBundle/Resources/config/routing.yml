@@ -6,3 +6,9 @@ front_end_vet:
 front_end_show_vet:
     path:     /veterinaire/{id}
     defaults: { _controller: VeterinaireBundle:Default:showVet }
+
+
+
+aff_Calendrier:
+    path:     /cal
+    defaults: { _controller: VeterinaireBundle:Calender:index }

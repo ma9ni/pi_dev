@@ -25,10 +25,24 @@ class f_soinController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user,"etat"=>1));
-        return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
-            'f_soins' => $f_soins,
-        ));
+//            var_dump($user);
+           $conf= $user->getConfirmation();
+           if ($conf == 1)
+           {
+               $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user,"etat"=>1));
+//               $this->redirectToRoute('vetno active');
+               var_dump($conf);
+               return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
+                   'f_soins' => $f_soins,
+                   'user'=>$user,
+               ));
+           }
+           else
+               {
+                   return $this->redirectToRoute('vetno active');
+                    var_dump($user);
+               }
+
     }
 
     /**
