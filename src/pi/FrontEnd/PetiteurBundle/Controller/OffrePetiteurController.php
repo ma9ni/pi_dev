@@ -91,7 +91,7 @@ class OffrePetiteurController extends Controller
     {
 
         $em = $this->getDoctrine()->getManager();
-        $em->remove($offrePetiteur);
+        $em->getRepository('pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur')->deleteAdmin($offrePetiteur);
         $em->flush();
 
 

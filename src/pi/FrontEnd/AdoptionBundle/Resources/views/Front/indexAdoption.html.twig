@@ -20,28 +20,33 @@
         {% endif %}
         <br>
         <div>
-            Recherche :  <input type="text">
+            <form method="post" action="{{ path('adoption_index') }}">
+                Recherche : <br>
+                lieu :
+                <input type="text" name="lieu" id="lieu">
 
-            type d'annonces :
-            <select>
-                <option>les deux</option>
-                <option>adoptez définitivement</option>
-                <option>adoptez temporairement</option>
-            </select>
-            race de l'animal :
-            <select>
-                <option>tous les races</option>
-                <option>chien</option>
-                <option>chat</option>
-                <option>oiseau</option>
-                <option>cheval</option>
+                type d'annonces :
+                <select name="type" id="type">
+                    <option value="">les deux</option>
+                    <option value="donner">adoptez définitivement</option>
+                    <option value="deleger">adoptez temporairement</option>
+                </select>
+                race de l'animal :
+                <select name="race" id="race">
+                    <option value="">tous les races</option>
+                    <option value="chien">chien</option>
+                    <option value="chat">chat</option>
+                    <option value="oiseau">oiseau</option>
+                    <option value="cheval">cheval</option>
 
-            </select>
-
-        </div>
+                </select>
+                <input type="submit" value="Recherche">
+            </form>        </div>
         <br>
         <br>
         {% for adoption in adoptions %}
+            {% if adoption.etatAdoption==1 %}
+
 
             <div class="container">
                 <div class="col-md-6 w3ls_welcome_right">
@@ -85,8 +90,9 @@
             </div>
             </br>
             </br>
+            {% endif %}
         {% endfor %}
-
+        {{ pagination(adoptions, 'page') }}
     </div>
     <!-- //welcome -->
 

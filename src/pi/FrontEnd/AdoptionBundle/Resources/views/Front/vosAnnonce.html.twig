@@ -14,6 +14,7 @@
             <th>animal</th>
             <th>consulter</th>
             <th>modifier</th>
+            <th>supprimer</th>
         </tr>
         </thead>
         <tbody>
@@ -34,6 +35,9 @@
 
                     </ul>
                 </td>
+                <td><li>
+                        <a href="{{ path('adoption_deleteUtilisateur',{'idAdoption':adoption.idAdoption}) }}">supprimer </a>
+                    </li></td>
             </tr>
         {% endfor %}
         </tbody>

@@ -21,14 +21,36 @@ class AdoptionController extends Controller
      * Lists all adoption entities.
      *
      * @Route("/", name="adoption_index")
-     * @Method("GET")
+     * @Method({"GET", "POST"})
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $adoptions = $em->getRepository('AdoptionBundle:Adoption')->findAll();
+        $adoptions = $em->getRepository('AdoptionBundle:Adoption')
+            ->findByPage(
+            $request->query->getInt('page', 1),
+            3
+        );
+        if ($request->isMethod('POST')){
 
+            $type=$request->get('type');
+            $race=$request->get('race');
+            $adresse=$request->get('lieu');
+            $em=$this->getDoctrine()->getManager();
+            $repository=$em->getRepository('pi\FrontEnd\AdoptionBundle\Entity\Adoption');
+            $query = $repository->createQueryBuilder('a')
+                ->innerJoin('a.idAnimal','b')
+                ->where('a.type like :type ')->andwhere('a.lieu like :lieu ')->andwhere('b.race like :race ')
+                ->setParameter('type', $type. '%')
+                ->setParameter('lieu', $adresse. '%')
+                ->setParameter('race', $race. '%')
+                ->getQuery();
+            $adoptions= $query->getResult();
+            return $this->render('@Adoption/Front/recherche.html.twig', array(
+                'adoptions' => $adoptions,
+            ));
+        }
         return $this->render('@Adoption/Front/indexAdoption.html.twig', array(
             'adoptions' => $adoptions,
         ));
@@ -44,7 +66,7 @@ class AdoptionController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user=$this->getUser();
 
-        $adoptions = $em->getRepository('AdoptionBundle:Adoption')->findBy(['idMembre'=>$user->getId()]);
+        $adoptions = $em->getRepository('AdoptionBundle:Adoption')->findBy(array('idMembre'=>$user->getId(),"etatadoption"=>1));
 
         return $this->render('@Adoption/Front/VosAnnonce.html.twig', array(
             'adoptions' => $adoptions,
@@ -80,8 +102,7 @@ class AdoptionController extends Controller
             $em->persist($adoption);
             $em->flush();
 
-            return $this->redirectToRoute('adopt
-            ion_show', array('idAdoption' => $adoption->getIdadoption()));
+            return $this->redirectToRoute('adoption_show', array('idAdoption' => $adoption->getIdadoption()));
         }
 
         return $this->render('@Adoption/Front/new.html.twig', array(
@@ -157,16 +178,32 @@ return $animal;
         return $this->redirectToRoute('adoption_index');
     }
     /**
+     * Deletes a adoption entity.
+     *
+     * @Route("/deleteUtilisateur/{idAdoption}", name="adoption_deleteUtilisateur")
+     */
+    public function deleteUtilisateurAction(Adoption $adoption)
+    {
+
+        $em=$this->getDoctrine()->getManager();
+        $em->getRepository('pi\FrontEnd\AdoptionBundle\Entity\Adoption')->delete($adoption);
+
+        $em->flush();
+
+
+        return $this->redirectToRoute('adoption_vosAnnonces');
+    }
+    /**
      *
      * @Route("/deleteAdmin/{idAdoption}", name="adoption_deleteAdmin")
      */
-    public function deleteAdminAction( Adoption $adoption)
+    public function deleteAdminAction(Request $request, Adoption $adoption)
     {
 
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($adoption);
-            $em->flush();
+        $em=$this->getDoctrine()->getManager();
+        $em->getRepository('pi\FrontEnd\AdoptionBundle\Entity\Adoption')->deleteAdmin($adoption);
 
+        $em->flush();
 
         return $this->redirectToRoute('reclamation_indexAdoption');
     }
@@ -183,6 +220,7 @@ return $animal;
         $em=$this->getDoctrine()->getManager();
 
         $adoption=$em->getRepository('AdoptionBundle:Adoption')->find($id);
+$User=$em->getRepository('pi\FrontEnd\FicheDeSoinBundle\Entity\User')->find($adoption->getIdMembre());
 
         if ($request->isMethod('POST')){
             $email=$request->get('Email');
@@ -192,7 +230,7 @@ return $animal;
             $messages = \Swift_Message::newInstance()
                 ->setSubject('contacter')
                 ->setFrom($email)
-                ->setTo('mourynesse@gmail.com')
+                ->setTo($User->getEmail())
             ->setBody(
                 $this->renderView(
                     'AdoptionBundle:Front:mail.html.twig',

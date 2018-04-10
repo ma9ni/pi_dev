@@ -4,8 +4,10 @@
 
     Vous cherchez un endroit pour faire garder votre précieux compagnon (animal de compagnie) voici des offres de garderie.
     <h1>Offrepetiteurs list</h1>
-    voir vos demande <a href="{{ path('demandegard_listdemandeUtilisateur') }}"> <button>cliquer</button></a>
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
+    voir vos demande <a href="{{ path('demandegard_listdemandeUtilisateur') }}"> <button>cliquer</button></a>
+{% endif %}
     <table>
         <thead>
             <tr>

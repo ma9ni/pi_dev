@@ -10,4 +10,14 @@ namespace pi\FrontEnd\PetiteurBundle\Repository;
  */
 class PetiteurRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function deleteAdmin($Offrepetiteur){
+
+        $qb = $this->createQueryBuilder('Offrepetiteur');
+        $query = $qb->delete('PetiteurBundle:OffrePetiteur', 'Offrepetiteur')
+            ->where('Offrepetiteur.id = :Id')
+            ->setParameter('Id', $Offrepetiteur->getId())
+            ->getQuery();
+
+        $query->execute();
+    }
 }

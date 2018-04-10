@@ -30,6 +30,7 @@
                 <input type="submit" value="Supprimer la reclamation">
             {{ form_end(delete_form) }}
         </li>
+
     </ul>
         {% if reclamation.idOffre == null and reclamation.idAdoption != null %}
             <a href="{{ path('adoption_deleteAdmin',{'idAdoption':reclamation.idAdoption.idAdoption}) }}">Supprimer l'annonce d'adoption </a>

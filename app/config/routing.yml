@@ -1,3 +1,7 @@
+calander:
+    resource: "@CalanderBundle/Resources/config/routing.yml"
+    prefix:   /
+
 reclamation_reclamation:
     resource: "@ReclamationBundle/Controller/ReclamationController.php"
     type:     annotation
@@ -77,3 +81,6 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
+
+ancarebeca_fullcalendar:
+    resource: "@FullCalendarBundle/Resources/config/routing.yml"

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Adoption
  *
  * @ORM\Table(name="adoption", indexes={@ORM\Index(name="FK_membreAdoption", columns={"id_membre"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="pi\FrontEnd\AdoptionBundle\Repository\AdoptionRepository")
  */
 class Adoption
 {
@@ -44,7 +44,7 @@ class Adoption
     /**
      * @var string
      *
-     * @ORM\Column(name="lieu", type="string", length=50, nullable=true)
+     * @ORM\Column(name="lieu", type="string", length=50, nullable=false)
      */
     private $lieu;
 
@@ -58,14 +58,14 @@ class Adoption
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text", length=65535, nullable=true)
+     * @ORM\Column(name="description", type="text", length=65535, nullable=false)
      */
     private $description;
 
     /**
      * @var int
      * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\animal", cascade={"persist", "remove"})
-     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id",nullable=true,onDelete="CASCADE")
+     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id",nullable=false,onDelete="CASCADE")
      */
     private $idAnimal;
 

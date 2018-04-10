@@ -45,9 +45,7 @@
             <a href="{{ path('adoption_edit', { 'idAdoption': adoption.idAdoption }) }}">Edit</a>
         </li>
         <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+            <a href="{{ patth('adoption_deleteUtilisateur',{'id':adoption.idAdoption}) }}">supprimer votre annonce</a>
         </li>
     </ul>
 {% endblock %}
