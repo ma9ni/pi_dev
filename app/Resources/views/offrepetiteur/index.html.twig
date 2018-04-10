@@ -2,40 +2,53 @@
 
 {% block body %}
 
-    Vous cherchez un endroit pour faire garder votre précieux compagnon (animal de compagnie) voici des offres de garderie.
-    <h1>Offrepetiteurs list</h1>
-    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
-    voir vos demande <a href="{{ path('demandegard_listdemandeUtilisateur') }}"> <button>cliquer</button></a>
-{% endif %}
-    <table>
-        <thead>
-            <tr>
+    <div class="team agileits">
+        <div class="team-agileinfo">
+            <div class="container">
+                <h3 class="agileits-title w3title2">Liste des Petiteur</h3>
+                <h4 class="agileits-icons-title">    Vous cherchez un endroit pour faire garder votre précieux compagnon (animal de compagnie) voici des offres de garderie.
+                </h4>
+                <div>
+                    <br>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
-                <th>Description</th>
-                <th>Prix</th>
-                <th>Race</th>
-                <th>Adresse</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for offrePetiteur in offrePetiteurs %}
-            <tr>
-                <td>{{ offrePetiteur.description }}</td>
-                <td>{{ offrePetiteur.prix }}</td>
-                <td>{{ offrePetiteur.race }}</td>
-                <td>{{ offrePetiteur.adresse }}</td>
-                <td>
+                         <a href="{{ path('demandegard_listdemandeUtilisateur') }}"> <button class="btn">voir vos demande</button></a>
 
-                            <a href="{{ path('offrepetiteur_show', { 'id': offrePetiteur.id }) }}">show</a>
+                    {% endif %}
+                    <input type="text" class="input-sm"><a href="{{ path('demandegard_listdemandeUtilisateur') }}"> <button class="btn">Rechercher</button></a>
+                    <br>
+                    <br>
+                </div>
+                <div class="team-row agileits-w3layouts">
 
-                </td>
-                <td><a href="{{ path('demandegard_new',{'id': offrePetiteur.id}) }}">envoyer demande</a></td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+                    {% for offrePetiteur in offrePetiteurs %}
+
+                    <div class="col-sm-3 col-xs-6 team-grids">
+                        <div class="team-agileimg">
+                            <img class="img-responsive" src="{{ asset('FrontEnd/images/t1.jpg') }}" alt="">
+                            <div class="">
+                                <div class="">
+                                    <h4>Nom :{{ offrePetiteur.idMembre.username }}</h4>
+                                    <p><strong>Race : </strong> {{ offrePetiteur.race }}</p>
+                                    <p><strong>Lieu : </strong> {{ offrePetiteur.adresse }}
+                                    </p>
+                                </div>
+                                <div class="social-w3lsicon">
+                                    <a href="{{ path('offrepetiteur_show', { 'id': offrePetiteur.id }) }}"><button class="btn-primary">Consulter</button></a>
+                                    <a href="{{ path('demandegard_new',{'id': offrePetiteur.id}) }}"><button class="btn-primary">Envoyer Demande</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 {% endblock %}

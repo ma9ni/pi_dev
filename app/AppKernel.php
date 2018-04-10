@@ -24,8 +24,8 @@ class AppKernel extends Kernel
             new pi\FrontEnd\AdoptionBundle\AdoptionBundle(),
             new pi\FrontEnd\PetiteurBundle\PetiteurBundle(),
             new pi\BackEnd\ReclamationBundle\ReclamationBundle(),
-            new pi\FrontEnd\CalenderBundle\CalanderBundle(),
             new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+            new pi\FrontEnd\CalenderBundle\CalanderBundle(),
             new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
 
         ];
