@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render(':FrontEnd:layout.html.twig');
     }
+
+    public function notActivedAction()
+    {
+        return $this->render('@FicheDeSoin/f_soin/404notFound.html.twig');
+    }
 }

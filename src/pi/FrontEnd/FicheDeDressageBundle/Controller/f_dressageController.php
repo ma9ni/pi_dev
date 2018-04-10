@@ -6,6 +6,7 @@ use pi\FrontEnd\FicheDeDressageBundle\Entity\f_dressage;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -22,13 +23,27 @@ class f_dressageController extends Controller
      */
     public function indexAction()
     {
+//        $this->denyAccessUnlessGranted('ROLE_DRESS', null, 'Unable to access this page!');
+        if (!$this->get('security.authorization_checker')->isGranted('ROLE_DRESS')) {
+            // Sinon on déclenche une exception « Accès interdit »
+            return $this->redirectToRoute('vetno active');
+//            throw new AccessDeniedException('Accès limité aux auteurs.');
+        }
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')
-            ->findBy(array("idMembre"=>$user,"etat"=>1));
-        return $this->render('@FicheDeDressage/f_dressage/index.html.twig', array(
-            'f_dressages' => $f_dressages,
-        ));
+        $conf= $user->getConfirmation();
+        if ($conf == 1) {
+
+            $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')
+                ->findBy(array("idMembre" => $user, "etat" => 1));
+            return $this->render('@FicheDeDressage/f_dressage/index.html.twig', array(
+                'f_dressages' => $f_dressages,
+            ));
+        } else
+        {
+            return $this->redirectToRoute('vetno active');
+//                    var_dump($user);
+        }
     }
     /**
      * Creates a new f_dressage entity.

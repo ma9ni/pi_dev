@@ -23,3 +23,8 @@ front_end_homepage:
 front_end_dress:
     path:     /dresseur
     defaults: { _controller: FicheDeDressageBundle:Default:dress }
+
+
+front_end_show_dres:
+    path:     /dresseur/{id}
+    defaults: { _controller: FicheDeDressageBundle:Default:showDress }

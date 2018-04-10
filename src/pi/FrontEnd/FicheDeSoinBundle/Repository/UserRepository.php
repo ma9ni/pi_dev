@@ -37,4 +37,17 @@ class UserRepository extends EntityRepository
 
     }
 
+
+    public function  findDressQB(){
+        $queryBuilder=$this
+            ->createQueryBuilder('s');
+        $queryBuilder
+            ->where("s.roles=:roles")
+            ->andWhere("s.confirmation=:val")
+            ->setParameter('roles','a:1:{i:0;s:10:"ROLE_DRESS";}')
+            ->setParameter('val','1');
+        return $queryBuilder->getQuery()->getResult();
+    }
+
+
 }

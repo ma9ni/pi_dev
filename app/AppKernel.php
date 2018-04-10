@@ -31,6 +31,8 @@ class AppKernel extends Kernel
             new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
             new pi\FrontEnd\CalenderBundle\CalanderBundle(),
             new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
 
 
 

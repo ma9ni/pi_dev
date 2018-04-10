@@ -224,7 +224,13 @@ class User extends BaseUser
 
 
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * @return mixed
+     */
+>>>>>>> 9263d31f67d16dfc7b6dfc526beb0272e4f234c9
 
 
 
