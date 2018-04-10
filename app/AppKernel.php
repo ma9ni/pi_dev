@@ -25,6 +25,8 @@ class AppKernel extends Kernel
             new blackknight467\StarRatingBundle\StarRatingBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
 
 
         ];

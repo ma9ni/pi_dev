@@ -61,10 +61,10 @@
 
 
 
-    hahahahahahahahaha
+    {#hahahahahahahahaha#}
 
 
-{{ vet.username }}
+{#{{ vet.username }}#}
 
 
     <div class="blog-bottom">
@@ -73,9 +73,9 @@
                 <h5>User name : {{ vet.username }}</h5>
                 <h5>Adress : {{ vet.adresse }}</h5>
                 <h3>Phone Number : {{ vet.numTel }}</h3>
-                {% for i in rai  %}
-                    {{ i.idMembre.username }}
-                {% endfor %}
+                {#{% for i in rai  %}#}
+                    {#{{ i.idMembre.username }}#}
+                {#{% endfor %}#}
                 {#{% for note in notee %}#}
                     {#<h3>Note : {{ note.noteuser }}</h3>#}
                 {#<h3>Note : {{ note.noteuser|rating }}</h3>#}
@@ -122,29 +122,31 @@
                             <span class="description"></span>
                         </div>
                         <!-- /.user-block -->
-                        <div class="box-tools">
-                            <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read">
-                                <i class="fa fa-circle-o"></i></button>
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
+                        {#<div class="box-tools">#}
+                            {#<button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read">#}
+                                {#<i class="fa fa-circle-o"></i></button>#}
+                            {#<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>#}
+                            {#</button>#}
+                            {#<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>#}
+                        {#</div>#}
                         <!-- /.box-tools -->
                     </div>
                     <!-- /.box-header -->
-                    <div class="box-body">
+                    {#<div class="box-body">#}
                         {#<img class="img-responsive pad" src="{{ asset('FrontEnd/images/s1.jpg') }}"  alt="Photo">#}
 
-                        <p>Description :
-                            </p>
+                        {#<p>Description :#}
+                            {#</p>#}
 
-                        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>
-                        <a href="#">like2</a>
-                        <button type="button" id="lb" href="#" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
-                        <span class="pull-right text-muted">hhhhhhh</span>
-                    </div>
+                        {#<button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>#}
+                        {#<a href="#">like2</a>#}
+                        {#<button type="button" id="lb" href="#" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>#}
+                        {#<span class="pull-right text-muted">hhhhhhh</span>#}
+                    {#</div>#}
                     <!-- /.box-body -->
-                    {% for c in com %}
+                    {% for c in rait %}
+                    {% if c.commentaire!=null %}
+
                     <div class="box-footer box-comments">
                         <div class="box-comment">
                             <!-- User image -->
@@ -154,10 +156,16 @@
                             {#{% endif %}#}
                             <div class="comment-text">
                       <span class="username">
-                                      {{ c.hoscam }}
+                                      {{ c.idMembre }}
+
                         <span class="text-muted pull-right">8:03 PM Today</span>
                       </span><!-- /.username -->
-                                comentaire : {{ c.comm }} </br>
+                                {% if c.commentaire==null %}
+                                {% endif %}
+                                {% if c.commentaire!=null %}
+
+                                comentaire : {{ c.commentaire }} </br>
+                                {% endif %}
                             </div>
                             <!-- /.comment-text -->
                         </div>
@@ -165,6 +173,7 @@
                         <!-- /.box-footer -->
                         <!-- /.box-footer -->
                     </div>
+                    {% endif %}
                     {% endfor %}
                     <div class="box-footer">
                         <form action="#" method="post">

@@ -12,6 +12,8 @@ class Rating2Type extends AbstractType
     /**
      * {@inheritdoc}
      */
+
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder

@@ -41,6 +41,15 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $notes=$em->getRepository('DresseurBundle:Rating')->findAll();
+        /**
+         * @var $paginator \Knp\Component\Pager\Paginator
+         */
+        $paginator=$this->get('knp_paginator');
+       $result= $paginator->paginate(
+            $notes,
+            $request->query->getInt('page',1),
+            $request->query->getInt('limit',1)
+        );
         $rech = $this->createFormBuilder()
             ->add('Recherche')
             ->getForm();
@@ -58,7 +67,8 @@ class DefaultController extends Controller
         $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireQB();
         return $this->render('@Veterinaire/veterinaires.html.twig', array(
             'veterinaires' => $veterinaires,
-            'rech'=>$rech->createView()
+            'rech'=>$rech->createView(),
+           'notes'=>$result,
 
         ));
     }
@@ -69,13 +79,16 @@ class DefaultController extends Controller
         $vet=$em->getRepository('FicheDeSoinBundle:User')->find($id);
         $note=$em->getRepository('DresseurBundle:Rating')->moyenneNote($id);
         $comment=$em->getRepository('DresseurBundle:Rating')->affCom($id);
+
         $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
         $user = $this->getUser();
 
-
+$rait=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
 
         $gateau=intval($note);
         $r=round($note[0]['noteuser'],0);
+        $idmembre=round($note[0]['noteuser'],1);
+
 
         $affectnote=new Rating();
         $affectnote->setNote($r);
@@ -86,17 +99,12 @@ class DefaultController extends Controller
 
         if($form->isSubmitted() && $form->isValid())
         {
+
             //var_dump($affectnote);die();
             $em->persist($affectnote);
             $em->flush();
-            $this->redirectToRoute('front_end_show_vet',array('id'=>$id));
-            return $this->render('@Veterinaire/showVet.html.twig', array(
-                'vet' => $vet,
-                'notee'=>$note,
-                'form' => $form->createView(),
-                'com'=>$comment,
-                'rai'=>$rai
-            ));
+            return $this->redirectToRoute('front_end_show_vet',array('id'=>$id));
+
         }
        // var_dump($note);die();
         return $this->render('@Veterinaire/showVet.html.twig', array(
@@ -105,6 +113,7 @@ class DefaultController extends Controller
             'form' => $form->createView(),
             'com'=>$comment,
             'rai'=>$rai,
+            'rait'=>$rait,
 
 
         ));
