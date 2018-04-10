@@ -4,3 +4,10 @@ fiche_de_soin_homepage:
 
 
 
+vetno active:
+    path:     /noActiv
+    defaults: { _controller: FicheDeSoinBundle:Default:notActived }
+
+rech:
+    path:     /find
+    defaults: { _controller: VeterinaireBundle:Default:recherchePArnom }

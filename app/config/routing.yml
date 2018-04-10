@@ -2,6 +2,9 @@ dresseur:
     resource: "@DresseurBundle/Resources/config/routing.yml"
     prefix:   /
 
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
 admin:
     resource: "@AdminBundle/Resources/config/routing.yml"
     prefix:   /
