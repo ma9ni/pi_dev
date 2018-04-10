@@ -1,0 +1,4 @@
+services:
+#    calander.example:
+#        class: pi\FrontEnd\CalenderBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

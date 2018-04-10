@@ -1,0 +1,52 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+    <h1>vos  Demande de garderie </h1>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Animal</th>
+            <th>le garderie</th>
+            <th>Datedebut</th>
+            <th>Datefin</th>
+            <th>voir</th>
+            <th>etat</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for demandeGard in demandeGards %}
+            <tr>
+                <td>{{ demandeGard.idAnimal.race }}</td>
+                <td><a href="{{ path('offrepetiteur_show',{'id': demandeGard.idOffre.id } ) }}">voir</a></td>
+                <td>{% if demandeGard.dateDebut %}{{ demandeGard.dateDebut|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if demandeGard.dateFin %}{{ demandeGard.dateFin|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('demandegard_show', { 'id': demandeGard.id }) }}"><button>voir</button></a>
+                        </li>
+                    </ul>
+                </td>
+                {% if demandeGard.etat ==1 %}
+                    <td style="color: #00ca6d">votre demande est accepter </td>
+                {% endif %}
+                    {% if  demandeGard.etat==0 %}
+                        <td style="color: #0d6aad">votre demande n'est pas encore traiter </td>
+                    {% endif %}
+                {% if demandeGard.etat==2 %}
+                        <td style="color: #9f191f" >votre demande est refuser</td>
+                    {% endif %}
+                {% if demandeGard.etat==4 %}
+                    <td >votre animal est retourner </td>
+
+
+                {% endif %}
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

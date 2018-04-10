@@ -25,7 +25,7 @@ class f_soin
     /**
      * @var int
      * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id",onDelete="CASCADE")
      */
     private $idMembre;
     /**
@@ -59,7 +59,7 @@ class f_soin
     /**
      * @var int
      * @ORM\ManyToOne(targetEntity="animal")
-     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id")
+     * @ORM\JoinColumn(name="id_animal",referencedColumnName="id",onDelete="CASCADE")
      */
     private $idAnimal;
 

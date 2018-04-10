@@ -1,0 +1,7 @@
+petiteur_homepage:
+    path:     /
+    defaults: { _controller: PetiteurBundle:Default:index }
+
+offre_pet:
+    path:     /petiteur
+    defaults: { _controller: PetiteurBundle:petiteur:index }

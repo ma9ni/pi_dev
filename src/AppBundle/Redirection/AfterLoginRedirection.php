@@ -55,6 +55,8 @@ private $router;
         // otherwise we redirect user to the member area
         elseif (in_array('ROLE_VETE', $rolesTab, true))
             $redirection = new RedirectResponse($this->router->generate('f_soin_index'));
+        elseif (in_array('ROLE_PET', $rolesTab, true))
+            $redirection = new RedirectResponse($this->router->generate('offre_pet'));
         // otherwise we redirect user to the member area
         elseif (in_array('ROLE_DRESS', $rolesTab, true))
             $redirection = new RedirectResponse($this->router->generate('f_dressage_index'));

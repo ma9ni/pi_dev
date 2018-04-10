@@ -1,0 +1,68 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">liste des reclamation </h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Sujet</th>
+                    <th>utilisateur</th>
+                    <th>l'annonce </th>
+                    <th>le proprietaire </th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+<tbody>
+{% for reclamation in reclamations %}
+    <tr>
+        <td>{{ reclamation.sujet }}</td>
+        <td>{{ reclamation.idMembre.username }}</td>
+        <td>{% if reclamation.idOffre==null %}
+          <a href="{{ path('adoption_show',{'idAdoption':reclamation.idAdoption.idAdoption}) }}" data-hover="voir annonce" > {{ reclamation.idAdoption.idAdoption }}</a>
+        {% endif %}
+            {% if reclamation.idAdoption==null %}
+                <a href="{{ path('offrepetiteur_show',{'id':reclamation.idOffre.id}) }}"data-hover="voir annonce">{{ reclamation.idOffre.id }}</a>
+            {% endif %}
+        </td>
+
+        <td>{% if reclamation.idOffre==null %}
+                {{ reclamation.idAdoption.idMembre }}
+
+            {% endif %}
+            {% if  reclamation.idAdoption ==null %}
+                {{ reclamation.idOffre.idMembre }}
+
+            {% endif %}</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="{{ path('reclamation_show', { 'id': reclamation.id }) }}">Consulter Reclamation</a>
+                </li>
+
+            </ul>
+        </td>
+
+    </tr>
+{% endfor %}
+</tbody>
+                <tfoot>
+                <tr>
+                    <th>Sujet</th>
+                    <th>utilisateur</th>
+                    <th>l'annonce </th>
+                    <th>le proprietaire </th>
+                    <th>Action </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+
+
+{% endblock %}

@@ -7,6 +7,9 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
+    {% block css %}
+
+    {% endblock %}
   <link rel="stylesheet" href="{{ asset('BackEnd/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('BackEnd/bower_components/font-awesome/css/font-awesome.min.css') }}">
@@ -15,7 +18,10 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('BackEnd/dist/css/AdminLTE.min.css') }}">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
+
        folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="{{ asset('BackEnd/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
+
   <link rel="stylesheet" href="{{ asset('BackEnd/dist/css/skins/_all-skins.min.css') }}">
   <!-- Morris chart -->
   <link rel="stylesheet" href="{{ asset('BackEnd/bower_components/morris.js/morris.css') }}">
@@ -27,6 +33,7 @@
   <link rel="stylesheet" href="{{ asset('BackEnd/bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{ asset('BackEnd/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -273,7 +280,8 @@
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-
+{% block script %}
+{% endblock %}
 <!-- jQuery 3 -->
 <script src="{{ asset('BackEnd/bower_components/jquery/dist/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -311,5 +319,20 @@
 <script src="{{ asset('BackEnd/dist/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('BackEnd/dist/js/demo.js') }}"></script>
+<script src="{{ asset('BackEnd/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{ asset('BackEnd/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
+<script>
+    $(function () {
+        $('#example1').DataTable()
+        $('#example2').DataTable({
+            'paging'      : true,
+            'lengthChange': false,
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false
+        })
+    })
+</script>
 </body>
 </html>

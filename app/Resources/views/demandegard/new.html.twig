@@ -1,0 +1,20 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+    <h1>envoyer une demande</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+
+    <select name="animal" id="animal">
+        {% for a in animal %}
+        <option value="{{ a.id }}">{{ a.nom }}</option>
+        {% endfor %}
+    </select>
+
+        <input type="submit" value="envoyer votre demande" />
+
+    {{ form_end(form) }}
+
+
+{% endblock %}
