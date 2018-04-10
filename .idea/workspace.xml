@@ -165,10 +165,6 @@
       <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/02906bd3fa8da3ecfea9662fc54999b3.png" beforeDir="false" />
       <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/3ccfa66b732f90fa867d026e33313564.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/calender/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/calender/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/offrepetiteur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/offrepetiteur/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/offrepetiteur/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/offrepetiteur/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -204,7 +200,7 @@
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -223,7 +219,7 @@
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="78" column="27" lean-forward="true" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+              <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -265,7 +261,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:generate:crud  " />
       <command text="s doctrine:schema:update --force " />
       <command text="s doctrine:generate:entity " />
       <command text="s doctrine:schema:update --force " />
@@ -290,6 +285,7 @@
       <command text="s assets:install web/" />
       <command text=" php bin/console assets:install web" />
       <command text="s doctrine:schema:update --force " />
+      <command text="s swiftmailer:email:send" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -735,7 +731,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp64/www/pi/app/Resources/views/header.html.twig&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;us&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
+    <property name="SearchEverywhereHistoryKey" value="work&#9;FILE&#9;file://C:/wamp64/www/pi/pi_dev/.idea/workspace.xml&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;us&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/pi_web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -795,12 +791,12 @@
       <workItem from="1522858894779" duration="21720000" />
       <workItem from="1522917295319" duration="77922000" />
       <workItem from="1523207287813" duration="24883000" />
-      <workItem from="1523367807689" duration="7554000" />
+      <workItem from="1523367807689" duration="7810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306211000" />
+    <option name="totallyTimeSpent" value="306467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1214,7 +1210,7 @@
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1224,7 +1220,7 @@
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="78" column="27" lean-forward="true" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
         </state>
       </provider>
     </entry>
