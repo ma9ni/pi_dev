@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/dressuer.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Redirection/AfterLoginRedirection.php" afterPath="$PROJECT_DIR$/src/AppBundle/Redirection/AfterLoginRedirection.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/DefaultController.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/routing.yml" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/UserRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php" />
+      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php" />
       <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,28 +23,20 @@
       <file leaf-file-name="f_dressageController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+              <folding>
+                <element signature="e#1408#1453#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
               <folding>
                 <element signature="e#12#36#0#Twig" expanded="true" />
               </folding>
@@ -66,71 +44,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="f_soinController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/header.html.twig">
+      <file leaf-file-name="ficheDeDressage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/ficheDeDressage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="4" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="left-side-colum.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="46" column="59" lean-forward="false" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AfterLoginRedirection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Redirection/AfterLoginRedirection.php">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            <state relative-caret-position="34">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="veterinaire_Admin.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig">
+      <file leaf-file-name="LoadDataListener.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="85">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="e#143#197#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php">
+      <file leaf-file-name="showVet.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+            <state relative-caret-position="179">
+              <caret line="203" column="212" lean-forward="false" selection-start-line="203" selection-start-column="212" selection-end-line="203" selection-end-column="212" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
+      <file leaf-file-name="lsb.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/lsb.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rating.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/rating.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -207,11 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Form/f_dressageType.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
@@ -247,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/show_Dres.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" />
@@ -258,6 +242,12 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Redirection/AfterLoginRedirection.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/CalenderController.php" />
+        <option value="$PROJECT_DIR$/web/FrontEnd/js/ficheDeDressage.js" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" />
       </list>
     </option>
   </component>
@@ -316,7 +306,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="y" value="30" />
     <option name="width" value="697" />
@@ -352,6 +342,12 @@
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
@@ -445,153 +441,6 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DresseurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DresseurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DresseurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeDressageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="f_dressage" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FicheDeSoinBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="f_soin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="VeterinaireBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -602,6 +451,15 @@
               <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="VeterinaireBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="VeterinaireBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Listener" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
@@ -631,22 +489,49 @@
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="friendsofsymfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ancarebeca" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="friendsofsymfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user-bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ancarebeca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="full-calendar-bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="friendsofsymfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user-bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ancarebeca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="full-calendar-bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ancarebeca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="full-calendar-bundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -660,7 +545,7 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="us&#9;null&#9;null&#10;f_d&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;inde&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Resources/views/Default/index.html.twig&#10;f_dr&#9;null&#9;null&#10;ra&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;dre&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;sh&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;vet&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;sho&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
+    <property name="SearchEverywhereHistoryKey" value="sh&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;app&#9;FILE&#9;file://C:/wamp64/www/pi/app/AppKernel.php&#10;sho&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;f_d&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;us&#9;null&#9;null&#10;inde&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Resources/views/Default/index.html.twig&#10;f_dr&#9;null&#9;null&#10;ra&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;dre&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;vet&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -713,15 +598,15 @@
       <workItem from="1522348749769" duration="1308000" />
       <workItem from="1522402330333" duration="10887000" />
       <workItem from="1522672947375" duration="29894000" />
-      <workItem from="1523286104494" duration="20441000" />
+      <workItem from="1523286104494" duration="24900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246236000" />
+    <option name="totallyTimeSpent" value="250695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -782,59 +667,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle/blackknight467/StarRatingBundle/Form/RatingType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Form/RatingType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -880,14 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1010,22 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="e#60#105#0#PHP" expanded="false" />
-            <element signature="e#1238#1261#1#PHP" expanded="false" />
-            <element signature="e#2085#2122#0#PHP" expanded="false" />
-            <element signature="e#2562#2585#1#PHP" expanded="false" />
-            <element signature="e#2634#2657#1#PHP" expanded="false" />
-            <element signature="e#2750#2773#1#PHP" expanded="false" />
-            <element signature="e#3793#3825#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/show_Dres.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1086,16 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="130" column="34" lean-forward="true" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/banner.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1105,14 +903,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/CalenderController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1151,16 +941,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#12#36#0#Twig" expanded="true" />
+            <element signature="e#12#36#0#Twig" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,14 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1215,7 +989,121 @@
     <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#12#36#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1502">
+          <caret line="109" column="9" lean-forward="false" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/CalenderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#234#269#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+          <folding>
+            <element signature="e#1408#1453#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/rating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/lsb.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/ficheDeDressage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#143#197#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="e#12#36#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="203" column="212" lean-forward="false" selection-start-line="203" selection-start-column="212" selection-end-line="203" selection-end-column="212" />
           <folding />
         </state>
       </provider>
