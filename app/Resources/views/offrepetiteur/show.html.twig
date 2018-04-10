@@ -145,7 +145,7 @@
 
         </div>
     </div>
-    {#{{ form_start(form) }}#}
+    {{ form_start(form) }}
     <div class="container">
         <h1>veterinaire </h1>
 
@@ -157,7 +157,7 @@
                         <div class="user-block">
                             <img class="img-circle" src="{{ asset('FrontEnd/images/s1.jpg') }}"  alt="User Image">
                             <span class="username"><a href="#">username</a></span>
-                            {#{{ form_widget(form.note) }}#}
+                            {{ form_widget(form.note) }}
                             <span class="description"></span>
                         </div>
                         <!-- /.user-block -->
@@ -219,15 +219,15 @@
                             <img class="img-responsive img-circle img-sm" src="" alt="Alt Text">
                             <!-- .img-push is used to add margin to elements next to floating images -->
                             <div class="img-push">
-                                {#{{ form_widget(form.commentaire, {'attr': {'placeholder': 'Press enter to post comment ','class':'form-control input-sm'}}) }}#}
+                                {{ form_widget(form.commentaire, {'attr': {'placeholder': 'Press enter to post comment ','class':'form-control input-sm'}}) }}
                                 {#<input type="text" class="form-control input-sm" placeholder="Press enter to post comment">#}
                             </div>
                         </form>
                     </div>
 
-                    {#{{ form_widget(form.commentaire) }}#}
+                    {{ form_widget(form.commentaire) }}
                     <input type="submit" value="notee" style="display: none">
-                    {#{{ form_end(form) }}#}
+                    {{ form_end(form) }}
                     <!-- /.box -->
                 </div>
 

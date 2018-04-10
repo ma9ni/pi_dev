@@ -37,6 +37,13 @@ class Rating
 
     /**
      * @var integer
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur")
+     * @ORM\JoinColumn(name="idOffrePet", referencedColumnName="id" ,nullable=true)
+     */
+    private $idOffrePet;
+
+    /**
+     * @var integer
      *
      * @ORM\Column(name="note", type="integer" , options={"default":0},nullable=true)
      */
@@ -168,6 +175,22 @@ class Rating
     public function setDatenote($datenote)
     {
         $this->datenote = $datenote;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIdOffrePet()
+    {
+        return $this->idOffrePet;
+    }
+
+    /**
+     * @param int $idOffrePet
+     */
+    public function setIdOffrePet($idOffrePet)
+    {
+        $this->idOffrePet = $idOffrePet;
     }
 
 

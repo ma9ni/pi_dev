@@ -2,6 +2,7 @@
 
 namespace pi\FrontEnd\PetiteurBundle\Controller;
 
+use pi\FrontEnd\DresseurBundle\Entity\Rating;
 use pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -20,12 +21,11 @@ class OffrePetiteurController extends Controller
      * @Route("/", name="offrepetiteur_index")
      * @Method("GET")
      */
+
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-
         $offrePetiteurs = $em->getRepository('PetiteurBundle:OffrePetiteur')->findAll();
-
         return $this->render('offrepetiteur/index.html.twig', array(
             'offrePetiteurs' => $offrePetiteurs,
         ));
@@ -72,15 +72,57 @@ class OffrePetiteurController extends Controller
      * Finds and displays a offrePetiteur entity.
      *
      * @Route("/{id}", name="offrepetiteur_show")
-     * @Method("GET")
+     * @Method({"GET", "POST"})
      */
-    public function showAction(OffrePetiteur $offrePetiteur)
-    {
+    public function showAction(OffrePetiteur $offrePetiteur,Request $request)
+    {   $em = $this->getDoctrine()->getManager();
         $deleteForm = $this->createDeleteForm($offrePetiteur);
+        $id=$offrePetiteur->getId();
+
+        $vet=$em->getRepository('FicheDeSoinBundle:User')->find($id);
+        $note=$em->getRepository('DresseurBundle:Rating')->moyenneNoteOffre($id);
+               if (empty($note)){
+            $r=0;
+        }else {
+            $r=round($note[0]['noteuser'],0);
+        }
+        $comment=$em->getRepository('DresseurBundle:Rating')->affCom($id);
+
+        $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idOffrePet'=>$id));
+        $user = $this->getUser();
+        $rait=$em->getRepository('DresseurBundle:Rating')->findBy(array('idOffrePet'=>$id));
+
+
+        $affectnote=new Rating();
+        $affectnote->setDatenote(new \DateTime());
+        $affectnote->setNote($r);
+        $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\Rating2Type',$affectnote);
+        $form->handleRequest($request);
+        $affectnote->setIdMembre($user);
+        $affectnote->setIdUser($vet);
+        $affectnote->setIdOffrePet($offrePetiteur);
+
+        if($form->isSubmitted() && $form->isValid())
+        {
+
+
+            $em->persist($affectnote);
+            $em->flush();
+            return $this->redirectToRoute('offrepetiteur_show',array('id'=>$id));
+
+        }
+
+
 
         return $this->render('offrepetiteur/show.html.twig', array(
             'offrePetiteur' => $offrePetiteur,
             'delete_form' => $deleteForm->createView(),
+            'vet' => $vet,
+            'notee'=>$note,
+            'form' => $form->createView(),
+            'com'=>$comment,
+            'rai'=>$rai,
+            'rait'=>$rait,
         ));
     }
     /**

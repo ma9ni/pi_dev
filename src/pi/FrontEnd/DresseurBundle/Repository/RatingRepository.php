@@ -21,6 +21,16 @@ class RatingRepository extends \Doctrine\ORM\EntityRepository
             ->getQuery()
             ->getResult();
     }
+
+    public function moyenneNoteOffre($id)
+    {
+        return $this->createQueryBuilder('r')
+            ->select("avg(r.note) as noteuser")
+            ->where('r.idOffrePet=:idmembre')
+            ->setParameter('idmembre',$id)
+            ->getQuery()
+            ->getResult();
+    }
     
     public function affCom($id)
     {
