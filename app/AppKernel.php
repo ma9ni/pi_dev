@@ -33,6 +33,8 @@ class AppKernel extends Kernel
             new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
 
 
+            new pi\FrontEnd\DresseurBundle\DresseurBundle(),
+            new blackknight467\StarRatingBundle\StarRatingBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

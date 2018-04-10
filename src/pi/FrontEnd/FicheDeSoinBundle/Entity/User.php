@@ -226,6 +226,23 @@ class User extends BaseUser
     /**
      * @return mixed
      */
+    public function getConfirmation()
+    {
+        return $this->confirmation;
+    }
+
+    /**
+     * @param mixed $confirmation
+     */
+    public function setConfirmation($confirmation)
+    {
+        $this->confirmation = $confirmation;
+    }
+
+
+    /**
+     * @return mixed
+     */
 
 
 

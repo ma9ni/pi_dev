@@ -32,12 +32,18 @@
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.3.10",
         "symfony/symfony": "3.3.16",
+<<<<<<< HEAD
 
         "twig/twig": "^1.0||^2.0",
         "blackknight467/star-rating-bundle": "2.*",
 
         "tiloweb/pagination-bundle": "^1.4",
         "twig/twig": "^1.0||^2.0"
+=======
+        "twig/twig": "^1.0||^2.0",
+        "blackknight467/star-rating-bundle": "2.*"
+
+>>>>>>> 0295ef1b830a441413d9f8185e6e515c5c00c471
 
     },
     "require-dev": {

@@ -1,5 +1,6 @@
 dresseur:
     resource: "@DresseurBundle/Resources/config/routing.yml"
+<<<<<<< HEAD
 calander:
     resource: "@CalanderBundle/Resources/config/routing.yml"
     prefix:   /

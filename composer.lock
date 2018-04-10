@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d6b7fd16bc31ecbc0fbc718ab3b8a734",
     "packages": [
         {
@@ -56,6 +57,11 @@
             "time": "2017-05-01T14:35:52+00:00"
         },
         {
+=======
+    "content-hash": "a403a20788640717aebbb79c4ccefa85",
+    "packages": [
+        {
+>>>>>>> 0295ef1b830a441413d9f8185e6e515c5c00c471
             "name": "blackknight467/star-rating-bundle",
             "version": "v2.0.1",
             "target-dir": "blackknight467/StarRatingBundle",
@@ -2534,6 +2540,7 @@
         },
         {
             "name": "symfony/phpunit-bridge",
+<<<<<<< HEAD
             "version": "v3.4.8",
             "source": {
                 "type": "git",
@@ -2544,6 +2551,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/48c669ec1a2b0425d4a82c7ad4bce2f5b947b95e",
                 "reference": "48c669ec1a2b0425d4a82c7ad4bce2f5b947b95e",
+=======
+            "version": "v3.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/phpunit-bridge.git",
+                "reference": "e4b72beb8961340764367a804f21044e83fc19a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/e4b72beb8961340764367a804f21044e83fc19a8",
+                "reference": "e4b72beb8961340764367a804f21044e83fc19a8",
+>>>>>>> 0295ef1b830a441413d9f8185e6e515c5c00c471
                 "shasum": ""
             },
             "require": {
@@ -2596,7 +2615,11 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-04-04T15:02:59+00:00"
+=======
+            "time": "2018-03-20T23:37:33+00:00"
+>>>>>>> 0295ef1b830a441413d9f8185e6e515c5c00c471
         }
     ],
     "aliases": [],
