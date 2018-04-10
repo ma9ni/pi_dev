@@ -48,6 +48,14 @@ class Rating
      * @ORM\Column(name="commentaire", type="string",nullable=true )
      */
     private $commentaire;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="datenote", type="date" ,nullable=true)
+     */
+    private $datenote;
+
     /**
      * Get id
      *
@@ -144,6 +152,22 @@ class Rating
     public function setCommentaire($commentaire)
     {
         $this->commentaire = $commentaire;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDatenote()
+    {
+        return $this->datenote;
+    }
+
+    /**
+     * @param \DateTime $datenote
+     */
+    public function setDatenote($datenote)
+    {
+        $this->datenote = $datenote;
     }
 
 

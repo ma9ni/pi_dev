@@ -60,7 +60,7 @@ private $router;
             $redirection = new RedirectResponse($this->router->generate('f_dressage_index'));
         // otherwise we redirect user to the member area
         else
-            $redirection = new RedirectResponse($this->router->generate('front_end_gallery'));
+            $redirection = new RedirectResponse($this->router->generate('index'));
         return $redirection;
     }
 }

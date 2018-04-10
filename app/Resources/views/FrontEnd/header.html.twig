@@ -38,10 +38,10 @@
 
                         <li><a href="{{ path('front_end_contact') }}" data-hover="Contact">Contact</a></li>
                         {% if is_granted('ROLE_VETE') %}
-                            <li><a href="{{ path('front_end_contact') }}" data-hover="Mes fiches des soins">Mes fiches des soins</a></li>
+                            <li><a href="{{ path('f_soin_index') }}" data-hover="Mes fiches des soins">Mes fiches des soins</a></li>
                         {% endif %}
                         {% if is_granted('ROLE_DRESS') %}
-                            <li><a href="{{ path('front_end_contact') }}" data-hover="Mes fiche des dressages">Mes fiche des dressages</a></li>
+                            <li><a href="{{ path('f_dressage_index') }}" data-hover="Mes fiche des dressages">Mes fiche des dressages</a></li>
                         {% endif %}
 
 

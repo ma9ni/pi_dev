@@ -85,12 +85,27 @@ class DefaultController extends Controller
 
 $rait=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
 
-        $gateau=intval($note);
-        $r=round($note[0]['noteuser'],0);
-        $idmembre=round($note[0]['noteuser'],1);
+
+        if (empty($note)){
+
+//            var_dump($note);
+//            die();
+//
+            echo "Ahmed";
+            $r=0;
+
+        }else {
+
+            $r=round($note[0]['noteuser'],0);
+            echo "MAkni";
+        }
+
+//        $r=round($note[0]['noteuser'],0);
+//        $idmembre=round($note[0]['noteuser'],1);
 
 
         $affectnote=new Rating();
+        $affectnote->setDatenote(new \DateTime());
         $affectnote->setNote($r);
         $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\Rating2Type',$affectnote);
         $form->handleRequest($request);

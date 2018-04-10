@@ -21,8 +21,15 @@ class f_soinController extends Controller
      * @Route("/index", name="f_soin_index")
      * @Method("GET")
      */
+
     public function indexAction()
     {
+        //        $this->denyAccessUnlessGranted('ROLE_DRESS', null, 'Unable to access this page!');
+        if (!$this->get('security.authorization_checker')->isGranted('ROLE_VETE')) {
+            // Sinon on déclenche une exception « Accès interdit »
+            return $this->redirectToRoute('vetno active');
+//            throw new AccessDeniedException('Accès limité aux auteurs.');
+        }
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
 //            var_dump($user);
@@ -31,7 +38,7 @@ class f_soinController extends Controller
            {
                $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user,"etat"=>1));
 //               $this->redirectToRoute('vetno active');
-               var_dump($conf);
+//               var_dump($conf);
                return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
                    'f_soins' => $f_soins,
                    'user'=>$user,
@@ -40,7 +47,7 @@ class f_soinController extends Controller
            else
                {
                    return $this->redirectToRoute('vetno active');
-                    var_dump($user);
+//                    var_dump($user);
                }
 
     }
