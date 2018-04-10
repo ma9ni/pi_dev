@@ -3,6 +3,7 @@
 namespace pi\FrontEnd\FicheDeSoinBundle\Controller;
 
 use pi\FrontEnd\FicheDeSoinBundle\Entity\f_soin;
+use pi\FrontEnd\FicheDeSoinBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -72,7 +73,6 @@ class f_soinController extends Controller
     }
     /**
      * Displays a form to edit an existing f_soin entity.
-     *
      * @Route("/edit/{id}", name="f_soin_edit")
      * @Method({"GET", "POST"})
      */

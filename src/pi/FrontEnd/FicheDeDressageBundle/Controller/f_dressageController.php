@@ -23,7 +23,9 @@ class f_dressageController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')->findAll();
+        $user = $this->getUser();
+        $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')
+            ->findBy(array("idMembre"=>$user,"etat"=>1));
         return $this->render('@FicheDeDressage/f_dressage/index.html.twig', array(
             'f_dressages' => $f_dressages,
         ));
@@ -46,7 +48,7 @@ class f_dressageController extends Controller
             $f_dressage->setIdMembre($user);
             $em->persist($f_dressage);
             $em->flush();
-            return $this->redirectToRoute('f_dressage_show', array('id' => $f_dressage->getId()));
+            return $this->redirectToRoute('f_dressage_index', array('id' => $f_dressage->getId()));
         }
 
         return $this->render('@FicheDeDressage/f_dressage/new.html.twig', array(
@@ -86,33 +88,25 @@ class f_dressageController extends Controller
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('f_dressage_edit', array('id' => $f_dressage->getId()));
+            return $this->redirectToRoute('f_dressage_index', array('id' => $f_dressage->getId()));
         }
 
         return $this->render('@FicheDeDressage/f_dressage/edit.html.twig', array(
             'f_dressage' => $f_dressage,
             'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
      * Deletes a f_dressage entity.
-     *
      * @Route("/delete/{id}", name="f_dressage_delete")
-     * @Method("DELETE")
      */
-    public function deleteAction(Request $request, f_dressage $f_dressage)
+    public function deleteAction(f_dressage $f_dressage)
     {
-        $form = $this->createDeleteForm($f_dressage);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($f_dressage);
-            $em->flush();
-        }
-
+        $em = $this->getDoctrine()->getManager();
+        $id=$f_dressage->getId();
+        $em->getRepository('FicheDeDressageBundle:f_dressage')->deleteFicheDeDressage($id);
+        $em->flush();
         return $this->redirectToRoute('f_dressage_index');
     }
 
