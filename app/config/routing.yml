@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 dresseur:
     resource: "@DresseurBundle/Resources/config/routing.yml"
-=======
 calander:
     resource: "@CalanderBundle/Resources/config/routing.yml"
     prefix:   /
@@ -32,7 +30,6 @@ adoption_adoption:
 
 adoption:
     resource: "@AdoptionBundle/Resources/config/routing.yml"
->>>>>>> houssem_marnissi
     prefix:   /
 
 admin:

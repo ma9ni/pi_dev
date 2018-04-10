@@ -2,173 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/GrapheBundle/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/GrapheBundle/GrapheBundle.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/GrapheBundle/Resources/config/routing.yml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/GrapheBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/GrapheBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Controller/MailController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Entity/Mail.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Form/MailType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/MailBundle.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Repository/MailRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/config/routing.yml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Mail/email.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Mail/email2.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Mail/emailEvent.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Mail/emailOffre.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Mail/emailWish.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Resources/views/Mail/index.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MailBundle/Tests/Controller/MailControllerTest.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/Commentaire1Controller.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/DemandeController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/EvenementController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/GoingEventsController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/InterestedController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/OffreController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/ReclamationController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/ReservationController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/SharedExperienceController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/VisitedController.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Commentaire.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Evenement.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/GoingEvent.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/InterestEvent.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Offre.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/SharedExperience.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/TableIndications.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Visited.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/VisitedEvent.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Wishliste.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/CommentaireType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/DemandeAjoutType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/EvenementType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/ModifierDemandeType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/OffreType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/RatingTypes.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/RechercheTypeR.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/ReclamationType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/ReservationHotel.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/ReservationType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/SharedExperienceType.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/CommentaireRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/EvenementRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/GoingEventRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/InterestRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/OffreRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/SharedExperienceRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/TableIndicationsRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/VisitedEventRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/VisitedRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/WishlisteRepository.php" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Affiche_Evenement.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Affiche_Evenement_Id.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Affiche_Evenement_Id_etab.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Affiche_Offre.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Affiche_Offre_Id.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Affiche_Offre_Id_etab.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Afficher_Reclamation.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Ajouter_Offre.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Commentaire/Signaler.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Commentaire/Update.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/Dash.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/GM.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/base.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/DemandeAjout/DemandeAjout.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/DemandeAjout/ListeDemandes.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/DemandeAjout/Modifier.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/DemandeAjout/Test.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/Rating.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Evenement/Liste.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Evenement/Liste_etab.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Evenement/afficher.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Evenement/ajout.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Evenement/ajoutAdmin.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Evenement/update.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Offre/Liste.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Offre/Liste_etab.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Offre/afficher.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Offre/ajout.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Offre/update.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show_content_2.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show_content_3.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show_content_4.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show_content_5.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reclamation/ListeReclamations.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reclamation/ajouter_reclamation.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reservation/RechercheR.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reservation/affiche.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reservation/affiche1.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reservation/ajout.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Reservation/ajout1.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/SharedExperience/affiche.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/SharedExperience/ajout.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/SharedExperience/update.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Visited/Going.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Visited/Interested.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Visited/Visited.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Wishlist/show.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Wishlist/show_whishlist.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/notification_list.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/notifications.html.twig" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/ajax.js" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/bootbox.min.js" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/246x0w.png" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/42064c2823f5d3f02ab86cf917d87410.jpeg" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/Hotel-Four-Seasons-Gammarth.jpg" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/f5305fbff3173a28e74a7d42c687fedd.jpeg" afterDir="false" />
-      <change afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/fathers-day-button.png" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/app/AppKernel.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/app/Resources/views/baseAdmin.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/app/Resources/views/baseAdmin.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/app/config/config.yml" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/app/config/config.yml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/app/config/config_dev.yml" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/app/config/config_dev.yml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/app/config/routing.yml" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/composer.json" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/composer.json" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/EtablissementController.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/EtablissementController.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/FavorisController.php" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/WishlistController.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Controller/WishlistController.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/DemandeAjout.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/DemandeAjout.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Etablissement.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Etablissement.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Hotels.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Hotels.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Loisirs.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Loisirs.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Notification.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Notification.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Reclamation.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Reclamation.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Reservation.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Reservation.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Restauration.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Restauration.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Shops.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/Shops.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/User.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Entity/User.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/EtablissementType.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/EtablissementType.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/ModifEtablissementType.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Form/ModifEtablissementType.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/EtablissementRepository.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/EtablissementRepository.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/ReclamationRepository.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/ReclamationRepository.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/ReservationRepository.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Repository/ReservationRepository.php" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Afficher_Etablissement.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Afficher_Etablissement.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Afficher_Etablissement_ParId.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Afficher_Etablissement_ParId.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Ajouter_Etablissement.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Admin/Ajouter_Etablissement.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/Contact.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/Contact.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/Rechercher_Etablissement_Client.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/Rechercher_Etablissement_Client.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/afficher.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/afficher.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/ajouter.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Etablissement/ajouter.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/LayoutBack.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/LayoutBack.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/LayoutFront.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/LayoutFront.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/edit_content.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/edit_content.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show_content.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Profile/show_content.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Representant/Modifier_Etablissement_Representant.html.twig" beforeDir="false" afterPath="$USER_HOME$/Desktop/projet/Bons_Plans/src/MainBundle/Resources/views/Representant/Modifier_Etablissement_Representant.html.twig" afterDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/02906bd3fa8da3ecfea9662fc54999b3.png" beforeDir="false" />
-      <change beforePath="$USER_HOME$/Desktop/projet/Bons_Plans/web/img/3ccfa66b732f90fa867d026e33313564.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,80 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/pi_web/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="289">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/offrepetiteur/index.html.twig">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/pi_web/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/offrepetiteur/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4012">
-              <caret line="236" column="30" selection-start-line="236" selection-start-column="30" selection-end-line="236" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
-            </state>
-            <state relative-caret-position="1326">
-              <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="806" column="69" selection-start-line="806" selection-start-column="69" selection-end-line="806" selection-end-column="69" />
-            </state>
-            <state relative-caret-position="116">
-              <caret line="171" column="51" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="f_soinController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="612">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -268,20 +47,47 @@
       <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+            <state relative-caret-position="544">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#7#47#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/pi_web/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="221">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
             </state>
-            <state relative-caret-position="-340">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1217">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-483">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -306,12 +112,11 @@
       <find>comm</find>
       <find>modal</find>
       <find>mailer</find>
-      <find />
-      <find />
       <find>housse</find>
       <find>rec</find>
       <find>votre</find>
       <find>config</find>
+      <find>twig</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -366,6 +171,7 @@
       <command text="c install " />
       <command text="c update " />
       <command text="c install " />
+      <command text="c clear-cache" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -383,58 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/modal-sign-in.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Form/f_dressageType.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/header.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/wrapper2.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/wrapper.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/animal.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/f_soinRepository.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Repository/f_dressageRepository.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
-        <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/UserRepository.php" />
-        <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/listVet_Dress_AdminController.php" />
-        <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Form/RatingType.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Resources/views/afficheLaNote" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Controller/noteController.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/animal.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Form/Rating2Type.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Repository/RatingRepository.php" />
-        <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/demandegard/new.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/demandegard/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/demandegard/animalGarder.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/PetiteurBundle/Controller/DemandeGardController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/demandegard/listdemandeUtilisateur.html.twig" />
@@ -450,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/reclamation/index.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/BackEnd/ReclamationBundle/Entity/Reclamation.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle/Resources/views/Calendar/calendar.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/CalenderBundle/Entity/EventCustom.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/CalenderBundle/Listener/LoadDataListener.php" />
@@ -480,10 +233,13 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Controller/AdoptionController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/calender/index.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/CalenderBundle/Resources/views/calender.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/offrepetiteur/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/offrepetiteur/show.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$USER_HOME$/Desktop/pi_web/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -553,7 +309,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -569,72 +324,34 @@
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="CalenderBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -642,34 +359,6 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="CalenderBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="CalenderBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Listener" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -678,8 +367,6 @@
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="VeterinaireBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -689,8 +376,6 @@
               <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="VeterinaireBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -701,72 +386,51 @@
               <item name="VeterinaireBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PetiteurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="petiteur" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bons_Plans" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bons_Plans" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bons_Plans" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bons_Plans" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bons_Plans" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bons_Plans" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -777,14 +441,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/wamp64/www/pi/pi_dev/app/AppKernel.php&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/pi_dev/.idea/workspace.xml&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;us&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/Users/user/Desktop/projet/Bons_Plans/app/AppKernel.php&#10;fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;us&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/pi_web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../covoiturage-EDT-ONE" />
-    <property name="SearchEverywhereHistoryKey" value="fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;us&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -826,6 +487,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="pi_web" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$USER_HOME$/Desktop/pi_web" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.pi_web" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -856,12 +527,14 @@
       <workItem from="1523207287813" duration="24883000" />
       <workItem from="1523367807689" duration="8062000" />
       <workItem from="1523378643742" duration="1046000" />
+      <workItem from="1523381377798" duration="190000" />
+      <workItem from="1523381586080" duration="1002000" />
+      <workItem from="1523382612824" duration="383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226051000" />
-    <option name="totallyTimeSpent" value="307765000" />
+    <option name="totallyTimeSpent" value="309340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -873,15 +546,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="11" visible="true" weight="0.48856208" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.48856208" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="11" sideWeight="0.49924356" visible="true" weight="0.48856208" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32189542" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49848714" weight="0.32189542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31240544" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -940,276 +614,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8075">
-          <caret line="475" column="42" selection-start-line="475" selection-start-column="42" selection-end-line="475" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/demandegard/animalGarder.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/BackEnd/pages/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="980" column="9" selection-start-line="820" selection-end-line="981" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/mail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/adoption/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/adoption/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/adoption/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="85" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Entity/f_dressage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1037">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/ControllerTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="328" column="23" selection-start-line="328" selection-start-column="23" selection-end-line="328" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Controller/noteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Resources/views/afficheLaNote">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/listVet_Dress_AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/animal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="55" column="6" selection-start-line="53" selection-end-line="55" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/FrontEnd/css/rating.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/RatingType.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle/blackknight467/StarRatingBundle/Resources/config/services.yml" />
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Form/Rating2Type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle/blackknight467/StarRatingBundle/Form/RatingType.php" />
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Form/RatingType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/PetiteurBundle/Controller/DemandeGardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1421,19 +825,6 @@
         <state relative-caret-position="170">
           <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
         </state>
-        <state relative-caret-position="105">
-          <caret line="216" column="9" selection-start-line="216" selection-end-line="252" />
-          <folding>
-            <element signature="e#7061#8345#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/recherche.html.twig">
@@ -1478,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1492,30 +876,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-        </state>
-        <state relative-caret-position="-340">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="171" column="51" selection-start-line="171" selection-start-column="51" selection-end-line="171" selection-end-column="51" />
+        <state relative-caret-position="12784">
+          <caret line="752" column="18" selection-start-line="752" selection-start-column="18" selection-end-line="752" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="143">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
         </state>
-        <state relative-caret-position="102">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/projet/Bons_Plans/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/pi_web/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/pi_web/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#7#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/pi_web/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1217">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

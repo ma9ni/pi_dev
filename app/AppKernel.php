@@ -21,10 +21,10 @@ class AppKernel extends Kernel
             new pi\FrontEnd\FicheDeDressageBundle\FicheDeDressageBundle(),
             new pi\FrontEnd\VeterinaireBundle\VeterinaireBundle(),
             new pi\BackEnd\AdminBundle\AdminBundle(),
-<<<<<<< HEAD
+
             new pi\FrontEnd\DresseurBundle\DresseurBundle(),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
-=======
+
             new pi\FrontEnd\AdoptionBundle\AdoptionBundle(),
             new pi\FrontEnd\PetiteurBundle\PetiteurBundle(),
             new pi\BackEnd\ReclamationBundle\ReclamationBundle(),
@@ -32,7 +32,7 @@ class AppKernel extends Kernel
             new pi\FrontEnd\CalenderBundle\CalanderBundle(),
             new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
 
->>>>>>> houssem_marnissi
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

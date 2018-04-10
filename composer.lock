@@ -4,36 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "0a43605ce36aaf0cccecadec3755f1ac",
-    "packages": [
-        {
-            "name": "blackknight467/star-rating-bundle",
-            "version": "v2.0.1",
-            "target-dir": "blackknight467/StarRatingBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/blackknight467/StarRatingBundle.git",
-                "reference": "5a95fe9cef75f8b3e3e763dc92b020091103d5b1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/blackknight467/StarRatingBundle/zipball/5a95fe9cef75f8b3e3e763dc92b020091103d5b1",
-                "reference": "5a95fe9cef75f8b3e3e763dc92b020091103d5b1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "symfony/framework-bundle": ">=2.1"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "blackknight467\\StarRatingBundle": ""
-=======
-    "content-hash": "6e65fa4c92f876022b3ccfb0da718cd4",
+    "content-hash": "d6b7fd16bc31ecbc0fbc718ab3b8a734",
     "packages": [
         {
             "name": "ancarebeca/full-calendar-bundle",
@@ -60,7 +31,6 @@
             "autoload": {
                 "psr-4": {
                     "AncaRebeca\\FullCalendarBundle\\": ""
->>>>>>> houssem_marnissi
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -69,7 +39,55 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+                    "name": "Rebeca Mora Anca",
+                    "email": "anca.rebeca@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Symfony2 integration with the library FullCalendar.js",
+            "homepage": "https://github.com/ancarebeca/FullCalendarBundle",
+            "keywords": [
+                "calendar",
+                "fullcalendar",
+                "jquery calendar",
+                "symfony2 bundle",
+                "symfony2 calendar"
+            ],
+            "time": "2017-05-01T14:35:52+00:00"
+        },
+        {
+            "name": "blackknight467/star-rating-bundle",
+            "version": "v2.0.1",
+            "target-dir": "blackknight467/StarRatingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blackknight467/StarRatingBundle.git",
+                "reference": "5a95fe9cef75f8b3e3e763dc92b020091103d5b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blackknight467/StarRatingBundle/zipball/5a95fe9cef75f8b3e3e763dc92b020091103d5b1",
+                "reference": "5a95fe9cef75f8b3e3e763dc92b020091103d5b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "symfony/framework-bundle": ">=2.1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "blackknight467\\StarRatingBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
                     "name": "Derick Felsman",
                     "email": "derickfelsman@gmail.com"
                 },
@@ -87,23 +105,6 @@
                 "symfony"
             ],
             "time": "2016-04-12T01:57:35+00:00"
-=======
-                    "name": "Rebeca Mora Anca",
-                    "email": "anca.rebeca@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Symfony2 integration with the library FullCalendar.js",
-            "homepage": "https://github.com/ancarebeca/FullCalendarBundle",
-            "keywords": [
-                "calendar",
-                "fullcalendar",
-                "jquery calendar",
-                "symfony2 bundle",
-                "symfony2 calendar"
-            ],
-            "time": "2017-05-01T14:35:52+00:00"
->>>>>>> houssem_marnissi
         },
         {
             "name": "composer/ca-bundle",

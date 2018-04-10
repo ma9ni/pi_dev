@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Desktop/projet/Bons_Plans/.idea/Bons_Plans.iml" filepath="$USER_HOME$/Desktop/projet/Bons_Plans/.idea/Bons_Plans.iml" />
       <module fileurl="file://$USER_HOME$/Desktop/pi_web/.idea/ahmed02.iml" filepath="$USER_HOME$/Desktop/pi_web/.idea/ahmed02.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pi.iml" filepath="$PROJECT_DIR$/.idea/pi.iml" />
     </modules>
