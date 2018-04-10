@@ -1,8 +1,108 @@
+
 {% trans_default_domain 'FOSUserBundle' %}
 
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
-    </div>
-{{ form_end(form) }}
+<section id="main-content">
+    <section class="wrapper">
+        <h3 class="agileits-title w3title2">login or register</h3>
+        <div class="col-sm-12 contact-right">
+
+            <div class="container padding">
+                <div class="col-lg-12 col-sm-offset-3">
+                    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register','id':'ABCDEF'}}) }}
+                    <table>
+                        <tr>
+                            <td width="200px">
+                                <strong class="BA">Pseudo</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.username, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>E-Mail</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.email, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Mot De Passe</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.plainPassword.first, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Confirmer Le Mot De Passe</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.plainPassword.second, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+
+
+                       <tr>
+                        <td>
+                            <strong>Num tel</strong>
+                        </td>
+                        <td>
+                            {{ form_widget(form.num_tel, {'attr':{'style':'width:300px'}}) }}
+                        </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <strong>gouvernorat</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.gouvernorat, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <strong>adresse</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.adresse, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>
+                                <strong>Role</strong>
+                            </td>
+                            <td>
+                                {{ form_widget(form.roles, {'attr':{'style':'width:300px'}}) }}
+                            </td>
+                        </tr>
+                        <br>
+
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input class="btn btn-default col-sm-offset-0" type="submit" value="S'Inscrire" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                {{ form_end(form) }}
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

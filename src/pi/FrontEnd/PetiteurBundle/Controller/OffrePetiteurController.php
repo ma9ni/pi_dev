@@ -79,7 +79,6 @@ class OffrePetiteurController extends Controller
         $deleteForm = $this->createDeleteForm($offrePetiteur);
         $id=$offrePetiteur->getId();
 
-        $vet=$em->getRepository('FicheDeSoinBundle:User')->find($id);
         $note=$em->getRepository('DresseurBundle:Rating')->moyenneNoteOffre($id);
                if (empty($note)){
             $r=0;
@@ -99,7 +98,6 @@ class OffrePetiteurController extends Controller
         $form = $this->createForm('pi\FrontEnd\DresseurBundle\Form\Rating2Type',$affectnote);
         $form->handleRequest($request);
         $affectnote->setIdMembre($user);
-        $affectnote->setIdUser($vet);
         $affectnote->setIdOffrePet($offrePetiteur);
 
         if($form->isSubmitted() && $form->isValid())
@@ -117,7 +115,6 @@ class OffrePetiteurController extends Controller
         return $this->render('offrepetiteur/show.html.twig', array(
             'offrePetiteur' => $offrePetiteur,
             'delete_form' => $deleteForm->createView(),
-            'vet' => $vet,
             'notee'=>$note,
             'form' => $form->createView(),
             'com'=>$comment,

@@ -3,30 +3,6 @@
 {% block body %}
     <h1>Offre petiteur</h1>
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ offrePetiteur.id }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ offrePetiteur.description }}</td>
-            </tr>
-            <tr>
-                <th>Prix</th>
-                <td>{{ offrePetiteur.prix }}</td>
-            </tr>
-            <tr>
-                <th>Etat</th>
-                <td>{{ offrePetiteur.etat }}</td>
-            </tr>
-            <tr>
-                <th>Race</th>
-                <td>{{ offrePetiteur.race }}</td>
-            </tr>
-        </tbody>
-    </table>
 
     <ul>
 
@@ -97,11 +73,6 @@
 
 
 
-    {#hahahahahahahahaha#}
-
-
-    {#{{ vet.username }}#}
-
 
     <div class="blog-bottom">
         <div class="container">
@@ -111,26 +82,6 @@
                 <h3>Phone Number : {{ offrePetiteur.prix }}</h3>
                 <h3>Phone Number : {{ offrePetiteur.etat }}</h3>
                 <h3>Phone Number :{{ offrePetiteur.race }}</h3>
-
-                {#{% for i in rai  %}#}
-                {#{{ i.idMembre.username }}#}
-                {#{% endfor %}#}
-                {#{% for note in notee %}#}
-                {#<h3>Note : {{ note.noteuser }}</h3>#}
-                {#<h3>Note : {{ note.noteuser|rating }}</h3>#}
-                {#{% endfor %}#}
-                {#<p>Pellentesque accumsan cursus dui, sodales blandit urna sodales vitae.#}
-                {#Maecenas placerat eget mi vitae euismod. Duis aliquam efficitur mi,#}
-                {#et eleifend velit.</p>#}
-                {#<p>{% for c in com %}#}
-                {#comentaire : {{ c.comm }} </br>#}
-                {#howsCom: {{ c.hoscam }}#}
-                {#{% endfor %}</p>#}
-                {#{% for i in  rai%}#}
-                {#nom: {{ i.idMembre.username }}#}
-                {#commantaire : {{ i.commentaire }}#}
-                {#{% endfor %}#}
-
 
 
 
@@ -147,7 +98,7 @@
     </div>
     {{ form_start(form) }}
     <div class="container">
-        <h1>veterinaire </h1>
+        <h1>Commentaire et note </h1>
 
         <div class="row">
             <div class="col-md-10">
@@ -156,85 +107,66 @@
                     <div class="box-header with-border">
                         <div class="user-block">
                             <img class="img-circle" src="{{ asset('FrontEnd/images/s1.jpg') }}"  alt="User Image">
-                            <span class="username"><a href="#">username</a></span>
+                            <span class="username">{{ offrePetiteur.idMembre }}</span>
                             {{ form_widget(form.note) }}
                             <span class="description"></span>
                         </div>
-                        <!-- /.user-block -->
-                        {#<div class="box-tools">#}
-                        {#<button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read">#}
-                        {#<i class="fa fa-circle-o"></i></button>#}
-                        {#<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>#}
-                        {#</button>#}
-                        {#<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>#}
-                        {#</div>#}
-                        <!-- /.box-tools -->
+
                     </div>
-                    <!-- /.box-header -->
-                    {#<div class="box-body">#}
-                    {#<img class="img-responsive pad" src="{{ asset('FrontEnd/images/s1.jpg') }}"  alt="Photo">#}
 
-                    {#<p>Description :#}
-                    {#</p>#}
 
-                    {#<button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>#}
-                    {#<a href="#">like2</a>#}
-                    {#<button type="button" id="lb" href="#" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>#}
-                    {#<span class="pull-right text-muted">hhhhhhh</span>#}
-                    {#</div>#}
-                    <!-- /.box-body -->
-                    {#{% for c in rait %}#}
-                        {#{% if c.commentaire!=null %}#}
+                               {% for c in rait %}
+                                            {% if c.commentaire!=null %}
 
-                            <div class="box-footer box-comments">
-                                <div class="box-comment">
-                                    <!-- User image -->
-                                    <img class="img-circle img-sm"  src="{{ asset('FrontEnd/images/s1.jpg') }}"   alt="User Image">
-                                    {#{% if {{ c.comm is null }} %}#}
-                                    {#hahhahahahahahaha#}
-                                    {#{% endif %}#}
-                                    <div class="comment-text">
+                                                <div class="box-footer box-comments">
+                                                    <div class="box-comment">
+                                                        <!-- User image -->
+
+                                                        <img class="img-circle img-sm"  src="{{ asset('FrontEnd/images/s1.jpg') }}"   alt="User Image">
+                                                        <div class="comment-text">
                       <span class="username">
-                                      {#{{ c.idMembre }}#}
-                                        username
-                          {#<span class="text-muted pull-right">{{ c.datenote|date("M d,Y h:m") }}</span>#}
-                      </span><!-- /.username -->
-                                        {#{% if c.commentaire==null %}#}
-                                        {#{% endif %}#}
-                                        {#{% if c.commentaire!=null %}#}
+                                      {{ c.idMembre }}
 
-                                            {#comentaire : {{ c.commentaire }} </br>#}
-                                        {#{% endif %}#}
-                                    </div>
-                                    <!-- /.comment-text -->
+                          <span class="text-muted pull-right">{{ c.datenote|date("M d,Y h:m") }}</span>
+                      </span>
+
+                                                            {% if c.commentaire!=null %}
+
+                                                                comentaire : {{ c.commentaire }} </br>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+
                                 </div>
-                                <!-- /.box-comment -->
-                                <!-- /.box-footer -->
-                                <!-- /.box-footer -->
+
                             </div>
                         {#{% endif %}#}
                     {#{% endfor %}#}
                     <div class="box-footer">
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
                         <form action="#" method="post">
-                            <img class="img-responsive img-circle img-sm" src="" alt="Alt Text">
-                            <!-- .img-push is used to add margin to elements next to floating images -->
-                            <div class="img-push">
-                                {{ form_widget(form.commentaire, {'attr': {'placeholder': 'Press enter to post comment ','class':'form-control input-sm'}}) }}
-                                {#<input type="text" class="form-control input-sm" placeholder="Press enter to post comment">#}
+
+                            <div class="img-push" data-width="500">
+                                {{ form_widget(form.commentaire, {'attr': {'placeholder': 'Press enter to post ',
+                                    'class':'form-control input-sm'}}) }}
+
                             </div>
                         </form>
                     </div>
+                {{ form_widget(form.commentaire) }}
+                <input type="submit" value="notee" style="display: none">
+                {{ form_end(form) }}
 
-                    {{ form_widget(form.commentaire) }}
-                    <input type="submit" value="notee" style="display: none">
-                    {{ form_end(form) }}
-                    <!-- /.box -->
+            {% endif %}
+
                 </div>
 
 
-                <!-- /.col -->
-
-                <!-- /.col -->
 
             </div>
         </div>

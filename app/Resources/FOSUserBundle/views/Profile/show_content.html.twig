@@ -1,6 +1,143 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<div class="fos_user_user_show">
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+
+<div class="container target">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1 class=""><spam>Bienvenue sur votre profile, <strong>{{ user.username }}</strong></spam></h1>
+
+
+        </div>
+
+        <div class="col-sm-2"><a  class="pull-right">
+                <img title="profile image" class="img-circle img-responsive" src="{{asset('profile.png')}}">
+                </a>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <!--left col-->
+            <ul class="list-group">
+                <li class="list-group-item text-right" style="background: #af93f6;height: 40px" ><strong style="float: left; color: white">PROFILE</strong></li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Username</strong></span> {{ user.username }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">adresse</strong></span>{{ user.adresse}} </li>
+
+
+
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Email</strong></span> {{ user.email }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tel</strong></span> {{ user.numTel }}</li>
+
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Role: </strong></span>
+                    {% if is_granted('ROLE_VETE') %}
+                        Veterinaire
+                    {% endif %}
+
+                    {% if is_granted('ROLE_PET') %}
+                        Petiteur et
+                    {% endif %}
+
+                    {% if is_granted('ROLE_USER') %}
+                        Utilisateur
+                    {% endif %}
+                    {% if is_granted('ROLE_DRESS') %}
+                    Administrateur
+                    {% endif %}
+                    {% if is_granted('ROLE_DRESS') %}
+Dresseur        {% endif %}</li>
+            </ul>
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background: #af93f6;height: 40px"><strong style="float: left; color: white">PARAMETRE DU COMPTE</strong>
+
+                </div>
+                <div class="panel-body"><i style="color:green" class="fa fa-check-square"></i><a href=""><b><U>Modifier Mot de passe</U></b></a>
+
+                </div>
+            </div>
+        </div>
+        <!--/col-3-->
+        <div class="col-sm-9 " contenteditable="false" style="">
+            <div class="panel panel-default target">
+                <div class="panel-heading" contenteditable="false" style="background: #af93f6;height: 40px"><strong style="float: left; color: white">NOS SERVICES</strong></div>
+                <div class="panel-body" style="height: 296px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail"style="height: 272px">
+                                <img  src="images/editer.png" height="280" width="185">
+                                <div class="caption">
+                                    <center>
+
+                                        <a href="">  <button type="submit" title="Submit" class="button submit" > <span> changer </span> </button>
+                                        </a>
+
+                                    </center>
+                                    <p>
+                                        <br>
+                                        Changez vos Informations.
+                                    </p>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-7">
+                            <div class="thumbnail" style="height: 272px">
+                                <img src="images/commande.jpg" height="280" width="185">
+                                <div class="caption">
+                                    <center>
+                                        <a href="/Commande">  <button type="submit" title="Submit" class="button submit" > <span> commande </span> </button>
+                                        </a>
+
+
+                                    </center>
+
+
+                                    <p>
+                                        <br>
+                                        Affichage de tous vos commandes .
+                                    </p>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-7">
+                            <div class="thumbnail" style="height: 272px">
+                                <img  src="{{asset('images/evenement.png')}}" height="280" width="185">
+                                <div class="caption">
+
+
+                                    <p>
+                                        </br>
+                                        Ajouter des evenements.
+                                    </p>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- End Quantcast tag -->
+
+
+
+
+
 </div>
