@@ -4,9 +4,10 @@
     <div class="gallery team">
         <div class="container">
             <h3 class="agileits-title w3title2">veterinaire</h3>
+
             <form action="{{ path('front_end_vet') }}" method="post">
-                <input type="text" name="recherche"id="recherche" class="form-control">
-                <input type="submit" class="btn btn-default">
+                <input type="text" name="recherche" id="recherche" placeholder="search For ...." class="form-control">
+                <input type="submit" value="search"   class="btn btn-default">
             </form>
              <div class=" col-md-4 col-md-offset-4  ">
         </div>
@@ -30,6 +31,9 @@
                 {% endfor %}
             </div>
         </div>
+
+
+
         <div class="navigation text-center">
             {{ knp_pagination_render(veterinaires) }}
         </div>

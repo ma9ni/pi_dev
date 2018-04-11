@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/edit.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/edit.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/config/routing.yml" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/show.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,16 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="imprimer.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/imprimer.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="imprimer.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/imprimer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+            <state relative-caret-position="187">
+              <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="veterinaires.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -233,7 +223,6 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Form/f_dressageType.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/show_Dres.html.twig" />
@@ -252,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/index.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" />
       </list>
     </option>
   </component>
@@ -556,7 +546,7 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../covoiturage-EDT-ONE" />
-    <property name="SearchEverywhereHistoryKey" value="new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;f_dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;composer&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;sho&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig&#10;sh&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;app&#9;FILE&#9;file://C:/wamp64/www/pi/app/AppKernel.php&#10;f_d&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;us&#9;null&#9;null&#10;inde&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Resources/views/Default/index.html.twig&#10;ra&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;dre&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;vet&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
+    <property name="SearchEverywhereHistoryKey" value="vete&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;f_dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;composer&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;sho&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig&#10;sh&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;app&#9;FILE&#9;file://C:/wamp64/www/pi/app/AppKernel.php&#10;f_d&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;us&#9;null&#9;null&#10;inde&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Resources/views/Default/index.html.twig&#10;ra&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;dre&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;vet&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -614,7 +604,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268767000" />
+    <option name="totallyTimeSpent" value="269402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -853,14 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1089,8 +1071,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
