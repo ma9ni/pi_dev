@@ -13,6 +13,6 @@
         <li class="list-group-item">Datefin : {% if f_dressage.dateFin %}{{ f_dressage.dateFin|date('Y-m-d') }}{% endif %}</li>
     </ul>
 
-            <a  type="submit"  href="{{ path('imprimer', { 'id': f_dressage.id }) }}"><span class="btn btn-primary" >Imprimer</span></a>
+            <a  class="btn btn-primary" type="submit"  href="{{ path('imprimer', { 'id': f_dressage.id }) }}">Imprimer</a>
 <br>
 {% endblock %}

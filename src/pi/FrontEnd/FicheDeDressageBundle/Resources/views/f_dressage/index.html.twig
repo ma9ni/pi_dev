@@ -11,7 +11,7 @@
     <table class=" table table table-hover table-dark" >
         <thead>
             <tr>
-                <th>Id</th>
+                {#<th>Id</th>#}
                 <th>Displine</th>
                 <th>Obeissance</th>
                 <th>Specialite</th>
@@ -20,14 +20,14 @@
                 <th>Notetotale</th>
                 <th>Datedebut</th>
                 <th>Datefin</th>
-                <th>Etat</th>
+                {#<th>Etat</th>#}
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for f_dressage in f_dressages %}
             <tr>
-                <td><a href="{{ path('f_dressage_show', { 'id': f_dressage.id }) }}">{{ f_dressage.id }}</a></td>
+                {#<td><a href="{{ path('f_dressage_show', { 'id': f_dressage.id }) }}">{{ f_dressage.id }}</a></td>#}
                 <td>{{ f_dressage.displine }}</td>
                 <td>{{ f_dressage.obeissance }}</td>
                 <td>{{ f_dressage.specialite }}</td>
@@ -36,7 +36,7 @@
                 <td>{{ f_dressage.noteTotale }}</td>
                 <td>{% if f_dressage.dateDebut %}{{ f_dressage.dateDebut|date('Y-m-d') }}{% endif %}</td>
                 <td>{% if f_dressage.dateFin %}{{ f_dressage.dateFin|date('Y-m-d') }}{% endif %}</td>
-                <td>{{ f_dressage.etat }}</td>
+                {#<td>{{ f_dressage.etat }}</td>#}
                 <td><a href="{{ path('f_dressage_show', { 'id': f_dressage.id }) }}"><span class="glyphicon glyphicon-hand-up"></span></a></td>
                 <td><a href="{{ path('f_dressage_edit', { 'id': f_dressage.id }) }}"><span class="glyphicon glyphicon-edit"></span></a></td>
                 <td><a href="{{ path('f_dressage_delete', { 'id': f_dressage.id }) }}"><span class="glyphicon glyphicon-trash"></span></a></td>
@@ -45,9 +45,7 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('f_dressage_new') }}">Create a new f_dressage</a>
-        </li>
-    </ul>
+
+            <a class="btn btn-success" type="submit" href="{{ path('f_dressage_new') }}">Create a new f_dressage</a>
+
 {% endblock %}

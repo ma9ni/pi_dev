@@ -125,7 +125,7 @@ class f_dressageController extends Controller
             $pdf->pdf->SetKeywords('facture,soukelmedina');
             $pdf->pdf->SetDisplayMode('real');
             $pdf->writeHTML($html);
-            $pdf->Output('Facture.pdf');
+            $pdf->Output('Fiche De Dressage.pdf');
 
 
 //require 'phpmailer.php';

@@ -29,20 +29,22 @@
             </div>
 
             <div class="form-group">
+
                 {{ form_label(form.displine ) }}
-                {{ form_widget(form.displine , {'attr': {'class':'form-control'}})  }}
+                {#<span class="input-group-addon" id="basic-addon2">/20</span>#}
+                {{ form_widget(form.displine , {'attr': {'class':'form-control','placeholder':'Displine /20'}})  }}
             </div>
             <div class="form-group">
                 {{ form_label(form.accompagnement ) }}
-                {{ form_widget(form.accompagnement , {'attr': {'class':'form-control'}})  }}
+                {{ form_widget(form.accompagnement , {'attr': {'class':'form-control','placeholder':'accompagnement /20'}})  }}
             </div>
             <div class="form-group">
                 {{ form_label(form.interception ) }}
-                {{ form_widget(form.interception , {'attr': {'class':'form-control','type':'range'}})  }}
+                {{ form_widget(form.interception , {'attr': {'class':'form-control','type':'range','placeholder':'interception /20'}})  }}
             </div>
             <div class="form-group">
                 {{ form_label(form.obeissance ) }}
-                {{ form_widget(form.obeissance , {'attr': {'class':'form-control'}})  }}
+                {{ form_widget(form.obeissance , {'attr': {'class':'form-control','placeholder':'obeissance /20'}})  }}
             </div>
 
             {#<div class="form-group">#}
@@ -52,14 +54,8 @@
             <div class="form-group">
                 <input type="submit" value="Ajouter" class=" btn-primary btn-lg btn-block"/>
             </div>
-
             {{ form_end(form) }}
 
-            <ul>
-                <li>
-                    <a href="{{ path('f_dressage_index') }}">Back to the list</a>
-                </li>
-            </ul>
         </div>
     </div>
 {% endblock %}
