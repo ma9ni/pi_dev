@@ -1,0 +1,40 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+
+{% block title %}Petiteur{% endblock %}
+
+{% block body2 %}
+    <!-- services -->
+    <div class="services jarallax">
+        <div class="container">
+            <h3 class="agileits-title w3title1">votre Service Petiteur</h3>
+            <div class="services-w3ls-row">
+                <div class="col-md-3 col-sm-3 col-xs-6 services-grid agileits-w3layouts">
+                    <a href="{{ path('offrepetiteur_new') }}">
+                        <span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
+                    <h5> Votre offre</h5>
+                    <p>saisir  et modifier  des infoformations de votre offre de petiteur</p>
+                    </a>
+                </div>
+                <a href="{{ path('homepagecalander') }}"><div class="col-md-3 col-sm-3 col-xs-6 services-grid agileits-w3layouts">
+                    <span class="glyphicon glyphicon-list-alt effect-1" aria-hidden="true"></span>
+                    <h5>Votre Disponibilité</h5>
+                    <p>ajouter et modifier votre disponibilité</p>
+                </div></a>
+
+                <div class="col-md-3 col-sm-3 col-xs-6 services-grid">
+                   <a href="{{ path('demandegard_index') }}"> <span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+                    <h5>les Demandes</h5>
+                    <p>Voir et accepter les  demandes de votre offre de petiteur</p></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 services-grid">
+                    <a href="{{ path('demandegard_demandeAccepter') }}"> <span class="glyphicon glyphicon-tree-deciduous effect-1" aria-hidden="true"></span>
+                        <h5>les animals Garder</h5>
+                        <p>Voir les animals que vois aver accepter de garder</p></a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //services -->
+{% endblock %}

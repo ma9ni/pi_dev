@@ -191,6 +191,22 @@ class User extends BaseUser
     }
 
     /**
+     * @return string
+     */
+    public function getEmailCanonical()
+    {
+        return $this->emailCanonical;
+    }
+
+    /**
+     * @param string $emailCanonical
+     */
+    public function setEmailCanonical($emailCanonical)
+    {
+        $this->emailCanonical = $emailCanonical;
+    }
+
+    /**
      * @return mixed
      */
     public function getConfirmation()
@@ -205,13 +221,6 @@ class User extends BaseUser
     {
         $this->confirmation = $confirmation;
     }
-
-
-
-    /**
-     * @return mixed
-     */
-
 
 
 }

@@ -4,6 +4,7 @@ security:
 
     role_hierarchy:
         ROLE_USER:        ROLE_USER
+        ROLE_PET:        ROLE_PET
         ROLE_DRESS:       ROLE_USER
         ROLE_VETE:        ROLE_USER
         ROLE_ADMIN:       ROLE_USER

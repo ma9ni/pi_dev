@@ -6,8 +6,17 @@
                 <h1><a href="{{ path('front_end_homepage') }}">Best Pets</a></h1>
             </div>
             <div class="agileits_w3layouts_sign_in">
-                <ul>
+                <ul style="color: white">
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                    {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+
+                    <li><a href="{{ path('fos_user_security_logout') }}" class="play-icon">
+                            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                        </a></li>
+                {% else %}
                     <li><a href="#myModal2" data-toggle="modal" class="play-icon">Login</a></li>
+                    {% endif %}
                     <li>Call us : <span>(+216) 51 09 09 69 </span></li>
                 </ul>
             </div>
@@ -27,16 +36,32 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav cl-effect-16">
                         <li><a href="{{ path('front_end_homepage') }}" class="active" data-hover="Home">Home</a></li>
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                            <li><a href="{{ path('fos_user_profile_show') }}" data-hover="Profile">Profile</a></li>
+                        {% endif %}
                         <li><a href="{{ path('front_end_about') }}" data-hover="About">About</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Annonce <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('adoption_index') }}" data-hover="Adoption">Adoption</a></li>
+                                <li><a href="" data-hover="sos disparition">Sos disparition</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ path('front_end_vet') }}" data-hover="Veterinarian">Veterinarian</a></li>
                                 <li><a href="{{ path('front_end_dress') }}" data-hover="Dresser">Dresser</a></li>
+                                <li><a href="{{ path('offrepetiteur_index') }}" data-hover="Petiteur">Petiteur</a></li>
+
                             </ul>
                         </li>
+
                         <li><a href="{{ path('front_end_gallery') }}" data-hover="Gallery">Gallery</a></li>
 
                         <li><a href="{{ path('front_end_contact') }}" data-hover="Contact">Contact</a></li>
+                        {% if is_granted("ROLE_PET") %}
+
+                        <li><a href="{{ path('offre_pet') }}" data-hover="Votre Service ">Votre Service </a></li>
+                        {% endif %}
                         {% if is_granted('ROLE_VETE') %}
                             <li><a href="{{ path('f_soin_index') }}" data-hover="Mes fiches des soins">Mes fiches des soins</a></li>
                         {% endif %}

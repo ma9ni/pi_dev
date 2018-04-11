@@ -21,10 +21,17 @@ class AppKernel extends Kernel
             new pi\FrontEnd\FicheDeDressageBundle\FicheDeDressageBundle(),
             new pi\FrontEnd\VeterinaireBundle\VeterinaireBundle(),
             new pi\BackEnd\AdminBundle\AdminBundle(),
+
             new pi\FrontEnd\DresseurBundle\DresseurBundle(),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+
+            new pi\FrontEnd\AdoptionBundle\AdoptionBundle(),
+            new pi\FrontEnd\PetiteurBundle\PetiteurBundle(),
+            new pi\BackEnd\ReclamationBundle\ReclamationBundle(),
             new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+            new pi\FrontEnd\CalenderBundle\CalanderBundle(),
+            new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
 
 
