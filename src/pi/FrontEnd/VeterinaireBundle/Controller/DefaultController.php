@@ -12,28 +12,6 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
 
-    public function recherchePArnomAction(Request $request)
-    {
-        $vet=new User();
-        $em = $this->getDoctrine()->getManager();
-        $rech = $this->createForm(rechercheVetParNom::class,$vet);
-        $rech->handleRequest($request);
-
-        if ($rech->isSubmitted())
-        {$nom=$vet->getUsername();
-        $nom;die();
-            $veterinair = $em->getRepository('FicheDeSoinBundle:User')->find($nom);
-            var_dump($veterinair);
-       }
-
-        return $this->render('@Veterinaire/veterinaires.html.twig', array(
-            'veterinaires' => $veterinair,
-            'rech'=>$rech->createView()
-
-        ));
-
-
-    }
 
 
     public function listAction(Request $request)
@@ -41,34 +19,44 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $notes=$em->getRepository('DresseurBundle:Rating')->findAll();
-        /**
-         * @var $paginator \Knp\Component\Pager\Paginator
-         */
-        $paginator=$this->get('knp_paginator');
-       $result= $paginator->paginate(
-            $notes,
-            $request->query->getInt('page',1),
-            $request->query->getInt('limit',1)
-        );
-        $rech = $this->createFormBuilder()
-            ->add('Recherche')
-            ->getForm();
 
-        $rech->handleRequest($request);
 
-        if ($rech->isSubmitted() && $rech->isValid()) {
-            // data is an array with "name", "email", and "message" keys
-            $data = $rech->getData();
+
+        if ($request->isMethod('POST')) {
+
+            $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireNomQB($request->get('recherche'));
+
+            /**
+             * @var $paginator \Knp\Component\Pager\Paginator
+             */
+            $paginator=$this->get('knp_paginator');
+            $result= $paginator->paginate(
+                $veterinaires,
+                $request->query->getInt('page',1),
+                $request->query->getInt('limit',3)
+            );
+            return $this->render('@Veterinaire/veterinaires.html.twig', array(
+                'veterinaires' => $result,
+
+
+            ));
 
         }
 
 
-//        $note=$em->getRepository('DresseurBundle:Rating')->moyenneNote();
         $veterinaires = $em->getRepository('FicheDeSoinBundle:User')->findVeterinaireQB();
+        /**
+         * @var $paginator \Knp\Component\Pager\Paginator
+         */
+        $paginator=$this->get('knp_paginator');
+        $result= $paginator->paginate(
+            $veterinaires,
+            $request->query->getInt('page',1),
+            $request->query->getInt('limit',3)
+        );
         return $this->render('@Veterinaire/veterinaires.html.twig', array(
-            'veterinaires' => $veterinaires,
-            'rech'=>$rech->createView(),
-           'notes'=>$result,
+            'veterinaires' => $result,
+
 
         ));
     }
@@ -79,29 +67,21 @@ class DefaultController extends Controller
         $vet=$em->getRepository('FicheDeSoinBundle:User')->find($id);
         $note=$em->getRepository('DresseurBundle:Rating')->moyenneNote($id);
         $comment=$em->getRepository('DresseurBundle:Rating')->affCom($id);
-
         $rai=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
         $user = $this->getUser();
-
-$rait=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
+        $rait=$em->getRepository('DresseurBundle:Rating')->findBy(array('idUser'=>$id));
 
 
         if (empty($note)){
 
 //            var_dump($note);
 //            die();
-//
             echo "Ahmed";
             $r=0;
-
         }else {
-
             $r=round($note[0]['noteuser'],0);
             echo "MAkni";
         }
-
-//        $r=round($note[0]['noteuser'],0);
-//        $idmembre=round($note[0]['noteuser'],1);
 
 
         $affectnote=new Rating();

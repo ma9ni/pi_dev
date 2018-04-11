@@ -4,6 +4,7 @@ namespace pi\FrontEnd\FicheDeSoinBundle\Controller;
 
 use pi\FrontEnd\FicheDeSoinBundle\Entity\f_soin;
 use pi\FrontEnd\FicheDeSoinBundle\Entity\User;
+use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -127,6 +128,50 @@ class f_soinController extends Controller
             $em->flush();
         return $this->redirectToRoute('f_soin_index');
     }
+
+    public function imprimerAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $f_dressages = $em->getRepository('FicheDeSoinBundle:f_soin')
+            ->find($id);
+        $idd=$f_dressages->getIdAnimal();
+
+        $rai=$em->getRepository('FicheDeSoinBundle:animal')->find($idd);
+        if (!$f_dressages) {
+            return $this->redirectToRoute('f_soin_index');
+        }
+
+        $html = $this->renderView('@FicheDeSoin/imprimer.html.twig',array(
+            'facture'=>$f_dressages,
+            'anim'=>$rai
+
+        ));
+
+        try{
+            $pdf = new Html2Pdf('P','A4','fr');
+            $pdf->pdf->SetAuthor('SoukElMedina');
+            $pdf->pdf->SetTitle('Facture ');
+            $pdf->pdf->SetSubject('Facture SoukElMedina');
+            $pdf->pdf->SetKeywords('facture,soukelmedina');
+            $pdf->pdf->SetDisplayMode('real');
+            $pdf->writeHTML($html);
+            $pdf->Output('Fiche De Soin.pdf');
+
+
+//require 'phpmailer.php';
+
+        }catch(\HTML2PDF_exception $e){
+            die($e);
+        }
+
+        $response = new Response();
+        $response->headers->set('Content-type' , 'application/pdf');
+
+        return $response;
+
+    }
+
     /**
      * Creates a form to delete a f_soin entity.
      *
