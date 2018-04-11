@@ -3,6 +3,7 @@
 namespace pi\FrontEnd\FicheDeDressageBundle\Controller;
 
 use pi\FrontEnd\FicheDeDressageBundle\Entity\f_dressage;
+use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -61,6 +62,13 @@ class f_dressageController extends Controller
             $user = $this->getUser();
             $f_dressage->setEtat(1);
             $f_dressage->setIdMembre($user);
+            $a1=$form->get('accompagnement')->getData();
+            $a2=$form->get('interception')->getData();
+            $a3=$form->get('obeissance')->getData();
+            $a4=$form->get('displine')->getData();
+            $total=($a1+$a2+$a3+$a4)/4;
+//            var_dump($total);
+            $f_dressage->setNoteTotale($total);
             $em->persist($f_dressage);
             $em->flush();
             return $this->redirectToRoute('f_dressage_index', array('id' => $f_dressage->getId()));
@@ -79,13 +87,58 @@ class f_dressageController extends Controller
      * @Method("GET")
      */
     public function showAction(f_dressage $f_dressage)
-    {
+    {  $em = $this->getDoctrine()->getManager();
+
         $deleteForm = $this->createDeleteForm($f_dressage);
 
         return $this->render('@FicheDeDressage/f_dressage/show.html.twig', array(
             'f_dressage' => $f_dressage,
             'delete_form' => $deleteForm->createView(),
+
         ));
+    }
+
+    public function imprimerAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')
+            ->find($id);
+        $idd=$f_dressages->getIdAnimal();
+
+        $rai=$em->getRepository('FicheDeSoinBundle:animal')->find($idd);
+        if (!$f_dressages) {
+            return $this->redirectToRoute('f_dressage_index');
+        }
+
+        $html = $this->renderView('@FicheDeDressage/imprimer.html.twig',array(
+            'facture'=>$f_dressages,
+            'anim'=>$rai
+
+        ));
+
+        try{
+            $pdf = new Html2Pdf('P','A4','fr');
+            $pdf->pdf->SetAuthor('SoukElMedina');
+            $pdf->pdf->SetTitle('Facture ');
+            $pdf->pdf->SetSubject('Facture SoukElMedina');
+            $pdf->pdf->SetKeywords('facture,soukelmedina');
+            $pdf->pdf->SetDisplayMode('real');
+            $pdf->writeHTML($html);
+            $pdf->Output('Facture.pdf');
+
+
+//require 'phpmailer.php';
+
+        }catch(\HTML2PDF_exception $e){
+            die($e);
+        }
+
+        $response = new Response();
+        $response->headers->set('Content-type' , 'application/pdf');
+
+        return $response;
+
     }
 
     /**
@@ -99,6 +152,13 @@ class f_dressageController extends Controller
         $deleteForm = $this->createDeleteForm($f_dressage);
         $editForm = $this->createForm('pi\FrontEnd\FicheDeDressageBundle\Form\f_dressageType', $f_dressage);
         $editForm->handleRequest($request);
+
+        $a1=$editForm->get('accompagnement')->getData();
+        $a2=$editForm->get('interception')->getData();
+        $a3=$editForm->get('obeissance')->getData();
+        $a4=$editForm->get('displine')->getData();
+        $total=($a1+$a1+$a2+$a3+$a4)/4;
+        $f_dressage->setNoteTotale($total);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
