@@ -4,7 +4,7 @@
 {% block body %}
     <h3 class="agileits-title">Vos Annonces</h3>
 
-    <table>
+    <table class="table">
         <thead>
         <tr>
             <th>Type</th>
@@ -25,19 +25,19 @@
                 <td>{{ adoption.lieu }}</td>
                 <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}">{{ adoption.description }}</a></td>
                 <td>{{ adoption.idAnimal.nom }}</td>
-                <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}"><button>voir</button></a></td>
+                <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}"><button class="btn btn-primary btn-block">voir</button></a></td>
 
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('adoption_edit', { 'idAdoption': adoption.idAdoption }) }}">modifier</a>
-                        </li>
 
-                    </ul>
+
+                            <a href="{{ path('adoption_edit', { 'idAdoption': adoption.idAdoption }) }}" class="btn btn-primary btn-block">modifier</a>
+
+
+
                 </td>
-                <td><li>
-                        <a href="{{ path('adoption_deleteUtilisateur',{'idAdoption':adoption.idAdoption}) }}">supprimer </a>
-                    </li></td>
+                <td>
+                        <a href="{{ path('adoption_deleteUtilisateur',{'idAdoption':adoption.idAdoption}) }}"class="btn btn-danger btn-block">supprimer </a>
+                    </td>
             </tr>
         {% endfor %}
         </tbody>

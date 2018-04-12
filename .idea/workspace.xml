@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/demandegard/animalGarder.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/demandegard/animalGarder.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/demandegard/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/demandegard/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/demandegard/listdemandeUtilisateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/demandegard/listdemandeUtilisateur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/indexAdoption.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/indexAdoption.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +48,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listdemandeUtilisateur.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listdemandeUtilisateur.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/demandegard/listdemandeUtilisateur.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
               <caret line="26" column="135" selection-start-line="26" selection-start-column="135" selection-end-line="26" selection-end-column="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexAdoption.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/indexAdoption.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vosAnnonce.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -91,24 +107,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
               <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdoptionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Controller/AdoptionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="243" column="37" selection-start-line="225" selection-start-column="12" selection-end-line="243" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -232,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig" />
@@ -274,7 +271,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/offrepetiteur/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/offrepetiteur/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/sucess.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" />
@@ -283,6 +279,8 @@
         <option value="$PROJECT_DIR$/app/Resources/views/demandegard/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/demandegard/animalGarder.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/demandegard/listdemandeUtilisateur.html.twig" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/indexAdoption.html.twig" />
+        <option value="$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig" />
       </list>
     </option>
   </component>
@@ -450,6 +448,17 @@
               <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdoptionBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Front" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -686,12 +695,12 @@
       <workItem from="1523382612824" duration="383000" />
       <workItem from="1523286104494" duration="24900000" />
       <workItem from="1523375359889" duration="597000" />
-      <workItem from="1523384237814" duration="35640000" />
+      <workItem from="1523384237814" duration="36153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344980000" />
+    <option name="totallyTimeSpent" value="345493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,13 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/sucess.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1010,9 +1012,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/mail.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/indexAdoption.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/contactAnnonceur.html.twig">
@@ -1103,6 +1102,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="26" column="135" selection-start-line="26" selection-start-column="135" selection-end-line="26" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/indexAdoption.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/AdoptionBundle/Resources/views/Front/vosAnnonce.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
