@@ -10,9 +10,6 @@ index:
     path:     /home
     defaults: { _controller: AdminBundle:Default:index }
 
-
-<<<<<<< HEAD
-
 confirmer:
     path:     /conf/{id}
     defaults: { _controller: AdminBundle:listVet_Dress_Admin:ConfirmerUser }
@@ -20,7 +17,7 @@ confirmer:
 block:
     path:     /block/{id}
     defaults: { _controller: AdminBundle:listVet_Dress_Admin:blockUser }
-=======
+
 Back_Concours_index:
     path:     /concours
     defaults: { _controller: AdminBundle:concours:index }
@@ -47,8 +44,9 @@ concours_d:
 concours_edit_participant:
     path:     /{id}/accepter
     defaults: { _controller: AdminBundle:concours:accept }
+
+
 concours_delete_particpant:
     path:     /{id}/refuser
     defaults: { _controller: AdminBundle:concours:refuser }
 
->>>>>>> concoursBundle

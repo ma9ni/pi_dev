@@ -6,15 +6,12 @@ imports:
     - { resource: "@FicheDeDressageBundle/Resources/config/services.yml" }
     - { resource: "@VeterinaireBundle/Resources/config/services.yml" }
     - { resource: "@AdminBundle/Resources/config/services.yml" }
-<<<<<<< HEAD
     - { resource: "@DresseurBundle/Resources/config/services.yml" }
     - { resource: "@AdoptionBundle/Resources/config/services.yml" }
     - { resource: "@PetiteurBundle/Resources/config/services.yml" }
     - { resource: "@ReclamationBundle/Resources/config/services.yml" }
     - { resource: "@CalanderBundle/Resources/config/services.yml" }
-=======
     - { resource: "@ConcoursBundle/Resources/config/services.yml" }
->>>>>>> concoursBundle
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -76,19 +73,17 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-<<<<<<< HEAD
     port:  2525
     transport: smtp
     host: smtp.mailtrap.io
     username:  830a84f109ebc5
     password: 06d71bed991286
-=======
+
     port: 2525
     transport: '%mailer_transport%'
     host: smtp.mailtrap.io
     username: 1c30198ed9be84
     password: be3a2f7bd26025
->>>>>>> concoursBundle
     spool: { type: memory }
 
 
@@ -106,7 +101,6 @@ fos_user:
         address: "ahmed.makni.1@esprit.tn"
         sender_name: "%Ahmed Makni%"
 
-<<<<<<< HEAD
 # KNP Paginator
 knp_paginator:
     page_range: 5                       # number of links showed in the pagination menu (e.g: you have 10 pages, a page_range of 3, on the 5th page you'll see links to page 4, 5, 6)
@@ -121,7 +115,7 @@ knp_paginator:
         pagination: '@KnpPaginator/Pagination/sliding.html.twig'     # sliding pagination controls template
         sortable: '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig' # sort link template
         filtration: '@KnpPaginator/Pagination/filtration.html.twig'  # filters template
-=======
+
 
 knp_paginator:
     page_range:                 5          # default page range used in pagination control
@@ -133,4 +127,3 @@ knp_paginator:
     template:
         pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig     # sliding pagination controls template
         sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig                         # sort link template
->>>>>>> concoursBundle

@@ -21,8 +21,6 @@ class AppKernel extends Kernel
             new pi\FrontEnd\FicheDeDressageBundle\FicheDeDressageBundle(),
             new pi\FrontEnd\VeterinaireBundle\VeterinaireBundle(),
             new pi\BackEnd\AdminBundle\AdminBundle(),
-<<<<<<< HEAD
-
             new pi\FrontEnd\DresseurBundle\DresseurBundle(),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
 
@@ -33,14 +31,12 @@ class AppKernel extends Kernel
             new pi\FrontEnd\CalenderBundle\CalanderBundle(),
             new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+//            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
 
 
-=======
             new pi\FrontEnd\CouncoursBundle\ConcoursBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
->>>>>>> concoursBundle
 
         ];
 

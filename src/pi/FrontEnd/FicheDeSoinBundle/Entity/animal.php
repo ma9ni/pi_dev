@@ -116,7 +116,6 @@ class animal
      */
     public function getIdMembre()
     {
-<<<<<<< HEAD
         return $this->id_membre;
     }
 
@@ -142,18 +141,10 @@ class animal
     public function setAge($age)
     {
         $this->age = $age;
-=======
         return $this->idMembre;
     }
 
-    /**
-     * @param int $idMembre
-     */
-    public function setIdMembre($idMembre)
-    {
-        $this->idMembre = $idMembre;
->>>>>>> concoursBundle
-    }
+
     /**
      * Generates the magic method
      *
@@ -165,9 +156,6 @@ class animal
         // return $this->id;
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> concoursBundle
 }
 
