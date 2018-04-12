@@ -35,6 +35,7 @@
                 <td>{{ f_dressage.etat }}</td>
                 <td><a href="{{ path('f_dressage_show', { 'id': f_dressage.id }) }}"><span class="glyphicon glyphicon-hand-up"></span></a></td>
                 <td><a href="{{ path('f_dressage_edit', { 'id': f_dressage.id }) }}"><span class="glyphicon glyphicon-edit"></span></a></td>
+
                 <td><a href="{{ path('f_dressage_delete', { 'id': f_dressage.id }) }}"><span class="glyphicon glyphicon-trash"></span></a></td>
                  </tr>
         {% endfor %}

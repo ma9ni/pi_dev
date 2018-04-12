@@ -1,6 +1,10 @@
+concours_concours:
+    resource: "@ConcoursBundle/Controller/concoursController.php"
+    type:     annotation
+
 concours:
     resource: "@ConcoursBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /Concours
 
 admin:
     resource: "@AdminBundle/Resources/config/routing.yml"

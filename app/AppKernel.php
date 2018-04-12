@@ -22,6 +22,9 @@ class AppKernel extends Kernel
             new pi\FrontEnd\VeterinaireBundle\VeterinaireBundle(),
             new pi\BackEnd\AdminBundle\AdminBundle(),
             new pi\FrontEnd\CouncoursBundle\ConcoursBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

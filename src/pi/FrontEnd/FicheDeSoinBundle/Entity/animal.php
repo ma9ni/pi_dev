@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * animal
  *
  * @ORM\Table(name="animal")
- * @ORM\Entity(repositoryClass="\AppBundle\Repository\animalRepository")
+ * @ORM\Entity(repositoryClass="pi\FrontEnd\FicheDeSoinBundle\Repository\animalRepository")
  */
 class animal
 {
@@ -34,6 +34,12 @@ class animal
      * @ORM\Column(name="race", type="string", length=255)
      */
     private $race;
+    /**
+     * @var int
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
+     */
+    private $idMembre;
 
 
     /**
@@ -93,5 +99,32 @@ class animal
     {
         return $this->race;
     }
+
+    /**
+     * @return int
+     */
+    public function getIdMembre()
+    {
+        return $this->idMembre;
+    }
+
+    /**
+     * @param int $idMembre
+     */
+    public function setIdMembre($idMembre)
+    {
+        $this->idMembre = $idMembre;
+    }
+    /**
+     * Generates the magic method
+     *
+     */
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->nom;
+        // to show the id of the Category in the select
+        // return $this->id;
+    }
+
 }
 

@@ -1,0 +1,60 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+
+    <div class="container" >
+    <h3 class="agileits-title w3title2">Création d'un concours </h3>
+
+
+
+        <div class="row">
+
+            {{ form_start(form, {'attr': {'class': 'form'}}) }}
+
+            <div class="form-group">
+                <label for="observation">titre</label>
+                {{ form_widget(form.titre, {'attr': {'class': 'form-control','placeholder':'titre','name':'specialite'}}) }}
+            </div>
+
+            <div class="form-group">
+                {{ form_label(form.type ) }}
+                {{ form_widget(form.type , {'attr': {'class':'form-control'}})  }}
+            </div>
+
+            <div class="form-group">
+                {{ form_label(form.race ) }}
+                {{ form_widget(form.race , {'attr': {'class':'form-control'}})  }}
+            </div>
+
+            <div class="form-group">
+                {{ form_label(form.capacite ) }}
+                {{ form_widget(form.capacite , {'attr': {'class':'form-control'}})  }}
+            </div>
+
+            <div class="form-group date">
+                {{ form_label(form.dateDebut ) }}
+                {{ form_widget(form.dateDebut ,{'attr': {'class':'form-control datepicker'}}) }}
+            </div>
+
+            <div class="form-group date">
+                {{ form_label(form.dateFin ) }}
+                {{ form_widget(form.dateFin ,{'attr': {'class':'form-control datepicker'}}) }}
+
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Add" class=" btn-primary btn-lg btn-block"/>
+            </div>
+
+            <div class="form-group">
+                <a type="submit" value="Add" class=" btn-primary btn-lg btn-block text-center" href="{{ path('Back_Concours_index') }}">Back to the list</a>
+            </div>
+
+            {{ form_end(form) }}
+
+
+
+        </div>
+    </div>
+{% endblock %}

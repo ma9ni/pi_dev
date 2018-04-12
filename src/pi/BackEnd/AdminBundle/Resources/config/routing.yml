@@ -9,3 +9,35 @@ admin_listVet:
 index:
     path:     /home
     defaults: { _controller: AdminBundle:Default:index }
+
+
+Back_Concours_index:
+    path:     /concours
+    defaults: { _controller: AdminBundle:concours:index }
+
+Back_Concours_new:
+    path:     /concours/new
+    defaults: { _controller: AdminBundle:concours:new }
+
+Back_concours_show:
+    path:     /concours/show/{id}
+    defaults: { _controller: AdminBundle:concours:show }
+Back_concours_edit:
+    path:     /concours/edit/{id}
+    defaults: { _controller: AdminBundle:concours:edit }
+Back_concours_delete:
+    path:     /concours/delete/{id}
+    defaults: { _controller: AdminBundle:concours:delete }
+concours_d:
+    path:     /demande
+    defaults: { _controller: AdminBundle:concours:houssem }
+
+
+
+concours_edit_participant:
+    path:     /{id}/accepter
+    defaults: { _controller: AdminBundle:concours:accept }
+concours_delete_particpant:
+    path:     /{id}/refuser
+    defaults: { _controller: AdminBundle:concours:refuser }
+
