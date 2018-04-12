@@ -80,5 +80,4 @@ concours_edit_participant:
 concours_delete_particpant:
     path:     /{id}/refuser
     defaults: { _controller: AdminBundle:concours:refuser }
->>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
 
