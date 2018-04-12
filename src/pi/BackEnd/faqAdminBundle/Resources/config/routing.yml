@@ -1,0 +1,11 @@
+faq_admin_homepage:
+    path:     /
+    defaults: { _controller: faqAdminBundle:Default:index }
+
+faq_admin_repondre:
+    path:     /listingAttente
+    defaults: { _controller: faqAdminBundle:Default:Repondre }
+
+faq_admin_reponce:
+    path:     /q/{id}
+    defaults: { _controller: faqAdminBundle:Default:rep }

@@ -1,0 +1,70 @@
+{% extends 'FrontEnd/base.html.twig' %}
+{% block body %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    input[type=text] {
+        width: 170px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+</style>
+<body>
+        <br>
+        <div>
+            <h1 class="text-primary">Recherche</h1>
+                <form method="post" action="{{ path('animal_recherche') }}">
+                    <input type="text" name="motcle" placeholder="Search..">
+                </form>
+        </div>
+        <br>
+{% for animal in animals %}
+
+    <div class="col-lg-4" >
+
+    <div  style="color: #0a0a0a" class="container">
+        <br><br><br><br>
+                        <div class="row">
+                                <div class="box box-widget">
+                                    <div class="box-tools">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+<br><br>
+                                    <div>
+                                        <a type="submit"  class="btn btn-primary"  href="{{ path('animal_show', { 'id': animal.id }) }}">show</a>
+                                    </div>
+                                    <h1>Animal de {{ animal.nomproprietaire }}</h1>
+                                    <div class="box-header with-border">
+                                        <div class="user-block">
+                                            <img class="img-circle" src="{{ asset('upload/images/' ~animal.image) }}" alt="User Image" width="500" height="300">
+                                            <span class="username"><a href="#">{{ animal.nom }}.</a></span>
+                                            <span class="description">{% if animal.datedenaissance %}{{ animal.datedenaissance|date('Y-m-d') }}{% endif %}</span>
+                                        </div>
+                                        <!-- /.user-block -->
+
+
+                                        <!-- /.box-tools -->
+                                    </div>
+                                    <div class="box-body" >
+                                        <img src="{{ asset('upload/images/' ~animal.image) }}" width="300" height="350" alt="Photo">
+                                        <p>Description :&nbsp;{{ animal.description }}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'FrontEnd/base.html.twig' %}
+
+{% block body %}
+    <div id="div_chart"></div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <script type="text/javascript">     {{ gc_draw(piechart, 'div_chart') }} </script>
+
+    <h3 class="agileits-title w3title2">Concours list</h3>
+
+
+    {% for concour in concours %}
+
+        <div class="stats services jarallax">
+            <div class="container">
+                <div class="stats-info agileits-w3layouts">
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h5>Titre :</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='157000' data-delay='.5' data-increment="100">{{ concour.titre }}</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </div>
+                        <h5>Type</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='850' data-delay='8' data-increment="1">{{ concour.type }}</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                        <h5>race</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80000' data-delay='.5' data-increment="100">{{ concour.race }}</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h5>Date Debut</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">{% if concour.dateDebut %}{{ concour.dateDebut|date('Y-m-d') }}{% endif %}</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h5>Capacite</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">{{ concour.capacite }}</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h5>Date Fin</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">{% if concour.dateDebut %}{{ concour.dateDebut|date('Y-m-d') }}{% endif %}</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h5>Choisir animal</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1"><select name="animal" id="animal">
+                                {% for animals in animal %}
+                                    <option value="{{ animals.id }}"> {{ animals.nom }}</option>
+
+                                {% endfor %}
+                            </select></div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 stats-grid">
+                        <div class="stats-img w3-agileits">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <h5>Envoyer demande</h5>
+                        <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='269' data-delay='8' data-increment="1">                    <input type="submit" value="Je participe">
+                        </div>
+                    </div>
+                    <input type="hidden" name="concour" id="concour" value="{{ concour.id }}">
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+   <div class="navigation-a text-center ">
+       {{ knp_pagination_render(concours) }}
+
+   </div>
+
+
+{% endblock %}

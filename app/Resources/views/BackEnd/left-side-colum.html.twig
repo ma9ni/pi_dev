@@ -68,9 +68,9 @@
 
 
                     <ul class="treeview-menu">
-                        <li><a href="page1"><i class="fa fa-circle-o"></i> Page1</a></li>
-                        <li><a href="page2"><i class="fa fa-circle-o"></i> Page2</a></li>
-                        <li><a href="page3"><i class="fa fa-circle-o"></i> Page3</a></li>
+                        <li><a href="{{ path('admin_animeaux') }}"><i class="fa fa-circle-o"></i> User List</a></li>
+                        <li><a href="{{ path('admin_sos') }}"><i class="fa fa-circle-o"></i> sos list</a></li>
+                        {#<li><a href="{{ path('admin_user') }}"><i class="fa fa-circle-o"></i> user list</a></li>#}
                         <li><a href="page4"><i class="fa fa-circle-o"></i> Page4</a></li>
                     </ul>
                 </li>
@@ -79,16 +79,15 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-pie-chart"></i>
-                        <span>Angham</span>
+                        <span>Concours</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="page1"><i class="fa fa-circle-o"></i> Page1</a></li>
-                        <li><a href="page2"><i class="fa fa-circle-o"></i> Page2</a></li>
-                        <li><a href="page3"><i class="fa fa-circle-o"></i> Page3</a></li>
-                        <li><a href="page4"><i class="fa fa-circle-o"></i> Page4</a></li>
+                        <li><a href="{{ path('Back_Concours_index') }}"><i class="fa fa-circle-o"></i> liste des Concours</a></li>
+                        <li><a href="{{ path('concours_d') }}"><i class="fa fa-circle-o"></i> les demandes</a></li>
+
                     </ul>
                 </li>
 

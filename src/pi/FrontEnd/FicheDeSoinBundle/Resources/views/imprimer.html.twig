@@ -1,0 +1,72 @@
+
+<style type="text/css">
+    *{  color: #717375; }
+    p{ margin: 0; padding: 4mm 0 0 0; }
+    hr{ background: #717375; height: 1px; border:none; }
+    table{ border-collapse: collapse; width: 100%; color: #717375; font-size: 12pt; font-family: helvetica; line-height: 6mm;}
+    em{font-size: 9pt;}
+    h1{color: #000; margin: 0; padding: 0;}
+    td.right{ text-align: right; }
+    strong {color: #000;}
+    table.border td{ border: 1px solid #CFD1D2; padding: 3mm 1mm; }
+    table.border th,td.black{ background: #000; color: #FFF; font-weight: normal; border: solid 1px #FFF; padding: 1mm 1mm; text-align: left; }
+    td.noborder{ border:none; }
+</style>
+<page backtop="20mm" backleft="10mm" backright="10mm" backbottom="30mm" footer="page; date;">
+    <page_footer>
+        <hr />
+        <h1>Fiche De Soin </h1>
+        <p>Date: {{ "now"|date("m/d/Y") }}</p>
+        <p>Signature et cachet de Veterinaire,précédés de la mention manuscrite "le nom de Veterinaire" </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </page_footer>
+
+    <table style="vertical-align: top; ">
+        <tr>
+            <td style="width:75%;">
+                <strong>Fiche De Dressage </strong><br>
+                Nom Centre De Dressage <br>
+                Adresse: <br>
+
+                <em>Je suis tellement heureux que nous avions<br> par la grâce de Dieu impacté autant<br> de vies en Martinique</em>
+
+
+            </td>
+            <td style="width:25%;"><strong>Best PETS</strong><br>
+                Adresse: ESPRIT
+
+            </td>
+        </tr>
+    </table>
+    <table style="vertical-align: bottom; margin-top: 20mm;">
+        <tr>
+
+            <td style="width:50%;" ><strong><h1>Fiche De Soin N°: N10345</h1> </strong></td>
+            <td style="width:50%;" class="right"> Emis le {{ "now"|date("m/d/Y") }}</td>
+        </tr>
+    </table>
+    <table class="border">
+           <tr>
+            <th style="width:60%;">Nom Animal :</th>
+               <td>{{ anim.nom }}</td>
+           </tr>
+        <tr>
+            <td style="width:60%;">Specialite</td>
+            <td>{{ facture.observation }}</td>
+        </tr>
+        <tr>  <td style="width:60%;">accompagnement</td>
+            <td>{{ facture.medicament }}</td>
+        </tr>
+        <tr>  <td style="width:60%;">Prochain Rendez-Vous</td>
+            <td>{{ facture.prochainRDV|date('Y-m-d') }}</td>
+        </tr>
+          <tr> <td style="width:60%;">Date De Creation </td>
+
+              <td>{{ facture.dateCreation|date('Y-m-d') }}</td>
+          </tr>
+
+
+
+    </table>
+</page>

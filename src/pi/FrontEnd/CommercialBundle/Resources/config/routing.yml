@@ -1,0 +1,59 @@
+commercial_homepage:
+    path:     /commercial
+    defaults: { _controller: CommercialBundle:Default:index }
+
+ajouter_accessoire:
+    path:     /ajouter_accessoire
+    defaults: { _controller: CommercialBundle:Default:ajouterAccessoire }
+
+ajouter_nourriture:
+    path:     /ajouter_nourriture
+    defaults: { _controller: CommercialBundle:Default:ajouterNourriture }
+
+listing_accessoire:
+    path:     /listing_accessoire
+    defaults: { _controller: CommercialBundle:Default:listingAccessoire }
+
+
+listing_nourriture:
+    path:     /listing_nourriture
+    defaults: { _controller: CommercialBundle:Default:listingnourriture }
+
+afficher_accessoire:
+    path:     /afficher_accessoire/{page}
+    defaults: { _controller: CommercialBundle:Default:afficherAccessoire }
+    defaults:
+        page: 1
+    requirements:
+        page: '\d+'
+
+afficher_nourriture:
+    path:     /afficher_nourriture/{page}
+    defaults: { _controller: CommercialBundle:Default:afficherNourriture }
+    defaults:
+        page: 1
+    requirements:
+        page: '\d+'
+
+gererAnnonces:
+    path:     /gestionAnnonce
+    defaults: { _controller: CommercialBundle:Default:GererAnnonces}
+
+delete_Annonce:
+    path:     /delete_Annonce/{id}/{type}
+    defaults: { _controller: CommercialBundle:Default:delete }
+    defaults:
+        type: 1
+        page: 1
+    requirements:
+        page: '\d+'
+
+gerer_annonce:
+    path:     /gerer_accessoire/{type}/{produit}
+    defaults: { _controller: CommercialBundle:Default:GererAnnonce }
+    defaults:
+        type: 1
+        produit: 1
+    requirements:
+        produit: '\d+'
+

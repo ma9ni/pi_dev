@@ -1,0 +1,51 @@
+{% extends 'FrontEnd/base.html.twig' %}
+{% block body %}
+
+    <div class="box-footer">
+        <div class="form-group">
+            <a  type="submit"  class="btn btn-primary"  href="{{ path('sosdisparition_new') }}">Create a new SOS</a>
+        </div>
+    </div>
+    {% for sosDisparition in sosDisparitions %}
+
+        <div class="col-lg-4">
+            <div  style="color: #0a0a0a" class="container">
+                <br><br><br><br>
+                <div class="row">
+                    <div class="box box-widget">
+            <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div><br><br>
+        <div  style="color: #0a0a0a" class="container">
+        <a  type="submit"  class="btn btn-primary"  href="{{ path('sosdisparition_show', { 'id': sosDisparition.id }) }}">show</a>
+        <a type="submit"  class="btn btn-success"  href="{{ path('sos_disparition_envoyer', { 'id': sosDisparition.idMembre.id  }) }}">envoyer mail</a>
+        <div class="row">
+                <div class="box box-widget">
+
+                    <h1>{{ sosDisparition.nomproprietaire }}</h1>
+                    <div class="box-header with-border">
+                        <div class="user-block">
+                            <img class="img-circle" src="" alt="User Image">
+                            <span class="username"><a href="#">{{ sosDisparition.nomproprietaire }}</a></span>
+                            <span class="description">{{ sosDisparition.race }}</span>
+                        </div>
+                        <!-- /.user-block -->
+
+                        <!-- /.box-tools -->
+                    </div>
+                    <div class="box-body">
+                        <img src="{{ asset('upload/images/' ~sosDisparition.image) }}" width="300" height="350"  alt="Photo">
+                        <p>Description :&nbsp;{{ sosDisparition.description }}</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    {% endblock %}

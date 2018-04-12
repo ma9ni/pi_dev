@@ -1,0 +1,46 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+<div>
+    <br><br><br>
+</div>
+<div class="col-md-12">
+    <!-- Horizontal Form -->
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">{{ user.username }}</h3>
+        </div>
+
+
+            <!-- /.box-header -->
+            <div class="box-body">
+                <dl>
+                    <dt>Numero de téléphone</dt>
+                    <dd>{{ user.numTel }}</dd>
+                    <hr>
+                    <dt>Email</dt>
+                    <dd>{{ user.email }}</dd>
+                    <hr>
+                    <dt>Last Login</dt>
+                    <dd>{% if user.lastLogin %}{{ user.lastLogin|date('Y-m-d') }}{% endif %}</dd>
+                    <hr>
+                    <dt>Adresse</dt>
+                    <dd>{{ user.adresse}}</dd>
+                    <hr>
+                    <dt>Gouvernerat</dt>
+                    <dd>{{ user.gouvernorat }}</dd>
+
+                </dl>
+                <hr>
+                        <a type="submit"  class="btn btn-primary" href="{{ path('user_index') }}">Back to the list</a>
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+    </div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,7 @@
+faq_homepage:
+    path:     /
+    defaults: { _controller: FaqBundle:Default:index }
+
+faq_listing_part_client:
+    path:     /faq
+    defaults: { _controller: FaqBundle:Default:listingFAQClient }

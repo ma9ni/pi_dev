@@ -1,5 +1,34 @@
 gregwar_captcha_routing:
      resource: "@GregwarCaptchaBundle/Resources/config/routing/routing.yml"
+
+fiche_de_soin_user:
+    resource: "@FicheDeSoinBundle/Controller/UserController.php"
+    type:     annotation
+
+fiche_de_soin_animal:
+    resource: "@FicheDeSoinBundle/Controller/animalController.php"
+    type:     annotation
+
+animale_sos_disparition:
+    resource: "@AnimaleBundle/Controller/sosDisparitionController.php"
+    type:     annotation
+
+animale:
+    resource: "@AnimaleBundle/Resources/config/routing.yml"
+    prefix:   /
+
+faq_admin:
+    resource: "@faqAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+faq:
+    resource: "@FaqBundle/Resources/config/routing.yml"
+    prefix:   /
+
+commercial:
+    resource: "@CommercialBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dresseur:
     resource: "@DresseurBundle/Resources/config/routing.yml"
 
@@ -37,6 +66,14 @@ adoption:
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+concours_concours:
+    resource: "@ConcoursBundle/Controller/concoursController.php"
+    type:     annotation
+
+concours:
+    resource: "@ConcoursBundle/Resources/config/routing.yml"
+    prefix:   /Concours
 
 admin:
     resource: "@AdminBundle/Resources/config/routing.yml"
@@ -90,6 +127,14 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
+mesanimal:
+    path:     /my_animals
+    defaults: { _controller: FicheDeSoinBundle:animal:index }
+
+
+
+
 ancarebeca_fullcalendar:
     resource: "@FullCalendarBundle/Resources/config/routing.yml"
+
 

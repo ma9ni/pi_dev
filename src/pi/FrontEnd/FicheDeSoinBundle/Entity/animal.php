@@ -3,6 +3,7 @@
 namespace pi\FrontEnd\FicheDeSoinBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraint as Assert ;
 
 /**
  * animal
@@ -27,17 +28,86 @@ class animal
     private $nom;
 
     /**
+     * @var int
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
+     */
+    private $idMembre;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nomproprietaire", type="string", length=255)
+     */
+    private $nomproprietaire;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sexe", type="string", length=255)
+     */
+    private $sexe;
+
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="Datedenaissance", type="date")
+     */
+    private $datedenaissance;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="race", type="string", length=255 )
      */
     private $race;
+    /**
+     * @var int
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
+     */
+    private $idMembre;
 
     /**
+<<<<<<< HEAD
+     * @ORM\Column(name="image", type="string")
+     */
+    public $image;
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+
+=======
      * @var int
      * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
      * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",onDelete="CASCADE")
      */
+>>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
 
 
     private $id_membre;
@@ -48,8 +118,6 @@ class animal
      */
     private $age;
     /**
-     * Get id
-     *
      * @return int
      */
     public function getId()
@@ -58,22 +126,14 @@ class animal
     }
 
     /**
-     * Set nom
-     *
-     * @param string $nom
-     *
-     * @return animal
+     * @param int $id
      */
-    public function setNom($nom)
+    public function setId($id)
     {
-        $this->nom = $nom;
-
-        return $this;
+        $this->id = $id;
     }
 
     /**
-     * Get nom
-     *
      * @return string
      */
     public function getNom()
@@ -82,22 +142,94 @@ class animal
     }
 
     /**
-     * Set race
-     *
-     * @param string $race
-     *
-     * @return animal
+     * @param string $nom
      */
-    public function setRace($race)
+    public function setNom($nom)
     {
-        $this->race = $race;
-
-        return $this;
+        $this->nom = $nom;
     }
 
     /**
-     * Get race
-     *
+     * @return int
+     */
+    public function getIdMembre()
+    {
+        return $this->idMembre;
+    }
+
+    /**
+     * @param int $idMembre
+     */
+    public function setIdMembre($idMembre)
+    {
+        $this->idMembre = $idMembre;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNomproprietaire()
+    {
+        return $this->nomproprietaire;
+    }
+
+    /**
+     * @param string $nomproprietaire
+     */
+    public function setNomproprietaire($nomproprietaire)
+    {
+        $this->nomproprietaire = $nomproprietaire;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * @param string $sexe
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDatedenaissance()
+    {
+        return $this->datedenaissance;
+    }
+
+    /**
+     * @param \DateTime $datedenaissance
+     */
+    public function setDatedenaissance($datedenaissance)
+    {
+        $this->datedenaissance = $datedenaissance;
+    }
+
+    /**
      * @return string
      */
     public function getRace()
@@ -106,6 +238,24 @@ class animal
     }
 
     /**
+<<<<<<< HEAD
+     * @param string $race
+     */
+    public function setRace($race)
+    {
+        $this->race = $race;
+    }
+
+//    /**
+//     * @ORM\Column(type="string")
+//     *
+//     * @Assert\NotBlank(message="Please, upload the image.")
+//     * @Assert\File(mimeTypes={ "application/pdf" })
+//     */
+//    private $image;
+
+
+=======
      * @return int
      */
     public function getIdMembre()
@@ -135,7 +285,10 @@ class animal
     public function setAge($age)
     {
         $this->age = $age;
+        return $this->idMembre;
     }
+
+
     /**
      * Generates the magic method
      *
@@ -146,6 +299,7 @@ class animal
         // to show the id of the Category in the select
         // return $this->id;
     }
+>>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
 
 
 }

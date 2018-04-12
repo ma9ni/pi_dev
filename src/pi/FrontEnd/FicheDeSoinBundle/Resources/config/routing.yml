@@ -2,12 +2,29 @@ fiche_de_soin_homepage:
     path:     /
     defaults: { _controller: FicheDeSoinBundle:Default:index }
 
+user_index:
+    path:     /user/
+    defaults: { _controller: FicheDeSoinBundle:User:index }
+
+user_show:
+    path:     /user/{id}
+    defaults: { _controller: FicheDeSoinBundle:User:show }
+
+
+
+addlk:
+    path:     /animallike/{id}
+    defaults: { _controller: FicheDeSoinBundle:animal:addlike }
 
 
 vetno active:
     path:     /noActiv
     defaults: { _controller: FicheDeSoinBundle:Default:notActived }
 
-rech:
-    path:     /find
-    defaults: { _controller: VeterinaireBundle:Default:recherchePArnom }
+#rech:
+#    path:     /find
+#    defaults: { _controller: VeterinaireBundle:Default:recherchePArnom }
+
+imprimerfiche de Soin:
+    path:     /imprimerf_s/{id}
+    defaults: { _controller: FicheDeSoinBundle:f_soin:imprimer }

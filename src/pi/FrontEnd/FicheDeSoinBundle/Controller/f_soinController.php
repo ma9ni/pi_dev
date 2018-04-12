@@ -4,6 +4,7 @@ namespace pi\FrontEnd\FicheDeSoinBundle\Controller;
 
 use pi\FrontEnd\FicheDeSoinBundle\Entity\f_soin;
 use pi\FrontEnd\FicheDeSoinBundle\Entity\User;
+use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -52,11 +53,14 @@ class f_soinController extends Controller
 
     }
 
+
     /**
      * Creates a new f_soin entity.
      *
      * @Route("/new", name="f_soin_new")
      * @Method({"GET", "POST"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function newAction(Request $request)
     {
@@ -79,10 +83,13 @@ class f_soinController extends Controller
             'form' => $form->createView(),
         ));
     }
+
     /**
      * Finds and displays a f_soin entity.
      * @Route("/show/{id}", name="f_soin_show")
      * @Method("GET")
+     * @param f_soin $f_soin
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function showAction(f_soin $f_soin)
     {
@@ -92,10 +99,14 @@ class f_soinController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
     /**
      * Displays a form to edit an existing f_soin entity.
      * @Route("/edit/{id}", name="f_soin_edit")
      * @Method({"GET", "POST"})
+     * @param Request $request
+     * @param f_soin $f_soin
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function editAction(Request $request, f_soin $f_soin)
     {
@@ -127,6 +138,50 @@ class f_soinController extends Controller
             $em->flush();
         return $this->redirectToRoute('f_soin_index');
     }
+
+    public function imprimerAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $f_dressages = $em->getRepository('FicheDeSoinBundle:f_soin')
+            ->find($id);
+        $idd=$f_dressages->getIdAnimal();
+
+        $rai=$em->getRepository('FicheDeSoinBundle:animal')->find($idd);
+        if (!$f_dressages) {
+            return $this->redirectToRoute('f_soin_index');
+        }
+
+        $html = $this->renderView('@FicheDeSoin/imprimer.html.twig',array(
+            'facture'=>$f_dressages,
+            'anim'=>$rai
+
+        ));
+
+        try{
+            $pdf = new Html2Pdf('P','A4','fr');
+            $pdf->pdf->SetAuthor('SoukElMedina');
+            $pdf->pdf->SetTitle('Facture ');
+            $pdf->pdf->SetSubject('Facture SoukElMedina');
+            $pdf->pdf->SetKeywords('facture,soukelmedina');
+            $pdf->pdf->SetDisplayMode('real');
+            $pdf->writeHTML($html);
+            $pdf->Output('Fiche De Soin.pdf');
+
+
+//require 'phpmailer.php';
+
+        }catch(\HTML2PDF_exception $e){
+            die($e);
+        }
+
+        $response = new Response();
+        $response->headers->set('Content-type' , 'application/pdf');
+
+        return $response;
+
+    }
+
     /**
      * Creates a form to delete a f_soin entity.
      *

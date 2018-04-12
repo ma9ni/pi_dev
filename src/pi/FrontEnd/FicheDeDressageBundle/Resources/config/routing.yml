@@ -28,3 +28,7 @@ front_end_dress:
 front_end_show_dres:
     path:     /dresseur/{id}
     defaults: { _controller: FicheDeDressageBundle:Default:showDress }
+
+imprimer:
+    path:     /imprimer/{id}
+    defaults: { _controller: FicheDeDressageBundle:f_dressage:imprimer }

@@ -1,0 +1,14 @@
+
+my_sos:
+    path:     /my_sos
+    defaults: { _controller: AnimaleBundle:sosDisparition:index2 }
+
+
+
+
+
+
+
+
+
+
