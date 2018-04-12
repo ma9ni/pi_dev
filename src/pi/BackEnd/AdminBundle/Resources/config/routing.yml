@@ -10,7 +10,6 @@ index:
     path:     /home
     defaults: { _controller: AdminBundle:Default:index }
 
-<<<<<<< HEAD
 admin_animeaux:
     path:     /useranimeaux
     defaults: { _controller: AdminBundle:AdminGateau:animal }
@@ -37,10 +36,6 @@ admin_user_delete:
     path:     /users/delete/{id}
     defaults: { _controller: AdminBundle:AdminGateau:deleteUser }
 
-
-
-
-=======
 confirmer:
     path:     /conf/{id}
     defaults: { _controller: AdminBundle:listVet_Dress_Admin:ConfirmerUser }
@@ -69,8 +64,6 @@ Back_concours_delete:
 concours_d:
     path:     /demande
     defaults: { _controller: AdminBundle:concours:houssem }
-
-
 
 concours_edit_participant:
     path:     /{id}/accepter
