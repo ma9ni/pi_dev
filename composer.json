@@ -21,12 +21,10 @@
     },
     "require": {
         "php": ">=5.5.9",
-<<<<<<< HEAD
         "ancarebeca/full-calendar-bundle": "^5.0",
         "blackknight467/star-rating-bundle": "2.*",
-=======
+
         "cmen/google-charts-bundle": "^3.0",
->>>>>>> concoursBundle
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "friendsofsymfony/jsrouting-bundle": "^2.2",
