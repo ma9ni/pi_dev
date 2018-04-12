@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dresseur:
     resource: "@DresseurBundle/Resources/config/routing.yml"
 
@@ -35,6 +36,15 @@ adoption:
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+=======
+concours_concours:
+    resource: "@ConcoursBundle/Controller/concoursController.php"
+    type:     annotation
+
+concours:
+    resource: "@ConcoursBundle/Resources/config/routing.yml"
+    prefix:   /Concours
+>>>>>>> concoursBundle
 
 admin:
     resource: "@AdminBundle/Resources/config/routing.yml"

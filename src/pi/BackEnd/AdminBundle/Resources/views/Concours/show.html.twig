@@ -1,0 +1,26 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+<h1>concours</h1>
+<ul class="list-group">
+    <li class="list-group-item">Id :</li>
+    <li class="list-group-item">Titre : {{ concour.titre }}</li>
+    <li class="list-group-item">Type : {{ concour.type }}</li>
+    <li class="list-group-item">Race : {{ concour.race }}</li>
+    <li class="list-group-item">Capacite : {{ concour.capacite }}</li>
+    <li class="list-group-item">Datedebut : {% if concour.dateDebut %}{{ concour.dateDebut|date('Y-m-d') }}{% endif %}</li>
+    <li class="list-group-item">Datefin : {% if concour.dateFin %}{{ concour.dateFin|date('Y-m-d') }}{% endif %}</li>
+</ul>
+
+
+
+
+<div class="form-group">
+            <a  type="submit"  class=" btn-primary btn-lg btn-block text-center" href="{{ path('Back_Concours_index') }}">Back to the list</a>
+</div>
+    <div class="form-group">
+            <a  type="submit"  class=" btn-primary btn-lg btn-block text-center" href="{{ path('Back_concours_edit', { 'id': concour.id }) }}">Edit</a>
+    </div>
+
+
+{% endblock %}

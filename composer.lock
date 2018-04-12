@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "b8ed3622b773574c46437fb39c96f9e4",
 =======
     "content-hash": "99254994f1564dcaaaeadce39908039e",
@@ -30,11 +31,40 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^2.2"
+=======
+    "content-hash": "bc24a3ab7f9d0d8500370350b5dc961c",
+    "packages": [
+        {
+            "name": "cmen/google-charts-bundle",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cmen/CMENGoogleChartsBundle.git",
+                "reference": "df3e48f2e2423329105af4b9b8070e34c8fa4d6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cmen/CMENGoogleChartsBundle/zipball/df3e48f2e2423329105af4b9b8070e34c8fa4d6f",
+                "reference": "df3e48f2e2423329105af4b9b8070e34c8fa4d6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "symfony/framework-bundle": "^2.7 || ^3.0 || ^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.9",
+                "phpunit/phpunit": "^5.7"
+>>>>>>> concoursBundle
             },
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "AncaRebeca\\FullCalendarBundle\\": ""
+=======
+                    "CMEN\\GoogleChartsBundle\\": ""
+>>>>>>> concoursBundle
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,6 +73,7 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
                     "name": "Rebeca Mora Anca",
                     "email": "anca.rebeca@gmail.com",
                     "role": "Developer"
@@ -109,6 +140,21 @@
                 "symfony"
             ],
             "time": "2016-04-12T01:57:35+00:00"
+=======
+                    "name": "Christophe Meneses"
+                }
+            ],
+            "description": "This Bundle provides a Twig extension and PHP objects to display Google charts in your Symfony application.",
+            "keywords": [
+                "chart",
+                "charts",
+                "google",
+                "graph",
+                "graphs",
+                "map"
+            ],
+            "time": "2018-01-16T12:51:23+00:00"
+>>>>>>> concoursBundle
         },
         {
             "name": "composer/ca-bundle",
@@ -1895,6 +1941,7 @@
             ],
             "description": "A security checker for your composer.lock",
             "time": "2018-02-28T22:10:01+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "spipu/html2pdf",
@@ -1948,6 +1995,8 @@
                 "pdf"
             ],
             "time": "2018-01-23T13:32:32+00:00"
+=======
+>>>>>>> concoursBundle
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2789,6 +2838,7 @@
                 "templating"
             ],
             "time": "2018-03-20T04:25:58+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -2829,6 +2879,8 @@
             ],
             "description": "JSONP callback validator.",
             "time": "2014-01-20T22:35:06+00:00"
+=======
+>>>>>>> concoursBundle
         }
     ],
     "packages-dev": [
@@ -2888,6 +2940,7 @@
         },
         {
             "name": "symfony/phpunit-bridge",
+<<<<<<< HEAD
             "version": "v3.4.8",
             "source": {
                 "type": "git",
@@ -2898,6 +2951,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/48c669ec1a2b0425d4a82c7ad4bce2f5b947b95e",
                 "reference": "48c669ec1a2b0425d4a82c7ad4bce2f5b947b95e",
+=======
+            "version": "v3.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/phpunit-bridge.git",
+                "reference": "32b06d2b0babf3216e55acfce42249321a304f03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/32b06d2b0babf3216e55acfce42249321a304f03",
+                "reference": "32b06d2b0babf3216e55acfce42249321a304f03",
+>>>>>>> concoursBundle
                 "shasum": ""
             },
             "require": {
@@ -2950,7 +3015,11 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2018-04-04T15:02:59+00:00"
+=======
+            "time": "2018-02-14T23:24:28+00:00"
+>>>>>>> concoursBundle
         }
     ],
     "aliases": [],
