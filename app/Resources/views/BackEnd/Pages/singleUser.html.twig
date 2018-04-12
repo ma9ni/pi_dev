@@ -1,0 +1,52 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+
+    <div class="container">
+        <h1>User </h1>
+
+        <table>
+            <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ us }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ user. }}</td>
+            </tr>
+            <tr>
+                <th>Nomproprietaire</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Sexe</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Datedenaissance</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Race</th>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ul>
+            <li>
+                <a href="{{ path('animal_index') }}">Back to the list</a>
+            </li>
+            <li>
+                <a href="{{ path('animal_edit', { 'id': animal.id }) }}">Edit</a>
+            </li>
+
+        </ul>
+    </div>
+{% endblock %}
+

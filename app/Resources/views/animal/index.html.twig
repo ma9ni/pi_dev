@@ -1,0 +1,64 @@
+{% extends 'FrontEnd/base.html.twig' %}
+
+{% block body %}
+    <h1>Animals list</h1>
+
+    {#<div class="page-search">#}
+        {#<form class="search-form">#}
+            {#<div class="form-group">#}
+                {#<label for="search_content" class="screen-reader-text">Search Content!</label>#}
+                {#<input id="search_content" type="text" class="form-control"#}
+                       {#placeholder="Search what you want to find...">#}
+            {#</div>#}
+            {#<button type="submit" class="btn btn-primary" value=""><i class="icon ion-ios-search-strong"></i>#}
+            {#</button>#}
+        {#</form>#}
+    {#</div>#}
+
+
+<table class=" table table table-hover table-dark">
+    <thead class="thead-dark">
+
+
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Nom proprietaire</th>
+                <th>Description</th>
+                <th>Sexe</th>
+                <th>Date de naissance</th>
+                <th>Race</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for animal in animals %}
+            <tr>
+                <td><a href="{{ path('animal_show', { 'id': animal.id }) }}">{{ animal.id }}</a></td>
+                <td>{{ animal.nom }}</td>
+                <td>{{ animal.nomproprietaire }}</td>
+                <td>{{ animal.description }}</td>
+                <td>{{ animal.sexe }}</td>
+                <td>{% if animal.datedenaissance %}{{ animal.datedenaissance|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ animal.race }}</td>
+                <td>
+                    <a type="submit"  class="btn btn-primary"  href="{{ path('animal_show', { 'id': animal.id }) }}">show</a>
+                    <a type="submit"  class="btn btn-success" href="{{ path('animal_edit', { 'id': animal.id }) }}">edit</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="box-footer">
+        <div class="form-group">
+            <a type="submit"  class="btn btn-primary" href="{{ path('animal_new') }}">Create a new animal</a>
+            <a  type="submit"  class="btn btn-danger"  href="{{ path('sosdisparition_new') }}">Create  SOS</a>
+
+
+     </div>
+    </div>
+
+
+
+{% endblock %}

@@ -4,7 +4,78 @@
     <bookmark url="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/animalController.php" description="$queryBuilder =$em-&gt;getRepository('FicheDeSoinBund..." line="39" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="" />
+    <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_02_04_18_22_56_c.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_02_04_18_22_56_s.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/salah.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/BackEnd/Pages/listUser.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/BackEnd/Pages/singleUser.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/animal/edit.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/animal/index.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/animal/indexall.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/animal/new.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/animal/show.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/EnvoyerMail.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/edit.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/index.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/mesSOS.htm.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/message.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/messageEnvoyer.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/new.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sosdisparition/show.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/composer.phar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/AdminController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/AdminGateauController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/Default/ListSosDisparition.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/Default/ListUsers.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/Default/listAnimeaux.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Tests/Controller/AdminControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Tests/Controller/AdminGateauControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Controller/sosDisparitionController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Entity/sosDisparition.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Form/sosDisparitionType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Repository/sosDisparitionRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Resources/views/Default/animales.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Resources/views/Default/sosDisparition.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Tests/Controller/animalControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/AnimaleBundle/Tests/Controller/sosDisparitionControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/UserController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/animalController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/feedback.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Form/animalType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/feedbackRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Tests/Controller/UserControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Tests/Controller/animalControllerTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/images/698956-icon-111-search-128.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/images/user1-128x128.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/06030138251731d33c2935e8c65e32b9.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/0e16eb0ac0f768f9c4116c4eead2b63a.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/3fbe90c90f9373b25d8b38b2868e847c.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/471d7e0cbc39b1a5f24e07c3b846763a.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/475cf048e50566ce57fc2f9ceebd79a5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/4d7b4cb9728a5ca8525dc71119b22fee.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/5456a98bb2778a853cc32aebd0e63059.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/623d90b95d22d9c2e3a28512070c230e.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/6c5bfef182590a00a586f21a192d42c8.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/6f86e3d781de0ad9c906512885177414.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/7e3ad24ef179501b20093fc0d00c83f9.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/844c4600f1e918f51e9d55834bc90d2c.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/95e8f1a51e5fd81590287f1656051966.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/9b9a2a91338981e0f3a2877b005e4b78.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/a628de941b86229ec025b3f812dc20cc.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/b7af4022f978b41f62582e11e5f4b9e3.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/bb36e16de73d7b1bd7addf7b1f008f6e.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/c7ead7bef28c069eb68282b8f301a4be.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/d260419cd1987798cd52d855177cc2da.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/dc76d9744c8d7636bf5e2cd55a71a53a.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/e8035d7f495b2736e386da2c5a44ea7a.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/e9d7204734bb0dd3c4a894a0a032f0bf.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/upload/images/f515c98a463c9f8a2511af99f1d7d470.jpeg" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +183,7 @@
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -319,7 +390,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -380,7 +451,14 @@
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -472,15 +550,15 @@
       <workItem from="1523116727027" duration="41303000" />
       <workItem from="1523309457443" duration="19297000" />
       <workItem from="1523458931333" duration="25967000" />
-      <workItem from="1523497016360" duration="64000" />
+      <workItem from="1523497016360" duration="229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327652000" />
+    <option name="totallyTimeSpent" value="327817000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -892,7 +970,7 @@
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>

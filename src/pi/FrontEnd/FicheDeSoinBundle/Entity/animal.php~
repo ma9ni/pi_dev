@@ -1,0 +1,217 @@
+<?php
+
+namespace pi\FrontEnd\FicheDeSoinBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraint as Assert ;
+
+/**
+ * animal
+ *
+ * @ORM\Table(name="animal")
+ * @ORM\Entity(repositoryClass="pi\FrontEnd\FicheDeSoinBundle\Repository\animalRepository")
+ */
+class animal
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @return int
+     */
+    public function getIdMembre()
+    {
+        return $this->idMembre;
+    }
+
+    /**
+     * @param int $idMembre
+     */
+    public function setIdMembre($idMembre)
+    {
+        $this->idMembre = $idMembre;
+    }
+
+
+    /**
+     * @var int
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
+     */
+    private $idMembre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nomproprietaire", type="string", length=255)
+     */
+    private $nomproprietaire;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sexe", type="string", length=255)
+     */
+    private $sexe;
+
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="Datedenaissance", type="date")
+     */
+    private $datedenaissance;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="race", type="string", length=255)
+     */
+    private $race;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return animal
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set race
+     *
+     * @param string $race
+     *
+     * @return animal
+     */
+    public function setRace($race)
+    {
+        $this->race = $race;
+
+        return $this;
+    }
+
+    /**
+     * Get race
+     *
+     * @return string
+     */
+    public function getRace()
+    {
+        return $this->race;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNomProprietaire()
+    {
+        return $this->nomproprietaire;
+    }
+
+    /**
+     * @param string $nomproprietaire
+     */
+    public function setNomProprietaire($nomproprietaire)
+    {
+        $this->nomproprietaire = $nomproprietaire;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * @param string $sexe
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateDeNaissance()
+    {
+        return $this->datedenaissance;
+    }
+
+    /**
+     * @param \DateTime $datedenaissance
+     */
+    public function setDateDeNaissance($datedenaissance)
+    {
+        $this->datedenaissance = $datedenaissance;
+    }
+
+
+}

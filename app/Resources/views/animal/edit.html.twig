@@ -1,0 +1,80 @@
+{% extends 'FrontEnd/base.html.twig' %}
+
+{% block body %}
+<br><br><br>
+<div class="col-md-6">
+    <!-- Horizontal Form -->
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">Modifier</h3>
+        </div>
+
+        <div class="row">
+
+
+            {{ form_start(edit_form , {'attr': {'class': 'form'}}) }}
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="observation">Nom</label>
+                    {{ form_widget(edit_form.nom, {'attr': {'class': 'form-control','placeholder':'Nom','name':'Nom'}}) }}
+                </div>
+
+
+                <div class="form-group">
+                    {{ form_label(edit_form.nomproprietaire ) }}
+                    {{ form_widget(edit_form.nomproprietaire , {'attr': {'class':'form-control' ,'placeholder':'Nom Proprietaite','name':'Nom Proprietaite'}})  }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(edit_form.description) }}
+                    {{ form_widget(edit_form.description , {'attr': {'class':'form-control' ,'placeholder':'Description','name':'Description'}})  }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(edit_form.sexe ) }}
+                    {{ form_widget(edit_form.sexe , {'attr': {'class':'form-control' ,'placeholder':'Sexe','name':'Sexe'}})  }}
+                </div>
+
+
+
+
+
+                <div class="form-group date">
+                    {{ form_label(edit_form.datedenaissance ) }}
+                    {{ form_widget(edit_form.datedenaissance ,{'attr': {'class':'form-control datepicker'}}) }}
+
+                </div>
+
+                <div class="form-group">
+                    {{ form_label(edit_form.race ) }}
+                    {{ form_widget(edit_form.race , {'attr': {'class':'form-control' ,'placeholder':'Race','name':'Race'}})  }}
+                </div>
+
+
+
+                <div class="box-footer">
+                    <div class="form-group">
+                        <input type="submit" value="Edit" class="btn btn-success"/>
+                    </div>
+                </div>
+
+
+
+    {{ form_end(edit_form) }}
+                <ul>
+                    <li>
+                        <a href="{{ path('animal_index') }}">Back to the list</a>
+                    </li>
+                    <li>
+                        {{ form_start(delete_form) }}
+                        <input type="submit" value="Delete">
+                        {{ form_end(delete_form) }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

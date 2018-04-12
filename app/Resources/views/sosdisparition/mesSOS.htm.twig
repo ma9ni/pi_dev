@@ -1,0 +1,61 @@
+{% extends 'FrontEnd/base.html.twig' %}
+
+{% block body %}
+    <h1>SOS list</h1>
+
+    {#<div class="page-search">#}
+    {#<form class="search-form">#}
+    {#<div class="form-group">#}
+    {#<label for="search_content" class="screen-reader-text">Search Content!</label>#}
+    {#<input id="search_content" type="text" class="form-control"#}
+    {#placeholder="Search what you want to find...">#}
+    {#</div>#}
+    {#<button type="submit" class="btn btn-primary" value=""><i class="icon ion-ios-search-strong"></i>#}
+    {#</button>#}
+    {#</form>#}
+    {#</div>#}
+
+
+    <table class=" table table table-hover table-dark">
+        <thead class="thead-dark">
+
+
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Date </th>
+            <th>Race</th>
+            <th>Numero du telephone</th>
+            <th>Lieu</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for sosDisparition in sosDisparitions %}
+            <tr>
+                <td><a href="{{ path('animal_show', { 'id': sosDisparition.id }) }}">{{ sosDisparition.id }}</a></td>
+                <td>{{ sosDisparition.description }}</td>
+                <td>{% if sosDisparition.date %}{{ sosDisparition.date|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ sosDisparition.race }}</td>
+                <td>{{ sosDisparition.numtel }}</td>
+                <td>{{ sosDisparition.lieu }}</td>
+
+
+                <td>
+                    <a type="submit"  class="btn btn-primary"  href="{{ path('sosdisparition_show', { 'id': sosDisparition.id }) }}">show</a>
+                    <a type="submit"  class="btn btn-success" href="{{ path('sos_disparition_edit', { 'id': sosDisparition.id }) }}">edit</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="box-footer">
+        <div class="form-group">
+            <a  type="submit"  class="btn btn-danger"  href="{{ path('sosdisparition_new') }}">Create  SOS</a>
+        </div>
+    </div>
+
+
+
+{% endblock %}

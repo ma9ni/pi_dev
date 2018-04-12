@@ -1,0 +1,81 @@
+{% extends 'FrontEnd/base.html.twig' %}
+{% block body %}
+
+
+
+    <div class="container">
+        <h1>Sos de {{ sosDisparition.nomproprietaire }}</h1>
+        <div class="row">
+            <div class="col-md-10">
+                <!-- Box Comment -->
+                <div class="box box-widget">
+                    <div class="box-header with-border">
+                        <div class="user-block">
+                            <img class="img-circle" src="{{ asset('upload/images/' ~sosDisparition.image) }}" alt="User Image">
+                            <span class="username"><a href="#">{{ sosDisparition.adresse }}</a></span>
+                            <span class="description">{% if sosDisparition.date %}{{ sosDisparition.date|date('Y-m-d') }}{% endif %}</span>
+                        </div>
+                        <!-- /.user-block -->
+                        <div class="box-tools">
+                            <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read">
+                                <i class="fa fa-circle-o"></i></button>
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                        <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <img class="img-responsive pad" src="{{ asset('upload/images/' ~sosDisparition.image) }}" alt="Photo">
+
+                        <p>Description :
+                            &nbsp;
+                            {{ sosDisparition.description }}</p>
+                        <span class="pull-right text-muted">{{ sosDisparition.numTel }}</span>
+                    </div>
+                    <!-- /.box-body -->
+
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+
+                <!-- /.col -->
+                <ul>
+                    <li>
+                        <a href="{{ path('sosdisparition_index') }}">Back to the list</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('sos_disparition_edit', { 'id': sosDisparition.id }) }}">Edit</a>
+                    </li>
+                    <li>
+                        {{ form_start(delete_form) }}
+                        <input type="submit" value="Delete">
+
+                    </li>
+                </ul>
+
+                <a class="btn btn-primary" href="{{ path('sos_disparition_edit', { 'id': sosDisparition.id }) }}" role="button">Edit</a>
+                {{ form_end(delete_form) }}
+                <a class="btn btn-primary"   type="submit" value="Delete">Delete</a>
+                {{ form_end(delete_form) }}
+                <a class="btn btn-primary" href="{{ path('sosdisparition_index') }}" role="button">Back to the list</a>
+                <a class="btn btn-primary" href="{{ path('my_sos') }}" role="button">Back to my list</a>
+
+            </div>
+
+            <div class="agile_map">
+                <iframe
+                        width="1000"
+                        height="400"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAfPZSw1aAS_A1-7J4zc88QnA7mhfVyEnI&q={{ sosDisparition.adresse }}" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

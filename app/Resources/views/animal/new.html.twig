@@ -1,0 +1,76 @@
+{% extends 'FrontEnd/base.html.twig' %}
+{% block stylesheets %}
+    <style>
+        body{background: url("https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Factu.2Fnews-actu.2Fjob-de-reve-devenez-calineur-pour-chats-39705.2F14560357-1-fre-FR.2Fjob-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.2Ejpg/748x372/quality/80/crop-from/center/job-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.jpeg")
+        no-repeat;}
+    </style>
+{% endblock %}
+{% block body %}
+    <br><br><br>
+<div class="col-md-6 .col-md-offset-3">
+    <!-- Horizontal Form -->
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h2 class="box-title" style="color:#0b3e6f "><u>Create</u></h2>
+
+        </div>
+        <br>
+        <br>
+    <div class="row ">
+
+
+    {{ form_start(form, {'attr': {'class': 'form'}}) }}
+        <div class="col-md-12">
+        <div class="form-group">
+            <label for="observation">Nom</label>
+            {{ form_widget(form.nom, {'attr': {'class': 'form-control','placeholder':'Nom','name':'Nom'}}) }}
+        </div>
+
+
+        <div class="form-group">
+            {{ form_label(form.nomproprietaire ) }}
+            {{ form_widget(form.nomproprietaire , {'attr': {'class':'form-control' ,'placeholder':'Nom Proprietaite','name':'Nom Proprietaite'}})  }}
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.description) }}
+            {{ form_widget(form.description , {'attr': {'class':'form-control' ,'placeholder':'Description','name':'Description'}})  }}
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.sexe ) }}
+            {{ form_widget(form.sexe , {'attr': {'class':'form-control' ,'placeholder':'Sexe','name':'Sexe'}})  }}
+        </div>
+
+
+
+
+
+        <div class="form-group date">
+            {{ form_label(form.datedenaissance ) }}
+            {{ form_widget(form.datedenaissance ,{'attr': {'class':'form-control datepicker'}}) }}
+
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.race ) }}
+            {{ form_widget(form.race , {'attr': {'class':'form-control' ,'placeholder':'Race','name':'Race'}})  }}
+        </div>
+
+            <div class="form-group">
+                {{ form_label(form.image ) }}
+                {{ form_widget(form.image , {'attr': {'class':'form-control' ,'placeholder':'image','name':'image'}})  }}
+            </div>
+
+       <div class="box-footer">
+            <div class="form-group">
+              <input type="submit" value="Create" class="btn btn-success"/>
+                <a class="btn btn-primary" href="{{ path('animal_index') }}">Back to the list</a>
+            </div>
+       </div>
+        {{ form_end(form) }}
+    </div>
+    </div>
+</div>
+</div>
+{% endblock %}
