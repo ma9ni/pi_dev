@@ -8,6 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/pi.iml" afterPath="$PROJECT_DIR$/.idea/pi.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
       <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php" />
@@ -55,7 +59,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="9517a6b7-a909-4337-8082-4899f2bbe957" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="8ea7c978-a544-4303-8ac6-67244d120c82" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
@@ -75,14 +79,19 @@
     <select />
   </component>
   <component name="FileEditorManager">
+
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
               <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-              <folding />
 
+            </state> <folding />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
       <file leaf-file-name="concoursController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/CouncoursBundle/Controller/concoursController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,7 +112,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-716">
               <caret line="2834" column="4" lean-forward="false" selection-start-line="2834" selection-start-column="4" selection-end-line="2834" selection-end-column="4" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/CouncoursBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,7 +132,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/header.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,7 +152,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="27" column="131" lean-forward="false" selection-start-line="27" selection-start-column="131" selection-end-line="27" selection-end-column="131" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="left-side-colum.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,7 +172,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
               <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -171,7 +192,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
               <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/concours/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -188,7 +212,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2448">
               <caret line="144" column="53" lean-forward="false" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="stat.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/CouncoursBundle/Resources/views/stat.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -205,7 +232,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
               <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="41" />
-              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <folding />
 
       <file leaf-file-name="contact.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/contact.html.twig">
@@ -225,7 +256,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <leaf>
       <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -242,6 +277,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
 
       <file leaf-file-name="news-letter.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/news-letter.html.twig">
@@ -255,6 +294,8 @@
         </entry>
       </file>
     </leaf>
+
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -355,7 +396,9 @@
       <command text="s doctrine:schema:update" />
       <command text="c clear-cache" />
       <command text="c update " />
+      <command text="s doctrine:database:create" />
       <command text="c require  spipu/html2pdf" />
+
 
       <command text="s doctrine:schema:update --dump-sql " />
       <command text="s generate:bundle" />
@@ -367,6 +410,11 @@
       <command text="s debug:router " />
       <command text="s swiftmailer:email:send" />
 
+=======
+      <command text="s generate:bundle" />
+      <command text="s doctrine:schema:update -f " />
+      <command text="s debug:router " />
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -384,6 +432,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
 
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig" />
@@ -412,7 +461,6 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/animal.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/base.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Form/Rating2Type.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Repository/RatingRepository.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php" />
@@ -427,7 +475,6 @@
         <option value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/CalenderController.php" />
         <option value="$PROJECT_DIR$/web/FrontEnd/js/ficheDeDressage.js" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Listener/LoadDataListener.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig" />
@@ -436,6 +483,7 @@
         <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Form/f_dressageType.php" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/show_Dres.html.twig" />
@@ -457,6 +505,7 @@
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/new.html.twig" />
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig" />
+
 
         <option value="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/f_soin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
@@ -498,6 +547,10 @@
         <option value="$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
 
+=======
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
       </list>
     </option>
   </component>
@@ -610,12 +663,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+
+=======
+      <pane id="Scope" />
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
@@ -648,10 +706,20 @@
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
             </path>
             <path>
               <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+=======
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pi_dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pi_dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
 
@@ -664,6 +732,7 @@
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="BackEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+
             <path>
               <item name="pi" type="b2602c69:ProjectViewProjectNode" />
               <item name="pi" type="2a2b976b:PhpTreeStructureProvider$1" />
@@ -849,11 +918,15 @@
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
 
             </path>
+=======
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
           </expand>
           <select />
         </subPane>
       </pane>
+
       <pane id="Scope" />
+
       <pane id="Scratches" />
     </panes>
   </component>
@@ -861,23 +934,15 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;sh&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;app&#9;FILE&#9;file://C:/wamp64/www/pi/app/AppKernel.php&#10;sho&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;f_d&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php&#10;f_s&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;us&#9;null&#9;null&#10;inde&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Resources/views/Default/index.html.twig&#10;f_dr&#9;null&#9;null&#10;ra&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;dr&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;dre&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig&#10;vet&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;show&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/VeterinaireBundle/Resources/views/showVet.html.twig&#10;fs&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;use&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;com&#9;FILE&#9;file://C:/wamp64/www/pi/composer.json&#10;rat&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/DresseurBundle/Entity/Rating.php&#10;ind&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;index&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/index.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\pi\src\pi\FrontEnd\FicheDeSoinBundle\Resources\views" />
-      <recent name="C:\wamp64\www\pi\src\pi\FrontEnd\DresseurBundle\Form" />
-      <recent name="C:\wamp64\www\pi\src\AppBundle\Form" />
-      <recent name="C:\wamp64\www\pi\web\FrontEnd\js" />
-      <recent name="C:\wamp64\www\pi\web\FrontEnd\css" />
-      <recent name="C:\wamp64\www\pi\app\Resources\views\BackEnd" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\pi\src\pi\FrontEnd\FicheDeDressageBundle\Resources\views" />
       <recent name="C:\wamp64\www\pi\src\pi\FrontEnd\VeterinaireBundle\Resources\views" />
-
+    </key>
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/Default" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp64/www/pi/app/Resources/views/header.html.twig&#10;new&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig&#10;work&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;us&#9;FILE&#9;file://C:/wamp64/www/pi/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php&#10;sec&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;par&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/parameters.yml&#10;se&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/security.yml&#10;works&#9;FILE&#9;file://C:/wamp64/www/pi/.idea/workspace.xml&#10;fosuser&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/wamp64/www/pi/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/Bundle/FormLoginBundle/Resources/views/Login/login.html.twig&#10;rout&#9;FILE&#9;file://C:/wamp64/www/pi/app/config/routing.yml" />
@@ -904,6 +969,7 @@
       <recent name="C:\wamp64\www\pi\src\AppBundle\Repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+
       <recent name="C:\wamp64\www\pi\pi_dev" />
       <recent name="C:\wamp64\www\pi\pi_dev\src\pi\FrontEnd\AdoptionBundle\Resources\views\Front" />
       <recent name="C:\wamp64\www\pi\app\Resources\views\BackEnd" />
@@ -911,6 +977,13 @@
       <recent name="C:\wamp64\www\pi\src\AppBundle\FosUser" />
 
 
+=======
+      <recent name="C:\xampp\htdocs\pi_dev\src\pi\BackEnd\faqAdminBundle" />
+      <recent name="C:\xampp\htdocs\pi_dev\web\FrontEnd\css" />
+      <recent name="C:\xampp\htdocs\pi_dev\web\FrontEnd\js" />
+      <recent name="C:\xampp\htdocs\pi_dev\src\pi\FrontEnd\FaqBundle" />
+      <recent name="C:\xampp\htdocs\pi_dev\web" />
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
     </key>
   </component>
   <component name="RunDashboard">
@@ -974,8 +1047,10 @@
       <workItem from="1523286104494" duration="24900000" />
       <workItem from="1523375359889" duration="597000" />
       <workItem from="1523384237814" duration="1553000" />
+      <workItem from="1523487848539" duration="2059000" />
       <workItem from="1523476297422" duration="705000" />
       <workItem from="1523479365682" duration="129000" />
+
 
       <workItem from="1522687992582" duration="2556000" />
       <workItem from="1522708006346" duration="4687000" />
@@ -990,11 +1065,14 @@
       <workItem from="1523442237774" duration="4020000" />
       <workItem from="1523462655954" duration="14915000" />
 
+=======
+      <workItem from="1523490677945" duration="1935000" />
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311727000" />
+    <option name="totallyTimeSpent" value="313662000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1013,24 +1091,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+
     <editor active="true" />
+=======
+>>>>>>> f0ec959670c214f6477dfe3f61abe69e3edbb041
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3898858" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32200646" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3213703" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38996765" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
 
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1103,152 +1184,81 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Entity/f_dressage.php">
+    <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+        <state relative-caret-position="48178">
+          <caret line="2834" column="4" lean-forward="false" selection-start-line="2834" selection-start-column="4" selection-end-line="2834" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/banner.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Resources/views/veterinaires.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="459">
+          <caret line="27" column="131" lean-forward="false" selection-start-line="27" selection-start-column="131" selection-end-line="27" selection-end-column="131" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Form/f_dressageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/RatingType.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle/blackknight467/StarRatingBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/CalenderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Repository/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="46" column="59" lean-forward="false" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/views/veterinaire_Admin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="128" column="5" lean-forward="false" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/VeterinaireBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="561">
+          <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="88" column="5" lean-forward="false" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+        <state relative-caret-position="527">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/rating.js">
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="144" column="53" lean-forward="false" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/lsb.min.js">
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="34" column="119" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="119" />
+        <state relative-caret-position="272">
+          <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/FrontEnd/js/ficheDeDressage.js" />
-    <entry file="file://$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/pi_web/app/config/config.yml" />
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
         </state>
@@ -1265,7 +1275,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/CouncoursBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1457,34 +1469,40 @@
         <state relative-caret-position="386">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/f_dressage/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/dressuer.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Resources/views/imprimer.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+        <state relative-caret-position="3706">
+          <caret line="224" column="0" lean-forward="true" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeDressageBundle/Controller/f_dressageController.php">
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/DresseurBundle/Controller/noteController.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Resources/views/f_soin/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="629">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-
+        </state>
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -1521,8 +1539,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
 
           <folding />
+
+        <state relative-caret-position="256">
+          <caret line="34" column="119" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="119" />
         </state>
       </provider>
     </entry>
@@ -1538,6 +1560,9 @@
         <state relative-caret-position="697">
           <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
 
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/CouncoursBundle/Resources/views/Default/demande.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1552,6 +1577,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 
           <folding />
+
         </state>
       </provider>
     </entry>
@@ -1559,20 +1585,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
 
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1594,7 +1615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-
+        </state>
         <state relative-caret-position="102">
           <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
           <folding />
@@ -1628,16 +1649,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="366">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/f_soinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
+        <state relative-caret-position="2346">
           <caret line="144" column="53" lean-forward="false" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
-
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/modal-sign-in.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1664,8 +1687,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock" />
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1678,7 +1709,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/services.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1687,6 +1718,7 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Controller/concoursController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-177">
@@ -1741,6 +1773,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+      <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1763,7 +1802,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/concours/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1795,8 +1836,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1804,7 +1853,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pi/FrontEnd/CouncoursBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1824,9 +1875,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="459">
           <caret line="27" column="131" lean-forward="false" selection-start-line="27" selection-start-column="131" selection-end-line="27" selection-end-column="131" />
-
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/BackEnd/left-side-colum.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1838,14 +1891,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-716">
+        <state relative-caret-position="48178">
           <caret line="2834" column="4" lean-forward="false" selection-start-line="2834" selection-start-column="4" selection-end-line="2834" selection-end-column="4" />
 
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-
+        </state>
+      </provider>
+    </entry>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding />
         </state>
       </provider>

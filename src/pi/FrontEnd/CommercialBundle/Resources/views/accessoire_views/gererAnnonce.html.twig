@@ -1,0 +1,53 @@
+{% extends ":FrontEnd:base.html.twig" %}
+{% block stylesheets %}
+    <style>
+        body{background: url("https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Factu.2Fnews-actu.2Fjob-de-reve-devenez-calineur-pour-chats-39705.2F14560357-1-fre-FR.2Fjob-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.2Ejpg/748x372/quality/80/crop-from/center/job-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.jpeg")
+        no-repeat;}
+    </style>
+{% endblock %}
+{% block body %}
+    <h1>Modifier votre annonce </h1>
+
+    <div class="container">
+        <div class="col-sm-5 w3_agile_blog_bottom_left">
+            <img src="{{ asset('uploads/images/' ~ image) }}" alt=" " class="img-responsive" />
+        </div>
+        <div class="col-sm-7 w3_agile_blog_bottom_right">
+            {{ form_start(form, {'attr': {'class': 'form'}}) }}
+            <div class="form-group">
+                <span class="input-group-addon">Titre</span>
+                {{ form_widget(form.nom, {'attr': {'placeholder': 'Titre ','class':'form-control'}})  }}
+            </div>
+            <div class="form-group">
+                <span class="input-group-addon">Description</span>
+                {{ form_widget(form.description, {'attr': {'class':'form-control'}})  }}
+            </div>
+            <div class="form-group">
+                <span class="input-group-addon">Prix</span>
+                {{ form_widget(form.prix, {'attr': {'class':'form-control'}})  }}
+            </div>
+            <div class="form-group">
+                <span class="input-group-addon">Photo</span>
+                {{ form_widget(form.photo, {'attr': {'class':'form-control'}})  }}
+            </div>
+            <div class="form-group">
+                <span class="input-group-addon">Validité</span>
+                {{ form_widget(form.validite, {'attr': {'class':'form-control'}})  }}
+            </div>
+            <div class="form-group">
+                <span class="input-group-addon">Categorie</span>
+                {{ form_widget(form.categorie, {'attr': {'class':'form-control'}})  }}
+            </div>
+            {% if (type==1) %}
+                <div class ="form-group">
+                    <span class="input-group-addon">date limite de consomation </span>
+                    {{ form_widget(form.datelimite , {'attr': {'placeholder': 'validite ','class':'form-control'}}) }}
+                </div>
+            {% endif %}
+            <input type="submit" class="btn-primary btn-lg btn-block">
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}
+

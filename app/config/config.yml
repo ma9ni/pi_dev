@@ -13,10 +13,16 @@ imports:
     - { resource: "@CalanderBundle/Resources/config/services.yml" }
     - { resource: "@ConcoursBundle/Resources/config/services.yml" }
 
+    - { resource: "@CommercialBundle/Resources/config/services.yml" }
+    - { resource: "@FaqBundle/Resources/config/services.yml" }
+    - { resource: "@faqAdminBundle/Resources/config/services.yml" }
+
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
+    images_directory: '%kernel.root_dir%/../web/uploads/images'
+
 
 framework:
     #esi: ~

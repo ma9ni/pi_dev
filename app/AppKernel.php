@@ -37,7 +37,10 @@ class AppKernel extends Kernel
             new pi\FrontEnd\CouncoursBundle\ConcoursBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
-
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new pi\FrontEnd\CommercialBundle\CommercialBundle(),
+            new pi\FrontEnd\FaqBundle\FaqBundle(),
+            new pi\BackEnd\faqAdminBundle\faqAdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

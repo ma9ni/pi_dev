@@ -1,0 +1,16 @@
+{% extends ":BackEnd:index.html.twig" %}
+{% block container %}
+    <br/>
+    {% for question in questions %}
+        <div class="small-box bg-aqua">
+            <div class="inner">
+                <h2>{{ question.question }}</h2>
+            </div>
+            <div class="icon">
+                <i class="ion ion-bag"></i>
+            </div>
+            <a href="{{ path('faq_admin_reponce',{'id': question.id}) }}" class="small-box-footer">Repondre... <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+       <p></p>
+    {% endfor %}
+{% endblock %}
