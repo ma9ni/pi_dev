@@ -23,14 +23,12 @@
                 <td>{% if demandeGard.dateDebut %}{{ demandeGard.dateDebut|date('Y-m-d') }}{% endif %}</td>
                 <td>{% if demandeGard.dateFin %}{{ demandeGard.dateFin|date('Y-m-d') }}{% endif %}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('demandegard_show', { 'id': demandeGard.id }) }}"><button>voir</button></a>
-                        </li>
-                    </ul>
+
+                            <a href="{{ path('demandegard_show', { 'id': demandeGard.id }) }}"><button class="btn btn-sm     btn-block">voir</button></a>
+
                 </td>
-                <td><a  href="{{ path('demandegard_accept', { 'id': demandeGard.id }) }}"><button>accepter</button></a></td>
-                <td><a  href="{{ path('demandegard_refuse', { 'id': demandeGard.id }) }}"><button>refuser</button></a></td>
+                <td><a  href="{{ path('demandegard_accept', { 'id': demandeGard.id }) }}"><button class="btn btn-primary btn-block">accepter</button></a></td>
+                <td><a  href="{{ path('demandegard_refuse', { 'id': demandeGard.id }) }}"><button class="btn btn-danger btn-block">refuser</button></a></td>
 
             </tr>
         {% endfor %}

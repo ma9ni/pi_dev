@@ -25,11 +25,11 @@
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('demandegard_show', { 'id': demandeGard.id }) }}"><button>voir</button></a>
+                            <a href="{{ path('demandegard_show', { 'id': demandeGard.id }) }}"><button class="btn btn-primary btn-block">voir</button></a>
                         </li>
                     </ul>
                 </td>
-                <td><a href="{{ path('demandegard_RetourAnimal',{'id':demandeGard.id}) }}" ><button>Retour de l'animal</button></a></td>
+                <td><a href="{{ path('demandegard_RetourAnimal',{'id':demandeGard.id}) }}" ><button class="btn btn-primary btn-block">Retour de l'animal</button></a></td>
             </tr>
         {% endfor %}
         </tbody>
