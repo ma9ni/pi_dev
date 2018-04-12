@@ -15,7 +15,7 @@
                             {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                         </a></li>
                 {% else %}
-                    <li><a href="#myModal2" data-toggle="modal" class="play-icon">Login</a></li>
+                    <li><a href="{{ path('fos_user_security_login') }}" data-toggle="modal" class="play-icon">Login</a></li>
                     {% endif %}
                     <li>Call us : <span>(+216) 51 09 09 69 </span></li>
                 </ul>
@@ -39,7 +39,6 @@
                         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                             <li><a href="{{ path('fos_user_profile_show') }}" data-hover="Profile">Profile</a></li>
                         {% endif %}
-                        <li><a href="{{ path('front_end_about') }}" data-hover="About">About</a></li>
                         <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Annonce <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ path('adoption_index') }}" data-hover="Adoption">Adoption</a></li>
@@ -55,9 +54,7 @@
                             </ul>
                         </li>
 
-                        <li><a href="{{ path('front_end_gallery') }}" data-hover="Gallery">Gallery</a></li>
 
-                        <li><a href="{{ path('front_end_contact') }}" data-hover="Contact">Contact</a></li>
                         {% if is_granted("ROLE_PET") %}
 
                         <li><a href="{{ path('offre_pet') }}" data-hover="Votre Service ">Votre Service </a></li>
@@ -69,7 +66,14 @@
                             <li><a href="{{ path('f_dressage_index') }}" data-hover="Mes fiche des dressages">Mes fiche des dressages</a></li>
                         {% endif %}
 
-
+                        <!--fadhlaoui_Ahmed's issues-->
+                        {#<li><a href="{{ path('faq_listing_part_client') }}" data-hover="F.A.Q.">F.A.Q.</a></li>#}
+                        {#<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produit <span class="caret"></span></a>#}
+                            {#<ul class="dropdown-menu">#}
+                                {#<li><a href="{{ path('listing_accessoire') }}" data-hover="Accessoires">Accessoires</a></li>#}
+                                {#<li><a href="{{ path('listing_nourriture') }}" data-hover="Nourriture">Nourriture</a></li>#}
+                            {#</ul>#}
+                        {#</li>#}
                     </ul>
                     <div class="clearfix"> </div>
                 </div>

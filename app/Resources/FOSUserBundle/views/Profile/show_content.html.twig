@@ -72,7 +72,7 @@ Dresseur        {% endif %}</li>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="thumbnail"style="height: 272px">
-                                <img  src="images/editer.png" height="280" width="185">
+                                <img  src="{{ asset('gerer.png') }}" height="280" width="185">
                                 <div class="caption">
                                     <center>
 
@@ -82,7 +82,7 @@ Dresseur        {% endif %}</li>
                                     </center>
                                     <p>
                                         <br>
-                                        Changez vos Informations.
+                                        gestion de vos Produit.
                                     </p>
                                     <p>
 
@@ -92,10 +92,10 @@ Dresseur        {% endif %}</li>
                         </div>
                         <div class="col-md-4 col-sm-7">
                             <div class="thumbnail" style="height: 272px">
-                                <img src="images/commande.jpg" height="280" width="185">
+                                <img src="{{ asset('gerer.png') }}" height="280" width="185">
                                 <div class="caption">
                                     <center>
-                                        <a href="/Commande">  <button type="submit" title="Submit" class="button submit" > <span> commande </span> </button>
+                                        <a href="{{ path('adoption_vosAnnonces') }}">  <button type="submit" title="Submit" class="button submit" > <span> commande </span> </button>
                                         </a>
 
 
@@ -104,7 +104,7 @@ Dresseur        {% endif %}</li>
 
                                     <p>
                                         <br>
-                                        Affichage de tous vos commandes .
+                                        afficher vos annonce d'adoption.
                                     </p>
                                     <p>
 
@@ -114,13 +114,18 @@ Dresseur        {% endif %}</li>
                         </div>
                         <div class="col-md-4 col-sm-7">
                             <div class="thumbnail" style="height: 272px">
-                                <img  src="{{asset('images/evenement.png')}}" height="280" width="185">
+                                <img  src="{{ asset('gerer.png') }}" height="280" width="185">
                                 <div class="caption">
 
+                                    <center>
+                                        <a href="{{ path('demandegard_listdemandeUtilisateur') }}">  <button type="submit" title="Submit" class="button submit" > <span> commande </span> </button>
+                                        </a>
 
+
+                                    </center>
                                     <p>
                                         </br>
-                                        Ajouter des evenements.
+voir vos demande de garderie
                                     </p>
                                     <p>
 
