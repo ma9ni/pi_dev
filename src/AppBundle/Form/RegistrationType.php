@@ -4,8 +4,11 @@ namespace AppBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Gregwar\CaptchaBundle\Type\CaptchaType;
+
 
 class RegistrationType extends AbstractType
 {
@@ -51,7 +54,12 @@ class RegistrationType extends AbstractType
                     'Petiteur' => 'ROLE_PET'
                 ),
                 'required' => true,
-                'multiple' => true,));
+                'multiple' => true,))->add('image', FileType::class, array('label' => 'Image(JPG)'))
+            ->add('captcha', CaptchaType::class, array(
+                'width' => 200,
+                'height' => 50,
+                'length' => 6,
+            ));
     }
     public function getParent()
     {

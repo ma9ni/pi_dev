@@ -36,7 +36,7 @@ class animal
     /**
      * @var int
      * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
-     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id")
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",onDelete="CASCADE")
      */
 
 

@@ -21,7 +21,7 @@ class AppKernel extends Kernel
             new pi\FrontEnd\FicheDeDressageBundle\FicheDeDressageBundle(),
             new pi\FrontEnd\VeterinaireBundle\VeterinaireBundle(),
             new pi\BackEnd\AdminBundle\AdminBundle(),
-
+            new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
             new pi\FrontEnd\DresseurBundle\DresseurBundle(),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
 

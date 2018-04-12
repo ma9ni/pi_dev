@@ -38,7 +38,7 @@ class Rating
     /**
      * @var integer
      * @ORM\ManyToOne(targetEntity="pi\FrontEnd\PetiteurBundle\Entity\OffrePetiteur")
-     * @ORM\JoinColumn(name="idOffrePet", referencedColumnName="id" ,nullable=true)
+     * @ORM\JoinColumn(name="idOffrePet", referencedColumnName="id" ,nullable=true,onDelete="CASCADE")
      */
     private $idOffrePet;
 

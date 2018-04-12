@@ -1,19 +1,15 @@
 {% extends ':FrontEnd:base.html.twig' %}
 
 {% block body %}
-    <h1>Offre petiteur</h1>
+    <div class="container target">
 
+<br>
+        <br>
+        <div class="container" >
+            <h3 class="agileits-title w3title2">Offre Petiteur</h3>
+        </div>
+    </div>
 
-    <ul>
-
-        <li>
-            <a href="{{ path('reclamation_newOffre',{ 'id':offrePetiteur.id } ) }}">ajouter  une reclamation</a>
-        </li>
-        <li>
-            <a href="{{ path('offrepetiteur_index') }}">retour au liste</a>
-        </li>
-
-    </ul>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,17 +73,23 @@
     <div class="blog-bottom">
         <div class="container">
             <div class="col-sm-7 w3_agile_blog_bottom_right">
-                <h5>User name : {{ offrePetiteur.description }}</h5>
+                <h3>pseudo : {{ offrePetiteur.idMembre }}</h3>
                 {#<h5>Adress : {{ vet.adresse }}</h5>#}
-                <h3>Phone Number : {{ offrePetiteur.prix }}</h3>
-                <h3>Phone Number : {{ offrePetiteur.etat }}</h3>
-                <h3>Phone Number :{{ offrePetiteur.race }}</h3>
-
+                <h5>adresse : {{ offrePetiteur.idMembre.adresse }}</h5>
+                <h5>tel :{{ offrePetiteur.idMembre.NumTel }}</h5>
+                <h5>race des animal qu'il peux garder :{{ offrePetiteur.race }}</h5>
+<h4>Description ;</h4>
+                <p>{{ offrePetiteur.description }}</p>
 
 
             </div>
             <div class="col-sm-5 w3_agile_blog_bottom_left">
-                <img src="{{ asset('FrontEnd/images/s1.jpg') }}" alt="" class="img-responsive">
+                {% if offrePetiteur.idMembre.image==null %}
+                <img title="profile image" class="img-responsive" src="{{asset('profile.png')}}">
+                {% else %}
+
+                <img src="{{ asset('uploads/images/' ~ offrePetiteur.idMembre.image) }}" alt="" class="img-responsive">
+                {% endif %}
             </div>
 
             <div class="clearfix"> </div>
@@ -97,6 +99,17 @@
         </div>
     </div>
     {{ form_start(form) }}
+        <ul>
+
+            <li>
+                <a href="{{ path('reclamation_newOffre',{ 'id':offrePetiteur.id } ) }}">ajouter  une reclamation</a>
+            </li>
+            <li>
+                <a href="{{ path('offrepetiteur_index') }}">retour au liste</a>
+            </li>
+            <li><a href="{{ path('demandegard_new',{'id': offrePetiteur.id}) }}"><button class="btn-primary">Envoyer Demande</button></a></li>
+
+        </ul>
     <div class="container">
         <h1>Commentaire et note </h1>
 
@@ -147,7 +160,7 @@
                         {#{% endif %}#}
                     {#{% endfor %}#}
                     <div class="box-footer">
-                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED")and i==1%}
 
                         <form action="#" method="post">
 
@@ -171,7 +184,10 @@
             </div>
         </div>
     </div>
+
     <div class="map">
         <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=tunis+(pets)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
+
+
 {% endblock %}

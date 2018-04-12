@@ -10,7 +10,13 @@
         </div>
 
         <div class="col-sm-2"><a  class="pull-right">
-                <img title="profile image" class="img-circle img-responsive" src="{{asset('profile.png')}}">
+                {% if user.image==null %}
+                    <img title="profile image" class="img-circle img-responsive" src="{{asset('profile.png')}}">
+{% else %}
+
+                <img title="profile image" class="img-circle img-responsive" src="{{ asset('uploads/images/' ~ user.image) }}">
+                {% endif %}
+
                 </a>
         </div>
 
@@ -51,7 +57,9 @@ Dresseur        {% endif %}</li>
                 <div class="panel-heading" style="background: #af93f6;height: 40px"><strong style="float: left; color: white">PARAMETRE DU COMPTE</strong>
 
                 </div>
-                <div class="panel-body"><i style="color:green" class="fa fa-check-square"></i><a href=""><b><U>Modifier Mot de passe</U></b></a>
+                <div class="panel-body"><i style="color:green" class="fa fa-check-square"></i><a href="{{ path('fos_user_profile_edit') }}"><b><U>Modifier Profil</U></b></a>
+
+                </div><div class="panel-body"><i style="color:green" class="fa fa-check-square"></i><a href="{{ path('fos_user_change_password') }}"><b><U>Modifier Mot de passe</U></b></a>
 
                 </div>
             </div>

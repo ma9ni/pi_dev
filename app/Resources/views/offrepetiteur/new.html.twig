@@ -1,17 +1,52 @@
 {% extends ':FrontEnd:base.html.twig' %}
 
-{% block body %}
-    <h1>Offrepetiteur creation</h1>
 
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
 
-    <ul>
-        {#<li>#}
-            {#<a href="{{ path('reclamation_newOffre') }}">ajouter  une reclamation</a>#}
-        {#</li>#}
 
-    </ul>
+{% block stylesheets %}
+    <style>
+        body{background: url("https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Factu.2Fnews-actu.2Fjob-de-reve-devenez-calineur-pour-chats-39705.2F14560357-1-fre-FR.2Fjob-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.2Ejpg/748x372/quality/80/crop-from/center/job-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.jpeg")
+        no-repeat;}
+    </style>
 {% endblock %}
+{% block body %}
+
+    <div class="container" >
+        <h3 class="agileits-title w3title2">ajouter votre métier Petiteur</h3>
+
+        <div class="row">
+
+            {{ form_start(form, {'attr': {'class': 'form'}}) }}
+            <div class="form-group">
+                <label for="observation">description</label>
+                {{ form_widget(form.description, {'attr': {'class': 'form-control','name':'description'}}) }}
+            </div>
+            <div class="form-group date">
+                {{ form_label(form.prix ) }}
+                {{ form_widget(form.prix ,{'attr': {'class':'form-control datepicker'}}) }}
+
+            </div>
+            <div class="form-group ">
+                {{ form_label(form.adresse ) }}
+                {{ form_widget(form.adresse ,{'attr': {'class':'form-control datepicker'}}) }}
+
+            </div>
+            <div class="form-group ">
+                {{ form_label(form.race ) }}
+                {{ form_widget(form.race ,{'attr': {'class':'form-control datepicker'}}) }}
+
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Ajouter votre annonces" class=" btn-primary btn-lg btn-block"/>
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}
+
+

@@ -91,7 +91,12 @@ class OffrePetiteurController extends Controller
         $user = $this->getUser();
         $rait=$em->getRepository('DresseurBundle:Rating')->findBy(array('idOffrePet'=>$id));
 
-
+$i=0;
+$aff=$em->getRepository('pi\FrontEnd\DresseurBundle\Entity\Rating')->findBy(array('idMembre'=>$this->getUser()));
+if ($aff==null)
+{
+    $i=1;
+}
         $affectnote=new Rating();
         $affectnote->setDatenote(new \DateTime());
         $affectnote->setNote($r);
@@ -120,6 +125,7 @@ class OffrePetiteurController extends Controller
             'com'=>$comment,
             'rai'=>$rai,
             'rait'=>$rait,
+            'i'=>$i,
         ));
     }
     /**

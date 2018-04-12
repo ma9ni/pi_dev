@@ -1,44 +1,44 @@
+
 {% extends ':FrontEnd:base.html.twig' %}
 
-{% block body %}
-    <h1>Demande gard d'un animal</h1>
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ demandeGard.id }}</td>
-            </tr>
-            <tr>
-                <th>Etat</th>
-                <td>{{ demandeGard.etat }}</td>
-            </tr>
-            <tr>
-                <th>Message</th>
-                <td>{{ demandeGard.message }}</td>
-            </tr>
-            <tr>
-                <th>Datedebut</th>
-                <td>{% if demandeGard.dateDebut %}{{ demandeGard.dateDebut|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Datefin</th>
-                <td>{% if demandeGard.dateFin %}{{ demandeGard.dateFin|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('demandegard_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('demandegard_edit', { 'id': demandeGard.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+
+{% block stylesheets %}
+    <style>
+        body{background: url("https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Factu.2Fnews-actu.2Fjob-de-reve-devenez-calineur-pour-chats-39705.2F14560357-1-fre-FR.2Fjob-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.2Ejpg/748x372/quality/80/crop-from/center/job-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.jpeg")
+        no-repeat;}
+    </style>
 {% endblock %}
+{% block body %}
+
+    <div class="container" >
+        <h3 class="agileits-title w3title2">votre demande a eété envoyer avec sucess</h3>
+
+        <div class="row">
+
+            <div class="form-group">
+                <label for="message">message</label>
+                <input type="text" value="{{ demandeGard.message }}" class="form-control">
+                            </div>
+            <div class="form-group date">
+                <label for="message">date debut</label>
+
+               <input type="text" value="{% if demandeGard.dateDebut %}{{ demandeGard.dateDebut|date('Y-m-d') }}{% endif %}" class="form-control">
+            </div>
+            <div class="form-group ">
+                <label for="message">date fin</label>
+                <input type="text" value="{% if demandeGard.dateFin %}{{ demandeGard.dateFin|date('Y-m-d') }}{% endif %}" class="form-control">
+                <td></td>
+
+            </div >
+
+            <a href="{{ path('offrepetiteur_index') }}" class=" btn-primary btn-lg btn-block" style="width: 150px">Retour au liste des petiteurs</a>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
+

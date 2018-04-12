@@ -51,3 +51,13 @@ services:
         class: AppBundle\Listener\LoadDataListener
         tags:
           - { name: 'kernel.event_listener', event: 'fullcalendar.set_data', method: loadData }
+
+    user.image_uploader:
+        class: AppBundle\ImageUpload
+        arguments: ['%images_directory%']
+    user.doctrine_image_listener:
+        class: AppBundle\EventListener\ImageUploadListener
+        arguments: ['@user.image_uploader']
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }

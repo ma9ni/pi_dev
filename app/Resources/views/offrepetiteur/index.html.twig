@@ -26,11 +26,16 @@
 
                     <div class="col-sm-3 col-xs-6 team-grids">
                         <div class="team-agileimg">
-                            <img class="img-responsive" src="{{ asset('FrontEnd/images/t1.jpg') }}" alt="">
+                            {% if offrePetiteur.idMembre.image==null %}
+                                <img title="profile image" class="img-responsive" src="{{asset('profile.png')}}">
+                            {% else %}
+
+                                <img src="{{ asset('uploads/images/' ~ offrePetiteur.idMembre.image) }}" alt="" class="img-responsive">
+                            {% endif %}
                             <div class="">
                                 <div class="">
                                     <h4>Nom :{{ offrePetiteur.idMembre.username }}</h4>
-                                    <p><strong>Race : </strong> {{ offrePetiteur.race }}</p>
+                                    <p><strong>les animals qu'il gardent: </strong> {{ offrePetiteur.race }}</p>
                                     <p><strong>Lieu : </strong> {{ offrePetiteur.adresse }}
                                     </p>
                                 </div>
