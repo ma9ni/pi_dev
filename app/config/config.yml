@@ -12,8 +12,11 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
+    images: '%kernel.project_dir%/web/upload/images'
+    data_class:     Symfony\Component\HttpFoundation\File\File
 
 framework:
+    validation: { enabled: true, enable_annotations: true }
     #esi: ~
     translator: { fallbacks: ['%locale%'] }
     secret: '%secret%'
@@ -68,10 +71,11 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: '%mailer_transport%'
-    host: '%mailer_host%'
-    username: '%mailer_user%'
-    password: '%mailer_password%'
+    transport: smtp
+    host: smtp.mailtrap.io
+    username: 35f25b74f068d0
+    password: 1ed67ba3e66694
+    port: 2525
     spool: { type: memory }
 
 
@@ -88,3 +92,15 @@ fos_user:
     from_email:
         address: "ahmed.makni.1@esprit.tn"
         sender_name: "%Ahmed Makni%"
+
+
+knp_paginator:
+    page_range: 5
+    default_options:
+        page_name: page
+        sort_field_name: sort
+        sort_direction_name: direction
+        distinct: true
+    template:
+        pagination: 'KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig'
+        sortable: 'KnpPaginatorBundle:Pagination:sortable_link.html.twig'

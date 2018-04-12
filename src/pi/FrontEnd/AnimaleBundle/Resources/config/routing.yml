@@ -1,3 +1,14 @@
-animale_homepage:
-    path:     /
-    defaults: { _controller: AnimaleBundle:Default:index }
+
+my_sos:
+    path:     /my_sos
+    defaults: { _controller: AnimaleBundle:sosDisparition:index2 }
+
+
+
+
+
+
+
+
+
+

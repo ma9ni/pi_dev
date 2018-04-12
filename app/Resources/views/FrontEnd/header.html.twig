@@ -7,7 +7,7 @@
             </div>
             <div class="agileits_w3layouts_sign_in">
                 <ul>
-                    <li><a href="#myModal2" data-toggle="modal" class="play-icon">Login</a></li>
+                    <li><a href="/login" data-toggle="modal" class="play-icon">Login</a></li>
                     <li>Call us : <span>(+216) 51 09 09 69 </span></li>
                 </ul>
             </div>
@@ -34,6 +34,13 @@
                                 <li><a href="{{ path('front_end_dress') }}" data-hover="Dresser">Dresser</a></li>
                             </ul>
                         </li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gateau <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('animal_index') }}" data-hover="Animales">Animales</a></li>
+                                <li><a href="{{ path('sosdisparition_index') }}" data-hover="Sos Disparition">Sos Disparition</a></li>
+                            </ul>
+                        </li>
+
                         <li><a href="{{ path('front_end_gallery') }}" data-hover="Gallery">Gallery</a></li>
                         <li><a href="{{ path('front_end_contact') }}" data-hover="Contact">Contact</a></li>
                     </ul>

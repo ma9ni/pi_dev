@@ -30,11 +30,14 @@ class f_soinController extends Controller
         ));
     }
 
+
     /**
      * Creates a new f_soin entity.
      *
      * @Route("/new", name="f_soin_new")
      * @Method({"GET", "POST"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function newAction(Request $request)
     {
@@ -57,10 +60,13 @@ class f_soinController extends Controller
             'form' => $form->createView(),
         ));
     }
+
     /**
      * Finds and displays a f_soin entity.
      * @Route("/show/{id}", name="f_soin_show")
      * @Method("GET")
+     * @param f_soin $f_soin
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function showAction(f_soin $f_soin)
     {
@@ -70,11 +76,15 @@ class f_soinController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
     /**
      * Displays a form to edit an existing f_soin entity.
      *
      * @Route("/edit/{id}", name="f_soin_edit")
      * @Method({"GET", "POST"})
+     * @param Request $request
+     * @param f_soin $f_soin
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
     public function editAction(Request $request, f_soin $f_soin)
     {

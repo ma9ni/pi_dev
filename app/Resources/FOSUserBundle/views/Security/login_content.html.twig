@@ -4,19 +4,54 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    {% if csrf_token %}
-        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-    {% endif %}
+<title>zanimo | Login</title>
+<body class="hold-transition register-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a href="{{ path('fos_user_security_login') }}"><b>Zanimo</b>Login</a>
+    </div>
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
 
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+        <form action="{{ path("fos_user_security_check") }}" method="post">
+            {% if csrf_token %}
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            {% endif %}
+            <div class="form-group has-feedback">
+                <label for="username">{{ 'security.login.username'|trans }}</label>
+                <input type="Text" class="form-control" placeholder="Username" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" >
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
 
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+            <div class="form-group has-feedback">
+                <label for="password">{{ 'security.login.password'|trans }}</label>
+                <input type="password" class="form-control" placeholder="Password" id="password" name="_password" required="required" autocomplete="current-password" >
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                </div>
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-</form>
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">Sign In</button>
+                </div>
+            </div>
+        </form>
+        <div class="social-auth-links text-center">
+            <p>- OR -</p>
+            <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
+                Facebook</a>
+            <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
+                Google+</a>
+        </div>
+        <a href="#">I forgot my password</a><br>
+        <a href="{{ path('fos_user_registration_register') }}" class="text-center">Register a new membership</a>
+    </div>
+</div>
+</body>

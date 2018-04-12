@@ -9,3 +9,34 @@ admin_listVet:
 index:
     path:     /home
     defaults: { _controller: AdminBundle:Default:index }
+
+admin_animeaux:
+    path:     /useranimeaux
+    defaults: { _controller: AdminBundle:AdminGateau:animal }
+
+admin_sos:
+    path:     /sos
+    defaults: { _controller: AdminBundle:AdminGateau:sosList }
+
+admin_user:
+    path:     /users
+    defaults: { _controller: AdminBundle:AdminGateau:user }
+
+admin_sos_delete:
+    path:     /sos/delete/{id}
+    defaults: { _controller: AdminBundle:AdminGateau:delete }
+
+
+admin_sos_animal:
+    path:     /useranimeaux/delete/{id}
+    defaults: { _controller: AdminBundle:AdminGateau:deleteAnimal }
+
+
+admin_user_delete:
+    path:     /users/delete/{id}
+    defaults: { _controller: AdminBundle:AdminGateau:deleteUser }
+
+
+
+
+

@@ -2,5 +2,18 @@ fiche_de_soin_homepage:
     path:     /
     defaults: { _controller: FicheDeSoinBundle:Default:index }
 
+user_index:
+    path:     /user/
+    defaults: { _controller: FicheDeSoinBundle:User:index }
+
+user_show:
+    path:     /user/{id}
+    defaults: { _controller: FicheDeSoinBundle:User:show }
+
+
+
+addlk:
+    path:     /animallike/{id}
+    defaults: { _controller: FicheDeSoinBundle:animal:addlike }
 
 

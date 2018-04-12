@@ -1,3 +1,15 @@
+fiche_de_soin_user:
+    resource: "@FicheDeSoinBundle/Controller/UserController.php"
+    type:     annotation
+
+fiche_de_soin_animal:
+    resource: "@FicheDeSoinBundle/Controller/animalController.php"
+    type:     annotation
+
+animale_sos_disparition:
+    resource: "@AnimaleBundle/Controller/sosDisparitionController.php"
+    type:     annotation
+
 animale:
     resource: "@AnimaleBundle/Resources/config/routing.yml"
     prefix:   /
@@ -53,3 +65,11 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
+
+mesanimal:
+    path:     /my_animals
+    defaults: { _controller: FicheDeSoinBundle:animal:index }
+
+
+
+
