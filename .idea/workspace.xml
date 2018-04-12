@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/animalController.php" description="$queryBuilder =$em-&gt;getRepository('FicheDeSoinBund..." line="39" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change beforePath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/pi/BackEnd/AdminBundle/Resources/config/routing.yml" />
-      <change beforePath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/pi/FrontEnd/FicheDeSoinBundle/Controller/DefaultController.php" />
-    </list>
+    <list default="true" id="8b757bf3-1769-45d7-ab5e-8003cfafbe31" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -546,12 +541,12 @@
       <workItem from="1523442237774" duration="4020000" />
       <workItem from="1523462655954" duration="14915000" />
       <workItem from="1523490677945" duration="1935000" />
-      <workItem from="1523499493603" duration="1299000" />
+      <workItem from="1523499493603" duration="1340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329120000" />
+    <option name="totallyTimeSpent" value="329161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
