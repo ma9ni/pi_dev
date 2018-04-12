@@ -1,6 +1,7 @@
 {% extends ":FrontEnd:base.html.twig" %}
 
 {% block body %}
+
     <div class="container" >
         <h3 class="agileits-title w3title2">Création Fiche De Dressage </h3>
 
@@ -8,14 +9,20 @@
 
             {{ form_start(form, {'attr': {'class': 'form'}}) }}
             <div class="form-group">
+
                 <label for="observation">specialite</label>
-                {{ form_widget(form.specialite, {'attr': {'class': 'form-control','placeholder':'Specialite','name':'specialite'}}) }}
+                {{ form_widget(form.specialite, {'attr': {'class': 'form-control','placeholder':'Specialite','name':'specialite','id':'speciCol'}}) }}
+                <label for="observation">titre</label>
+                {{ form_widget(form.titre, {'attr': {'class': 'form-control','placeholder':'titre','name':'specialite'}}) }}
             </div>
+
+
+
             <div class="form-group date">
                 {{ form_label(form.dateDebut ) }}
                 {{ form_widget(form.dateDebut ,{'attr': {'class':'form-control datepicker'}}) }}
-
             </div>
+
             <div class="form-group date">
                 {{ form_label(form.dateFin ) }}
                 {{ form_widget(form.dateFin ,{'attr': {'class':'form-control datepicker'}}) }}
@@ -28,37 +35,33 @@
             </div>
 
             <div class="form-group">
+
                 {{ form_label(form.displine ) }}
-                {{ form_widget(form.displine , {'attr': {'class':'form-control'}})  }}
+                {#<span class="input-group-addon" id="basic-addon2">/20</span>#}
+                {{ form_widget(form.displine , {'attr': {'class':'form-control','placeholder':'Displine /20'}})  }}
             </div>
             <div class="form-group">
                 {{ form_label(form.accompagnement ) }}
-                {{ form_widget(form.accompagnement , {'attr': {'class':'form-control'}})  }}
+                {{ form_widget(form.accompagnement , {'attr': {'class':'form-control','placeholder':'accompagnement /20'}})  }}
             </div>
             <div class="form-group">
                 {{ form_label(form.interception ) }}
-                {{ form_widget(form.interception , {'attr': {'class':'form-control'}})  }}
+                {{ form_widget(form.interception , {'attr': {'class':'form-control','type':'range','placeholder':'interception /20'}})  }}
             </div>
             <div class="form-group">
                 {{ form_label(form.obeissance ) }}
-                {{ form_widget(form.obeissance , {'attr': {'class':'form-control'}})  }}
+                {{ form_widget(form.obeissance , {'attr': {'class':'form-control','placeholder':'obeissance /20'}})  }}
             </div>
 
-            <div class="form-group">
-                {{ form_label(form.noteTotale ) }}
-                {{ form_widget(form.noteTotale , {'attr': {'class':'form-control'}})  }}
-            </div>
+            {#<div class="form-group">#}
+                {#{{ form_label(form.noteTotale ) }}#}
+                {#{{ form_widget(form.noteTotale , {'attr': {'class':'form-control'}})  }}#}
+            {#</div>#}
             <div class="form-group">
                 <input type="submit" value="Ajouter" class=" btn-primary btn-lg btn-block"/>
             </div>
-
             {{ form_end(form) }}
 
-            <ul>
-                <li>
-                    <a href="{{ path('f_dressage_index') }}">Back to the list</a>
-                </li>
-            </ul>
         </div>
     </div>
 {% endblock %}

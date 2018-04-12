@@ -1,0 +1,96 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+
+{% block body %}
+    <h1>Adoptions list</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Type</th>
+            <th>Dateannonce</th>
+            <th>Lieu</th>
+            <th>Description</th>
+            <th>Idanimal</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for adoption in adoptions %}
+            <tr>
+                <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}">{{ adoption.idAdoption }}</a></td>
+                <td>{{ adoption.type }}</td>
+                <td>{% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ adoption.lieu }}</td>
+                <td><a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}">{{ adoption.description }}</a></td>
+                <td>{{ adoption.idAnimal }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}">show</a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="">Voir vos Annonces</a>
+        </li>
+    </ul>
+
+    <!-- welcome -->
+    <div class="welcome">
+        <h3 class="agileits-title">liste des annoces d'adoptions</h3>
+
+        {% for adoption in adoptions %}
+
+            <div class="container">
+                <div class="col-md-6 w3ls_welcome_right">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="agileits_w3layouts_welcome_grid">
+                                    <img src="{{ asset('FrontEnd/images/g1.jpg') }}" alt=" " class="img-responsive" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agileits_w3layouts_welcome_grid">
+                                    <img src="{{ asset('FrontEnd/images/g2.jpg') }}" alt=" " class="img-responsive" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agileits_w3layouts_welcome_grid">
+                                    <img src="{{ asset('FrontEnd/images/g3.jpg') }}" alt=" " class="img-responsive" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 w3ls_welcome_left">
+                    <div class="w3ls_welcome_right1">
+                        <h4 class="agileits-title"></h4>
+                        <h6>{% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</h6>
+                        <p>{{ adoption.description }}</p>
+                        <div class="w3l_more">
+                            <a href="{{ path('adoption_show', { 'idAdoption': adoption.idAdoption }) }}" class="button button--nina" data-text="Learn more" data-toggle="modal" data-target="#myModal">
+                                <span>L</span><span>e</span><span>a</span><span>n</span> <span>m</span><span>o</span><span>r</span><span>e</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            </br>
+            </br>
+        {% endfor %}
+
+    </div>
+    <!-- //welcome -->
+
+{% endblock %}

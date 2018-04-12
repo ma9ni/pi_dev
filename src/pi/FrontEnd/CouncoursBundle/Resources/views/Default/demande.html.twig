@@ -1,0 +1,43 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+    <form method="post">
+        <table class=" table table table-hover table-dark" >
+
+            <thead>
+            <tr>
+                <th>Id Participant</th>
+                <th>Titre Concours</th>
+
+                <th>accepter</th>
+                <th>refuser</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for particiapant in participation %}
+                <tr>
+
+                    <td>{{ particiapant.id }}</td>
+
+                    <td>{{ particiapant.idConcour.Titre}}</td>
+
+
+                    <td><a href="{{ path('concours_edit_participant', { 'id': particiapant.id}) }}"><span class=" btn-primary btn-lg btn-block text-center">Accepter la particiption</span></a></td>
+                    <td><a href="{{ path('concours_delete_particpant', { 'id': particiapant.id }) }}"><span class=" btn-primary btn-lg btn-block text-center">Refuser la particiption</span></a></td>
+                    <td>
+                        {#<div class="wrap-input100 validate-input" data-validate="Phone is required">#}
+
+                    </td>
+                </tr>
+
+
+
+
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+concours_homepage:
+    path:     /
+    defaults: { _controller: ConcoursBundle:Default:index }
+
+
+concours_index:
+    path:     /angham
+    defaults: { _controller: ConcoursBundle:concours:index }
+
+
+concours_new:
+    path:     /new
+    defaults: { _controller: ConcoursBundle:concours:new }
+concours_show:
+    path:     /{id}
+    defaults: { _controller: ConcoursBundle:concours:show }
+
+
+concours_edit:
+    path:     /{id}/edit
+    defaults: { _controller: ConcoursBundle:concours:edit }
+
+
+concours_delete:
+    path:     /{id}/delete
+    defaults: { _controller: ConcoursBundle:concours:delete }
+
+concours_d:
+    path:     /demandedd
+    defaults: { _controller: ConcoursBundle:concours:requests }
+
+
+
+concours_edit_participant:
+    path:     /{id}/accepter
+    defaults: { _controller: ConcoursBundle:concours:accept }
+concours_delete_particpant:
+    path:     /{id}/refuser
+    defaults: { _controller: ConcoursBundle:concours:refuser }
+Statistique_Concours:
+    path:     /Statistique_Concours
+    defaults: { _controller: ConcoursBundle:concours:statis }

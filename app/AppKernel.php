@@ -24,6 +24,26 @@ class AppKernel extends Kernel
             new pi\FrontEnd\AnimaleBundle\AnimaleBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
 
+            new pi\FrontEnd\DresseurBundle\DresseurBundle(),
+            new blackknight467\StarRatingBundle\StarRatingBundle(),
+
+            new pi\FrontEnd\AdoptionBundle\AdoptionBundle(),
+            new pi\FrontEnd\PetiteurBundle\PetiteurBundle(),
+            new pi\BackEnd\ReclamationBundle\ReclamationBundle(),
+            new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+            new pi\FrontEnd\CalenderBundle\CalanderBundle(),
+            new Tiloweb\PaginationBundle\TilowebPaginationBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+//            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
+
+            new pi\FrontEnd\CouncoursBundle\ConcoursBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new pi\FrontEnd\CommercialBundle\CommercialBundle(),
+            new pi\FrontEnd\FaqBundle\FaqBundle(),
+            new pi\BackEnd\faqAdminBundle\faqAdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

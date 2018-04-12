@@ -1,11 +1,14 @@
 {% extends ":FrontEnd:base.html.twig" %}
 {% block body %}
-    <h1>F_soins list</h1>
+
+
+
+    <h1>FIche des soins </h1>
 
     <table class=" table table table-hover table-dark">
         <thead class="thead-dark">
         <tr>
-            <th scope="col">ID</th>
+            {#<th scope="col">ID</th>#}
             <th scope="col">Observation</th>
             <th scope="col">Medicament</th>
             <th scope="col">Datecreation</th>
@@ -18,7 +21,7 @@
 
         {% for f_soin in f_soins %}
                 <tr>
-                    <td>{{ f_soin.id }}</td>
+                    {#<td>{{ f_soin.id }}</td>#}
                     <td>{{ f_soin.observation }}</td>
                     <td>{{ f_soin.medicament }}</td>
                     <td>{% if f_soin.dateCreation %}{{ f_soin.dateCreation|date('Y-m-d') }}{% endif %}</td>
@@ -29,9 +32,7 @@
                 </tr>
         {% endfor %}
             </table>
-    <ul>
-        <li>
-            <a href="{{ path('f_soin_new') }}">Create a new f_soin</a>
-        </li>
-    </ul>
+<div class="col-mg-9"> <a class="btn btn-primary" type="submit" href="{{ path('f_soin_new') }}" >Create a new f_soin</a>
+    <a class="btn btn-primary" type="submit" href="{{ path('aff_Calendrier') }}">My Calander</a></div>
+
 {% endblock %}

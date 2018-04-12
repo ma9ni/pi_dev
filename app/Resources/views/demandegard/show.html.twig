@@ -1,0 +1,44 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+    <h1>Demande gard d'un animal</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ demandeGard.id }}</td>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <td>{{ demandeGard.etat }}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>{{ demandeGard.message }}</td>
+            </tr>
+            <tr>
+                <th>Datedebut</th>
+                <td>{% if demandeGard.dateDebut %}{{ demandeGard.dateDebut|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Datefin</th>
+                <td>{% if demandeGard.dateFin %}{{ demandeGard.dateFin|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('demandegard_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('demandegard_edit', { 'id': demandeGard.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

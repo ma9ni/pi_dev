@@ -1,0 +1,3 @@
+calander_homepage:
+    path:     /
+    defaults: { _controller: CalanderBundle:Default:index }

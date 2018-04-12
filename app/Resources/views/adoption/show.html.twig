@@ -1,0 +1,51 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+    <h1>Adoption</h1>
+
+    <table>
+        <tbody>
+
+            <tr>
+                <th>le membre </th>
+                <td>{{ adoption.idMembre }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ adoption.type }}</td>
+            </tr>
+            <tr>
+                <th>Dateannonce</th>
+                <td>{% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Lieu</th>
+                <td>{{ adoption.lieu }}</td>
+            </tr>
+            <tr>
+                <th>Etatadoption</th>
+                <td>{{ adoption.etatadoption }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ adoption.description }}</td>
+            </tr>
+            <tr>
+                <th>Idanimal</th>
+                <td>{{ adoption.idAnimal.race }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('adoption_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('adoption_edit', { 'idAdoption': adoption.idAdoption }) }}">Edit</a>
+        </li>
+        <li>
+            <a href="{{ patth('adoption_deleteUtilisateur',{'id':adoption.idAdoption}) }}">supprimer votre annonce</a>
+        </li>
+    </ul>
+{% endblock %}

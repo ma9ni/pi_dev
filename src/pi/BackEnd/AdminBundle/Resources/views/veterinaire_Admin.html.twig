@@ -1,0 +1,38 @@
+{% extends ":BackEnd:index.html.twig" %}
+{% block container %}
+<div class="container">
+
+<table class="table table-hover">
+    <tbody><tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Reason</th>
+    </tr>
+
+{% for  i in veterinaires %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.username }}</td>
+        <td>{{ i.email }}</td>
+        <td>{{ i.gouvernorat }}</td>
+        <td>{{ i.adresse }}</td>
+        {#<td>{{ i.l }}</td>#}
+        {% if i.confirmation ==0 %}
+            <td><a href="{{ path('confirmer', { 'id': i.id }) }}"><span class="label label-success">Approved</span></a></td>
+        {% else %}
+            <td></td>
+        <td><a href="{{ path('block', { 'id': i.id }) }}"><span class="label label-danger">deney</span></a></td>
+        {#<td>{{ i.confirmation}}</td>#}
+
+        {% endif %}
+    </tr>
+
+
+{% endfor %}
+    </tbody></table>
+</div>
+
+
+{% endblock %}

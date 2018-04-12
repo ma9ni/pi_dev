@@ -14,8 +14,7 @@ use Symfony\Component\Validator\Constraint as Assert ;
 class animal
 {
     /**
-     * @var int
-     *
+     * @var integer
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -24,7 +23,6 @@ class animal
 
     /**
      * @var string
-     *
      * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
@@ -71,11 +69,18 @@ class animal
     /**
      * @var string
      *
-     * @ORM\Column(name="race", type="string", length=255)
+     * @ORM\Column(name="race", type="string", length=255 )
      */
     private $race;
+    /**
+     * @var int
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
+     */
+    private $idMembre;
 
     /**
+<<<<<<< HEAD
      * @ORM\Column(name="image", type="string")
      */
     public $image;
@@ -97,7 +102,21 @@ class animal
     }
 
 
+=======
+     * @var int
+     * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
+     * @ORM\JoinColumn(name="id_membre",referencedColumnName="id")
+     */
+>>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
 
+
+    private $id_membre;
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="age", type="integer")
+     */
+    private $age;
     /**
      * @return int
      */
@@ -219,6 +238,7 @@ class animal
     }
 
     /**
+<<<<<<< HEAD
      * @param string $race
      */
     public function setRace($race)
@@ -235,6 +255,51 @@ class animal
 //    private $image;
 
 
+=======
+     * @return int
+     */
+    public function getIdMembre()
+    {
+        return $this->id_membre;
+    }
+
+    /**
+     * @param int $id_membre
+     */
+    public function setIdMembre($id_membre)
+    {
+        $this->id_membre = $id_membre;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    /**
+     * @param int $age
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
+        return $this->idMembre;
+    }
+
+
+    /**
+     * Generates the magic method
+     *
+     */
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->nom;
+        // to show the id of the Category in the select
+        // return $this->id;
+    }
+>>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
 
 
 }

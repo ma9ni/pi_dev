@@ -1,0 +1,42 @@
+{% extends ':FrontEnd:base.html.twig' %}
+
+{% block body %}
+
+
+
+    <div class="blog-bottom">
+        <div class="container">
+            <div class="col-sm-5 w3_agile_blog_bottom_left">
+                <img src="{{ asset('FrontEnd/images/s1.jpg') }}" alt=" " class="img-responsive" />
+            </div>
+            <div class="col-sm-7 w3_agile_blog_bottom_right">
+                <h3>{% if adoption.type=="deleger" %}
+                    {{ adoption.idAnimal.race }}  a adopter temporairement
+                {% else %}
+                        {{ adoption.idAnimal.race }}  a adopter définitivement
+{% endif %}
+                </h3>
+                <br>
+                <br>
+                <h5>Date d'annonce : {% if adoption.dateannonce %}{{ adoption.dateannonce|date('Y-m-d') }}{% endif %}</h5>
+                <h5>Lieu :{{ adoption.lieu }}</h5>
+                <h5> Race :{{ adoption.idAnimal.race }}</h5>
+                <h5> Age :{{ adoption.idAnimal.age }} mois</h5>
+
+                <h5> Nom de l'animal :{{ adoption.idAnimal.nom }}</h5>
+                <p>{{ adoption.description }}.</p>
+                <p><a href="{{ path('reclamation_newAdoption',{'id':adoption.idAdoption}) }}">signaler annonce </a></p>
+                <div class="w3l_more">
+                    <a href="{{ path('adoption_contact',{'id':adoption.idAdoption}) }}" class="button button--nina" data-text="Contacter l'annonceur">
+                        <span>Contacter l'annonceur</span>
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="clearfix"> </div>
+
+<br>
+        <br>
+        </div>
+    </div>
+{% endblock %}

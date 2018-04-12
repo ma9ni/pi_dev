@@ -1,0 +1,45 @@
+{% extends ":FrontEnd:base.html.twig" %}
+{% block stylesheets %}
+    <style>
+        body{background: url("https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Factu.2Fnews-actu.2Fjob-de-reve-devenez-calineur-pour-chats-39705.2F14560357-1-fre-FR.2Fjob-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.2Ejpg/748x372/quality/80/crop-from/center/job-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.jpeg")
+        no-repeat;}
+    </style>
+{% endblock %}
+{% block body %}
+    <br/>
+<h3 class="agileits-title w3title2">{{ nourriture.nom }}</h3>
+    <div class="blog-bottom">
+        <div class="container">
+            <div class="col-sm-5 w3_agile_blog_bottom_left">
+                <img src="{{ asset('uploads/images/' ~ nourriture.photo) }}" alt=" " class="img-responsive" />
+            </div>
+            <div class="col-sm-7 w3_agile_blog_bottom_right">
+                <h3>{{ nourriture.nom }}</h3>
+                <h6>{{ nourriture.datePublication|date("d/M/Y") }}</h6>
+                <p>{{ nourriture.description }}</p>
+<!--                <div class="w3l_more">
+                    <a href="#" class="button button--nina" data-text="Contacter l'annonceur">
+                        <span>{{ proprio.numTel }}</span>
+                    </a>
+                </div>
+-->
+                <div id="demo" style="visibility : hidden">
+                        <h2>{{ proprio.username }}</h2>
+                    <h3> <span class="input-group-addon">@   : <a href="mailto:{{ proprio.email }}"> {{ proprio.email }}</a></span></h3>
+                        <h3><span class="input-group-addon">tel  : <a href="tel:+216{{ proprio.numTel }}">{{ proprio.numTel }}</a></span></h3>
+                </div>
+                <input id="btncontatcer"type="submit" value="contacter l'annonceur" class="button button--nina" onclick="getElementById('demo').style.visibility = 'visible';getElementById('btncontatcer').style.visibility = 'hidden';" >
+            </div>
+        </div>
+    </div>
+    <div class="agile_social_icons_banner" style="background-color: #707070;">
+        <ul class="agileits_social_list">
+            <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <br/>
+{% endblock %}
+

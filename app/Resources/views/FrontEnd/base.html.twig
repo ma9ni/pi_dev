@@ -9,8 +9,12 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
         <!-- Custom Theme files -->
+        <link rel="stylesheet" href="{{ asset('bundles/fullcalendar/css/fullcalendar/fullcalendar.min.css') }}" />
+
         <link href="{{ asset('FrontEnd/css/bootstrap.css') }}" type="text/css" rel="stylesheet" media="all">
         <link href="{{ asset('FrontEnd/css/style.css') }}" type="text/css" rel="stylesheet" media="all">
+        <link rel="stylesheet" type="text/css" href="{{ asset('FrontEnd/css/rating.css') }}" />
+
         <link href="{{ asset('FrontEnd/css/font-awesome.css') }}" rel="stylesheet"> <!-- font-awesome icons -->
         <link rel="stylesheet" href="{{ asset('FrontEnd/css/flexslider.css') }}" type="text/css" media="screen" property="" />
 
@@ -32,9 +36,12 @@
     <!-- //banner -->
 
 <div class="container">
+
     {% block body %}{% endblock %}
 
 </div>
+    {% block body2 %}{% endblock %}
+
 
     <!-- footer -->
                 {% include ':FrontEnd:footer.html.twig' %}
@@ -68,6 +75,8 @@
 
     <!-- js -->
     <script src="{{ asset('FrontEnd/js/jquery-2.2.3.min.js') }}"></script>
+    <script src="{{ asset('FrontEnd/js/rating.js') }}"></script>
+
     <!-- //js -->
     <!-- jarallax -->
     <script src="{{ asset('FrontEnd/js/SmoothScroll.min.js') }}"></script>
@@ -168,6 +177,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ asset('FrontEnd/js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fullcalendar/js/fullcalendar/lib/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fullcalendar/js/fullcalendar/lib/moment.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fullcalendar/js/fullcalendar/fullcalendar.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/fullcalendar/js/fullcalendar/fullcalendar.default-settings.js') }}"></script>
     {% block javascripts %}{% endblock %}
     </body>
 </html>

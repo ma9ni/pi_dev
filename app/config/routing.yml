@@ -14,6 +14,64 @@ animale:
     resource: "@AnimaleBundle/Resources/config/routing.yml"
     prefix:   /
 
+faq_admin:
+    resource: "@faqAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+faq:
+    resource: "@FaqBundle/Resources/config/routing.yml"
+    prefix:   /
+
+commercial:
+    resource: "@CommercialBundle/Resources/config/routing.yml"
+    prefix:   /
+
+dresseur:
+    resource: "@DresseurBundle/Resources/config/routing.yml"
+
+calander:
+    resource: "@CalanderBundle/Resources/config/routing.yml"
+    prefix:   /
+
+reclamation_reclamation:
+    resource: "@ReclamationBundle/Controller/ReclamationController.php"
+    type:     annotation
+
+reclamation:
+    resource: "@ReclamationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+petiteur_demande_gard:
+    resource: "@PetiteurBundle/Controller/DemandeGardController.php"
+    type:     annotation
+
+petiteur_offre_petiteur:
+    resource: "@PetiteurBundle/Controller/OffrePetiteurController.php"
+    type:     annotation
+
+petiteur:
+    resource: "@PetiteurBundle/Resources/config/routing.yml"
+    prefix:   /
+
+adoption_adoption:
+    resource: "@AdoptionBundle/Controller/AdoptionController.php"
+    type:     annotation
+
+adoption:
+    resource: "@AdoptionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+concours_concours:
+    resource: "@ConcoursBundle/Controller/concoursController.php"
+    type:     annotation
+
+concours:
+    resource: "@ConcoursBundle/Resources/config/routing.yml"
+    prefix:   /Concours
+
 admin:
     resource: "@AdminBundle/Resources/config/routing.yml"
     prefix:   /
@@ -73,3 +131,5 @@ mesanimal:
 
 
 
+ancarebeca_fullcalendar:
+    resource: "@FullCalendarBundle/Resources/config/routing.yml"

@@ -3,9 +3,11 @@
 namespace pi\FrontEnd\FicheDeDressageBundle\Controller;
 
 use pi\FrontEnd\FicheDeDressageBundle\Entity\f_dressage;
+use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -22,11 +24,27 @@ class f_dressageController extends Controller
      */
     public function indexAction()
     {
+//        $this->denyAccessUnlessGranted('ROLE_DRESS', null, 'Unable to access this page!');
+        if (!$this->get('security.authorization_checker')->isGranted('ROLE_DRESS')) {
+            // Sinon on déclenche une exception « Accès interdit »
+            return $this->redirectToRoute('vetno active');
+//            throw new AccessDeniedException('Accès limité aux auteurs.');
+        }
         $em = $this->getDoctrine()->getManager();
-        $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')->findAll();
-        return $this->render('@FicheDeDressage/f_dressage/index.html.twig', array(
-            'f_dressages' => $f_dressages,
-        ));
+        $user = $this->getUser();
+        $conf= $user->getConfirmation();
+        if ($conf == 1) {
+
+            $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')
+                ->findBy(array("idMembre" => $user, "etat" => 1));
+            return $this->render('@FicheDeDressage/f_dressage/index.html.twig', array(
+                'f_dressages' => $f_dressages,
+            ));
+        } else
+        {
+            return $this->redirectToRoute('vetno active');
+//                    var_dump($user);
+        }
     }
     /**
      * Creates a new f_dressage entity.
@@ -44,9 +62,16 @@ class f_dressageController extends Controller
             $user = $this->getUser();
             $f_dressage->setEtat(1);
             $f_dressage->setIdMembre($user);
+            $a1=$form->get('accompagnement')->getData();
+            $a2=$form->get('interception')->getData();
+            $a3=$form->get('obeissance')->getData();
+            $a4=$form->get('displine')->getData();
+            $total=($a1+$a2+$a3+$a4)/4;
+//            var_dump($total);
+            $f_dressage->setNoteTotale($total);
             $em->persist($f_dressage);
             $em->flush();
-            return $this->redirectToRoute('f_dressage_show', array('id' => $f_dressage->getId()));
+            return $this->redirectToRoute('f_dressage_index', array('id' => $f_dressage->getId()));
         }
 
         return $this->render('@FicheDeDressage/f_dressage/new.html.twig', array(
@@ -62,13 +87,58 @@ class f_dressageController extends Controller
      * @Method("GET")
      */
     public function showAction(f_dressage $f_dressage)
-    {
+    {  $em = $this->getDoctrine()->getManager();
+
         $deleteForm = $this->createDeleteForm($f_dressage);
 
         return $this->render('@FicheDeDressage/f_dressage/show.html.twig', array(
             'f_dressage' => $f_dressage,
             'delete_form' => $deleteForm->createView(),
+
         ));
+    }
+
+    public function imprimerAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $f_dressages = $em->getRepository('FicheDeDressageBundle:f_dressage')
+            ->find($id);
+        $idd=$f_dressages->getIdAnimal();
+
+        $rai=$em->getRepository('FicheDeSoinBundle:animal')->find($idd);
+        if (!$f_dressages) {
+            return $this->redirectToRoute('f_dressage_index');
+        }
+
+        $html = $this->renderView('@FicheDeDressage/imprimer.html.twig',array(
+            'facture'=>$f_dressages,
+            'anim'=>$rai
+
+        ));
+
+        try{
+            $pdf = new Html2Pdf('P','A4','fr');
+            $pdf->pdf->SetAuthor('SoukElMedina');
+            $pdf->pdf->SetTitle('Facture ');
+            $pdf->pdf->SetSubject('Facture SoukElMedina');
+            $pdf->pdf->SetKeywords('facture,soukelmedina');
+            $pdf->pdf->SetDisplayMode('real');
+            $pdf->writeHTML($html);
+            $pdf->Output('Fiche De Dressage.pdf');
+
+
+//require 'phpmailer.php';
+
+        }catch(\HTML2PDF_exception $e){
+            die($e);
+        }
+
+        $response = new Response();
+        $response->headers->set('Content-type' , 'application/pdf');
+
+        return $response;
+
     }
 
     /**
@@ -83,36 +153,35 @@ class f_dressageController extends Controller
         $editForm = $this->createForm('pi\FrontEnd\FicheDeDressageBundle\Form\f_dressageType', $f_dressage);
         $editForm->handleRequest($request);
 
+        $a1=$editForm->get('accompagnement')->getData();
+        $a2=$editForm->get('interception')->getData();
+        $a3=$editForm->get('obeissance')->getData();
+        $a4=$editForm->get('displine')->getData();
+        $total=($a1+$a1+$a2+$a3+$a4)/4;
+        $f_dressage->setNoteTotale($total);
+
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('f_dressage_edit', array('id' => $f_dressage->getId()));
+            return $this->redirectToRoute('f_dressage_index', array('id' => $f_dressage->getId()));
         }
 
         return $this->render('@FicheDeDressage/f_dressage/edit.html.twig', array(
             'f_dressage' => $f_dressage,
             'edit_form' => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
      * Deletes a f_dressage entity.
-     *
      * @Route("/delete/{id}", name="f_dressage_delete")
-     * @Method("DELETE")
      */
-    public function deleteAction(Request $request, f_dressage $f_dressage)
+    public function deleteAction(f_dressage $f_dressage)
     {
-        $form = $this->createDeleteForm($f_dressage);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($f_dressage);
-            $em->flush();
-        }
-
+        $em = $this->getDoctrine()->getManager();
+        $id=$f_dressage->getId();
+        $em->getRepository('FicheDeDressageBundle:f_dressage')->deleteFicheDeDressage($id);
+        $em->flush();
         return $this->redirectToRoute('f_dressage_index');
     }
 

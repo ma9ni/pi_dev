@@ -1,0 +1,21 @@
+{% extends ":FrontEnd:base.html.twig" %}
+{% block body %}
+
+
+
+
+{% for note in notes %}
+    {{ note.id }}
+    </br>
+    {{ note.note }}
+    </br>
+    {{ note.idMembre }}
+    </br>
+    {{ note.idUser }}
+{% endfor %}
+
+{{ form_start(form) }}
+<input type="submit" value="Affecte La Note">
+{{ form_end(form) }}
+
+{% endblock %}

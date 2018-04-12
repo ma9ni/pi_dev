@@ -3,6 +3,8 @@
 namespace pi\FrontEnd\FicheDeSoinBundle\Controller;
 
 use pi\FrontEnd\FicheDeSoinBundle\Entity\f_soin;
+use pi\FrontEnd\FicheDeSoinBundle\Entity\User;
+use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -20,14 +22,35 @@ class f_soinController extends Controller
      * @Route("/index", name="f_soin_index")
      * @Method("GET")
      */
+
     public function indexAction()
     {
+        //        $this->denyAccessUnlessGranted('ROLE_DRESS', null, 'Unable to access this page!');
+        if (!$this->get('security.authorization_checker')->isGranted('ROLE_VETE')) {
+            // Sinon on déclenche une exception « Accès interdit »
+            return $this->redirectToRoute('vetno active');
+//            throw new AccessDeniedException('Accès limité aux auteurs.');
+        }
         $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
-        $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user,"etat"=>1));
-        return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
-            'f_soins' => $f_soins,
-        ));
+//            var_dump($user);
+           $conf= $user->getConfirmation();
+           if ($conf == 1)
+           {
+               $f_soins = $em->getRepository('FicheDeSoinBundle:f_soin')->findBy(array("idMembre"=>$user,"etat"=>1));
+//               $this->redirectToRoute('vetno active');
+//               var_dump($conf);
+               return $this->render('@FicheDeSoin/f_soin/index.html.twig', array(
+                   'f_soins' => $f_soins,
+                   'user'=>$user,
+               ));
+           }
+           else
+               {
+                   return $this->redirectToRoute('vetno active');
+//                    var_dump($user);
+               }
+
     }
 
 
@@ -79,7 +102,6 @@ class f_soinController extends Controller
 
     /**
      * Displays a form to edit an existing f_soin entity.
-     *
      * @Route("/edit/{id}", name="f_soin_edit")
      * @Method({"GET", "POST"})
      * @param Request $request
@@ -116,6 +138,50 @@ class f_soinController extends Controller
             $em->flush();
         return $this->redirectToRoute('f_soin_index');
     }
+
+    public function imprimerAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $f_dressages = $em->getRepository('FicheDeSoinBundle:f_soin')
+            ->find($id);
+        $idd=$f_dressages->getIdAnimal();
+
+        $rai=$em->getRepository('FicheDeSoinBundle:animal')->find($idd);
+        if (!$f_dressages) {
+            return $this->redirectToRoute('f_soin_index');
+        }
+
+        $html = $this->renderView('@FicheDeSoin/imprimer.html.twig',array(
+            'facture'=>$f_dressages,
+            'anim'=>$rai
+
+        ));
+
+        try{
+            $pdf = new Html2Pdf('P','A4','fr');
+            $pdf->pdf->SetAuthor('SoukElMedina');
+            $pdf->pdf->SetTitle('Facture ');
+            $pdf->pdf->SetSubject('Facture SoukElMedina');
+            $pdf->pdf->SetKeywords('facture,soukelmedina');
+            $pdf->pdf->SetDisplayMode('real');
+            $pdf->writeHTML($html);
+            $pdf->Output('Fiche De Soin.pdf');
+
+
+//require 'phpmailer.php';
+
+        }catch(\HTML2PDF_exception $e){
+            die($e);
+        }
+
+        $response = new Response();
+        $response->headers->set('Content-type' , 'application/pdf');
+
+        return $response;
+
+    }
+
     /**
      * Creates a form to delete a f_soin entity.
      *

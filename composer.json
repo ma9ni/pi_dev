@@ -21,18 +21,31 @@
     },
     "require": {
         "php": ">=5.5.9",
+<<<<<<< HEAD
+        "ancarebeca/full-calendar-bundle": "^5.0",
+        "blackknight467/star-rating-bundle": "2.*",
+=======
+        "cmen/google-charts-bundle": "^3.0",
+>>>>>>> concoursBundle
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
+        "friendsofsymfony/jsrouting-bundle": "^2.2",
         "friendsofsymfony/user-bundle": "^2.1",
         "incenteev/composer-parameter-handler": "^2.0",
         "knplabs/knp-paginator-bundle": "^2.7",
         "sensio/distribution-bundle": "^5.0.19",
         "sensio/framework-extra-bundle": "^3.0.2",
+        "spipu/html2pdf": "^5.1",
         "symfony/monolog-bundle": "^3.1.0",
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.3.10",
         "symfony/symfony": "3.3.16",
-        "twig/twig": "^1.0||^2.0"
+
+
+        "twig/twig": "^1.0||^2.0",
+
+        "tiloweb/pagination-bundle": "^1.4"
+
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -55,7 +68,12 @@
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "5.6"
+        }
+
+
     },
     "extra": {
         "symfony-app-dir": "app",

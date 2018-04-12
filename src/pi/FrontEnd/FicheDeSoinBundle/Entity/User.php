@@ -26,7 +26,7 @@ class User extends BaseUser
     /**
      * @var float
      *
-     * @ORM\Column(name="note", type="float" ,options={"default":1}, nullable=true)
+     * @ORM\Column(name="note", type="float" ,options={"default":0}, nullable=true)
      */
     protected $note;
     /**
@@ -48,6 +48,11 @@ class User extends BaseUser
      * @ORM\Column(type="string",length=255,nullable=true)
      */
     protected $type;
+
+    /**
+     * @ORM\Column(type="boolean",options={"default":0},nullable=true)
+     */
+    private $confirmation;
 
     /**
      * @return mixed
@@ -186,9 +191,36 @@ class User extends BaseUser
     }
 
     /**
+     * @return string
+     */
+    public function getEmailCanonical()
+    {
+        return $this->emailCanonical;
+    }
+
+    /**
+     * @param string $emailCanonical
+     */
+    public function setEmailCanonical($emailCanonical)
+    {
+        $this->emailCanonical = $emailCanonical;
+    }
+
+    /**
      * @return mixed
      */
+    public function getConfirmation()
+    {
+        return $this->confirmation;
+    }
 
+    /**
+     * @param mixed $confirmation
+     */
+    public function setConfirmation($confirmation)
+    {
+        $this->confirmation = $confirmation;
+    }
 
 
 }

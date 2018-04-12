@@ -1,0 +1,12 @@
+{% extends ":BackEnd:index.html.twig" %}
+
+{% block container %}
+    <div>
+        <h2><em>La question :</em></h2>
+        <h3>{{ laquestion.question }}</h3>
+        {{ form_start(form, {'attr': {'class': 'form'}}) }}
+        {{ form_widget(form.reponse, {'attr': {'placeholder': 'Votre reponse ','class':'form-control'}})  }}
+            <input type="submit" class="bbtn btn-default btn-block" >
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

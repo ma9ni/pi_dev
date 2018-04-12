@@ -1,0 +1,13 @@
+dresseur_homepage:
+    path:     /
+    defaults: { _controller: DresseurBundle:Default:index }
+
+
+aff_note:
+    path:     /note/{id}
+    defaults: { _controller: DresseurBundle:note:afficheNote }
+
+
+affecte_note:
+    path:     /affecte
+    defaults: { _controller: DresseurBundle:note:affecteLaNote }
