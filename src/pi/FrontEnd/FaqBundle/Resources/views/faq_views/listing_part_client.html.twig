@@ -1,0 +1,49 @@
+{% extends ":FrontEnd:base.html.twig" %}
+{% block stylesheets %}
+    <style>
+        body{background: url("https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fwww.2Efemmeactuelle.2Efr.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Factu.2Fnews-actu.2Fjob-de-reve-devenez-calineur-pour-chats-39705.2F14560357-1-fre-FR.2Fjob-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.2Ejpg/748x372/quality/80/crop-from/center/job-de-reve-une-clinique-veterinaire-recherche-un-calineur-pour-chats.jpeg")
+        no-repeat;}
+    </style>
+{% endblock %}
+{% block body %}
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{ asset('FrontEnd/css/reset_faq.css') }}"> <!-- CSS reset -->
+    <link rel="stylesheet" href="{{ asset('FrontEnd/css/style_faq.css') }}"> <!-- Resource style -->
+    <script src="{{ asset('FrontEnd/js/modernizr.js') }}"></script>
+    <h3 class="agileits-title w3title2">Foire aux questions</h3>
+    <div class="cd-faq-items">
+        <ul id="basics" class="cd-faq-group">
+            {% for laquestion in questions  %}
+                <li>
+                    <a class="cd-faq-trigger" href="#0">{{ laquestion.question }}</a>
+                    <div class="cd-faq-content">
+                        {% for lareponse in reponses  %}
+
+                            {% if lareponse.id == laquestion.idReponse.id %}
+                                <p>{{ lareponse.reponse }}</p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+            {% endfor %}
+            <div style="margin-bottom: 50px">
+                <button id="btnproposer" class="btn btn-default btn-block" style="position: absolute" onclick="getElementById('btnproposer').style.visibility = 'hidden';getElementById('form').style.visibility = 'visible';" > Proposer une question </button>
+                <div id="form" style="visibility: hidden; position: absolute">
+                    {{ form_start(form, {'attr': {'class': 'form'}}) }}
+                    <div class="input-group">
+                        <div class="input-group-addon">Votre Question </div>
+                        {{ form_widget(form.question, {'attr': {'placeholder': 'question ','class':'form-control'}})  }}
+                        <input type="submit" class="bbtn btn-default btn-block">
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </ul>
+    </div>
+    <br/>
+    <script src="{{ asset('FrontEnd/js/jquery-2.2.3.min.js') }}"></script>
+    <script src="{{ asset('FrontEnd/js/jquery.mobile.custom.min.js') }}"></script>
+    <script src="{{ asset('FrontEnd/js/main.js') }}"></script>
+{% endblock %}
+

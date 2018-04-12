@@ -4,17 +4,13 @@
     <div class="gallery team">
         <div class="container">
             <h3 class="agileits-title w3title2">veterinaire</h3>
-           {{ form_start(rech) }}
-            <div class=" col-md-4 col-md-offset-4  ">
-                <div class="input-group ">
-                    {{ form_widget(rech.Recherche, {'attr': {'placeholder': 'Search for... ','class':'form-control'}}) }}
-                    {#<input type="text" class="form-control" placeholder="Search for...">#}
-                    <span class="input-group-btn">
-                     <button class="btn btn-default"  type="submit"><a href="{{ path('rech') }}">Go!</a></button>
-                   </span>
-                </div><!-- /input-group -->
+
+            <form action="{{ path('front_end_vet') }}" method="post">
+                <input type="text" name="recherche" id="recherche" placeholder="search For ...." class="form-control">
+                <input type="submit" value="search"   class="btn btn-default">
+            </form>
+             <div class=" col-md-4 col-md-offset-4  ">
         </div>
-        {{ form_end(rech) }}
             <div class="agile_gallery_grids">
                 {% for  i in veterinaires %}
                     <div class="col-sm-4 col-xs-4 col-md-6 agile_gallery_grid">
@@ -34,6 +30,12 @@
                     </div>
                 {% endfor %}
             </div>
+        </div>
+
+
+
+        <div class="navigation text-center">
+            {{ knp_pagination_render(veterinaires) }}
         </div>
     </div>
 {% endblock %}

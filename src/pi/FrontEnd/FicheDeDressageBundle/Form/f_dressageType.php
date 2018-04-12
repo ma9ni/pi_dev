@@ -21,7 +21,7 @@ class f_dressageType extends AbstractType
             ->add('specialite')
             ->add('accompagnement')
             ->add('interception')
-            ->add('noteTotale')
+//            ->add('noteTotale')
             ->add('dateDebut',DateType::class,array('widget'=>'single_text'))
             ->add('dateFin',DateType::class,array('widget'=>'single_text'))
             ->add('id_animal',EntityType::class,array(

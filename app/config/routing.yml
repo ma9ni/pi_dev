@@ -1,3 +1,15 @@
+faq_admin:
+    resource: "@faqAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+faq:
+    resource: "@FaqBundle/Resources/config/routing.yml"
+    prefix:   /
+
+commercial:
+    resource: "@CommercialBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dresseur:
     resource: "@DresseurBundle/Resources/config/routing.yml"
 

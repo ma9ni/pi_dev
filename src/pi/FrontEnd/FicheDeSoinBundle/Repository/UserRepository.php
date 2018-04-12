@@ -24,6 +24,21 @@ class UserRepository extends EntityRepository
         return $queryBuilder->getQuery()->getResult();
     }
 
+    public function  findVeterinaireNomQB($nom){
+        $queryBuilder=$this
+            ->createQueryBuilder('s');
+        $queryBuilder
+            ->where("s.roles=:roles")
+            ->andWhere("s.confirmation=:val")
+            ->andWhere("s.username like :nom")
+            ->orWhere("s.gouvernorat like :nom")
+            ->orWhere("s.adresse like :nom")
+            ->setParameter('roles','a:1:{i:0;s:9:"ROLE_VETE";}')
+            ->setParameter('val','1')
+        ->setParameter('nom',$nom);
+        return $queryBuilder->getQuery()->getResult();
+    }
+
     public function  findUser(){
         $queryBuilder=$this
             ->createQueryBuilder('s');
@@ -32,7 +47,6 @@ class UserRepository extends EntityRepository
             ->orWhere("s.roles=:roledres")
             ->setParameter('roles','a:1:{i:0;s:9:"ROLE_VETE";}')
             ->setParameter('roledres','a:1:{i:0;s:10:"ROLE_DRESS";}');
-
         return $queryBuilder->getQuery()->getResult();
 
     }

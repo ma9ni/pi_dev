@@ -8,6 +8,10 @@ vetno active:
     path:     /noActiv
     defaults: { _controller: FicheDeSoinBundle:Default:notActived }
 
-rech:
-    path:     /find
-    defaults: { _controller: VeterinaireBundle:Default:recherchePArnom }
+#rech:
+#    path:     /find
+#    defaults: { _controller: VeterinaireBundle:Default:recherchePArnom }
+
+imprimerfiche de Soin:
+    path:     /imprimerf_s/{id}
+    defaults: { _controller: FicheDeSoinBundle:f_soin:imprimer }

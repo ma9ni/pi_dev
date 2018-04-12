@@ -45,21 +45,17 @@
                 {{ form_widget(edit_form.obeissance , {'attr': {'class':'form-control'}})  }}
             </div>
 
-            <div class="form-group">
-                {{ form_label(edit_form.noteTotale ) }}
-                {{ form_widget(edit_form.noteTotale , {'attr': {'class':'form-control'}})  }}
-            </div>
+            {#<div class="form-group">#}
+                {#{{ form_label(edit_form.noteTotale ) }}#}
+                {#{{ form_widget(edit_form.noteTotale , {'attr': {'class':'form-control'}})  }}#}
+            {#</div>#}
             <div class="form-group">
                 <input type="submit" value="Edit" class=" btn-primary btn-lg btn-block"/>
             </div>
 
             {{ form_end(edit_form) }}
 
-            <ul>
-                <li>
-                    <a href="{{ path('f_dressage_index') }}">Back to the list</a>
-                </li>
-            </ul>
+
         </div>
     </div>
 {% endblock %}
