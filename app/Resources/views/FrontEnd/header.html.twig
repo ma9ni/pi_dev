@@ -6,8 +6,7 @@
                 <h1><a href="{{ path('front_end_homepage') }}">Best Pets</a></h1>
             </div>
             <div class="agileits_w3layouts_sign_in">
-                <ul>
-                    <li><a href="/login" data-toggle="modal" class="play-icon">Login</a></li>
+
                 <ul style="color: white">
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
@@ -56,13 +55,9 @@
 
                             </ul>
                         </li>
-                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gateau <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ path('animal_index') }}" data-hover="Animales">Animales</a></li>
-                                <li><a href="{{ path('sosdisparition_index') }}" data-hover="Sos Disparition">Sos Disparition</a></li>
-                            </ul>
-                        </li>
 
+
+                        <li><a href="{{ path('animal_index') }}" data-hover="Animal">Animal</a></li>
 
 
                         {% if is_granted("ROLE_PET") %}
@@ -76,19 +71,17 @@
                             <li><a href="{{ path('f_dressage_index') }}" data-hover="Mes fiche des dressages">Mes fiche des dressages</a></li>
                         {% endif %}
 
-<<<<<<< HEAD
                         <!--fadhlaoui_Ahmed's issues-->
-                        {#<li><a href="{{ path('faq_listing_part_client') }}" data-hover="F.A.Q.">F.A.Q.</a></li>#}
-                        {#<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produit <span class="caret"></span></a>#}
-                            {#<ul class="dropdown-menu">#}
-                                {#<li><a href="{{ path('listing_accessoire') }}" data-hover="Accessoires">Accessoires</a></li>#}
-                                {#<li><a href="{{ path('listing_nourriture') }}" data-hover="Nourriture">Nourriture</a></li>#}
-                            {#</ul>#}
-                        {#</li>#}
-=======
-                        <li><a href="{{ path('concours_index') }}" data-hover="Contact">concours</a></li>
+                        <li><a href="{{ path('faq_listing_part_client') }}" data-hover="F.A.Q.">F.A.Q.</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produit <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('listing_accessoire') }}" data-hover="Accessoires">Accessoires</a></li>
+                                <li><a href="{{ path('listing_nourriture') }}" data-hover="Nourriture">Nourriture</a></li>
+                            </ul>
+                        </li>
 
->>>>>>> 86b7bb1139bc00c38637403ffdd2dbb6fb993f86
+                        <li><a href="{{ path('concours_index') }}" data-hover="concours">concours</a></li>
+
                     </ul>
                     <div class="clearfix"> </div>
                 </div>

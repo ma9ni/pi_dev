@@ -35,7 +35,6 @@ class animal
     private $idMembre;
 
 
-
     /**
      * @var string
      *
@@ -72,15 +71,9 @@ class animal
      * @ORM\Column(name="race", type="string", length=255 )
      */
     private $race;
-    /**
-     * @var int
-     * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumn(name="id_membre", referencedColumnName="id")
-     */
-    private $idMembre;
+
 
     /**
-<<<<<<< HEAD
      * @ORM\Column(name="image", type="string")
      */
     public $image;
@@ -101,13 +94,12 @@ class animal
         $this->image = $image;
     }
 
-
-=======
+    /**
      * @var int
      * @ORM\ManyToOne(targetEntity="pi\FrontEnd\FicheDeSoinBundle\Entity\User")
      * @ORM\JoinColumn(name="id_membre",referencedColumnName="id",onDelete="CASCADE")
      */
->>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
+
 
 
     private $id_membre;
@@ -157,13 +149,7 @@ class animal
         return $this->idMembre;
     }
 
-    /**
-     * @param int $idMembre
-     */
-    public function setIdMembre($idMembre)
-    {
-        $this->idMembre = $idMembre;
-    }
+
 
     /**
      * @return string
@@ -238,7 +224,6 @@ class animal
     }
 
     /**
-<<<<<<< HEAD
      * @param string $race
      */
     public function setRace($race)
@@ -255,13 +240,6 @@ class animal
 //    private $image;
 
 
-=======
-     * @return int
-     */
-    public function getIdMembre()
-    {
-        return $this->id_membre;
-    }
 
     /**
      * @param int $id_membre
@@ -299,7 +277,7 @@ class animal
         // to show the id of the Category in the select
         // return $this->id;
     }
->>>>>>> aecd55095bfd9a8ec3d097f9c8ac1652a7938404
+
 
 
 }
